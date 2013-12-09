@@ -14,33 +14,33 @@
 .vui-heading-4 {
 	color: @headingColour;
 	font-family: inherit;
-	font-weight: normal;
+	font-weight: @headingWeight;
 	margin: 0 0 15px 0;
 }
 
 .vui-heading-1 {
-	.fontSizeEm( 23 );
-	.lineHeightEm( 25, 23 );
+	.fontSizeEm( @heading1Size );
+	.lineHeightEm( @headingLineHeight, @heading1Size );
 }
 
 .vui-heading-2 {
-	.fontSizeEm( 19 );
-	.lineHeightEm( 25, 19 );
+	.fontSizeEm( @heading2Size );
+	.lineHeightEm( @headingLineHeight, @heading2Size );
 }
 
 .vui-heading-3 {
-	.fontSizeEm( 17 );
-	.lineHeightEm( 25, 17 );
+	.fontSizeEm( @heading3Size );
+	.lineHeightEm( @headingLineHeight, @heading3Size );
 }
 
 .vui-heading-4 {
-	.fontSizeEm( 15 );
-	.lineHeightEm( 25, 15 );
+	.fontSizeEm( @heading4Size );
+	.lineHeightEm( @headingLineHeight, @heading4Size );
 }
 
 .vui-emphasis {
 	color: @emphasisColour;
-	font-style: italic;
+	font-style: @emphasisStyle;
 	margin: 0 0 20px 0;
 }
 
