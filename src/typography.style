@@ -1,0 +1,29 @@
+@import 'typography';
+
+.vui-typography {
+	.vui-typography();
+}
+
+.vui-heading-1 {
+	.vui-heading-1();
+}
+
+.vui-heading-2 {
+	.vui-heading-2();
+}
+
+.vui-heading-3 {
+	.vui-heading-3();
+}
+
+.vui-heading-4 {
+	.vui-heading-3();
+}
+
+.vui-emphasis {
+	.vui-emphasis();
+}
+
+.vui-help {
+	.vui-help();
+}
