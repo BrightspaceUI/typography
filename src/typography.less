@@ -1,0 +1,57 @@
+@import '../../core/core';
+
+.vui-typography {
+	color: @fontColour;
+	font-family: @fontFamily;
+	font-size: @fontSize;
+	font-weight: normal;
+	line-height: @lineHeight;
+}
+
+.vui-heading-1,
+.vui-heading-2,
+.vui-heading-3,
+.vui-heading-4 {
+	color: @headingColour;
+	font-family: inherit;
+	font-weight: @headingWeight;
+}
+
+.vui-heading-1 {
+	.fontSizeEm( @heading1Size );
+	.lineHeightEm( @headingLineHeight, @heading1Size );
+	.marginEm( @headingTopMargin, @headingRightMargin, @headingBottomMargin, @headingLeftMargin, @heading1Size );
+}
+
+.vui-heading-2 {
+	.fontSizeEm( @heading2Size );
+	.lineHeightEm( @headingLineHeight, @heading2Size );
+	.marginEm( @headingTopMargin, @headingRightMargin, @headingBottomMargin, @headingLeftMargin, @heading2Size );
+}
+
+.vui-heading-3 {
+	.fontSizeEm( @heading3Size );
+	.lineHeightEm( @headingLineHeight, @heading3Size );
+	.marginEm( @headingTopMargin, @headingRightMargin, @headingBottomMargin, @headingLeftMargin, @heading3Size );
+}
+
+.vui-heading-4 {
+	.fontSizeEm( @heading4Size );
+	.lineHeightEm( @headingLineHeight, @heading4Size );
+	.marginEm( @headingTopMargin, @headingRightMargin, @headingBottomMargin, @headingLeftMargin, @heading4Size );
+}
+
+.vui-emphasis {
+	color: @emphasisColour;
+	font-style: @emphasisStyle;
+	.marginEm( @emphasisTopMargin, @emphasisRightMargin, @emphasisBottomMargin, @emphasisLeftMargin );
+}
+
+.vui-help {
+	color: @helpColour;
+	font-style: @helpStyle;
+	font-weight: @helpWeight;
+	.fontSizeEm( @helpSize );
+	.lineHeightEm( @helpLineHeight, @helpSize );
+	.marginEm( @helpTopMargin, @helpRightMargin, @helpBottomMargin, @helpLeftMargin, @helpSize );
+}
