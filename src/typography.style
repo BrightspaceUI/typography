@@ -17,7 +17,7 @@
 }
 
 .vui-heading-4 {
-	.vui-heading-3();
+	.vui-heading-4();
 }
 
 .vui-emphasis {
