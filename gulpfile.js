@@ -2,7 +2,7 @@ var gulp = require( 'gulp' ),
 	vui = require( 'vui-helpers' );
 
 gulp.task( 'clean', function( cb ) {
-	vui.clean( [ 'dist/**/*', 'lib', 'output' ] )
+	vui.clean( [ 'dist/**/*', 'output' ] )
 		.then( function() { cb(); } );
 } );
 
