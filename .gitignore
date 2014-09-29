@@ -1,5 +1,5 @@
 deplui.sublime-project
 deplui.sublime-workspace
-dist/
 node_modules/
-output/
+test/output
+typography.css

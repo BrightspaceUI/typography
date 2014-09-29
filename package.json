@@ -1,15 +1,18 @@
 {
   "name": "vui-typography",
   "description": "Valence.UI typography behavior",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "D2L Incorporated",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "ssh://git@git.dev.d2l:7999/val/typography.git"
   },
+  "scripts": {
+    "test": "gulp && gulp test"
+  },
   "devDependencies": {
     "gulp": "^3.8.8",
-    "vui-helpers": "^0.0.7"
+    "vui-helpers": "^0.1.1"
   }
 }
