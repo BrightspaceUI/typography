@@ -7,7 +7,11 @@ gulp.task( 'clean', function() {
 } );
 
 gulp.task( 'css', function () {
-	return vui.makeCss( 'typography.css.less', 'typography.css', { lintOpts: '.csslintrc' } );
+	return vui.makeCss(
+		'typography.css.less',
+		'typography.css',
+		{ lintOpts: '.csslintrc' }
+	);
 } );
 
 gulp.task( 'default', [ 'clean' ], function() {
