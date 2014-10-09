@@ -32,150 +32,154 @@
 @vui-helpBottomMargin: 20px;
 @vui-helpLeftMargin: 0;
 
-.vui-typography( 
-		@fontColor: @vui-fontColor,
-		@fontFamily: @vui-fontFamily,
-		@fontSize: @vui-fontSize,
-		@lineHeight: @vui-lineHeight
-	) {
-	color: @fontColor;
-	font-family: @fontFamily;
-	font-size: @fontSize;
-	font-weight: normal;
-	line-height: @lineHeight;
-}
+#vui {
 
-.vui-heading(
-		@fontColor: @vui-headingFontColor,
-		@fontWeight: @vui-headingFontWeight
-	) {
-	color: @fontColor;
-	font-family: inherit;
-	font-weight: @fontWeight;
-}
+	.typography( 
+			@fontColor: @vui-fontColor,
+			@fontFamily: @vui-fontFamily,
+			@fontSize: @vui-fontSize,
+			@lineHeight: @vui-lineHeight
+		) {
+		color: @fontColor;
+		font-family: @fontFamily;
+		font-size: @fontSize;
+		font-weight: normal;
+		line-height: @lineHeight;
+	}
 
-.vui-heading-1(
-		@fontColor: @vui-headingFontColor,
-		@fontWeight: @vui-headingFontWeight,
-		@fontSize: @vui-heading1FontSize,
-		@lineHeight: @vui-headingLineHeight,
-		@topMargin: @vui-headingTopMargin,
-		@rightMargin: @vui-headingRightMargin,
-		@bottomMargin: @vui-headingBottomMargin,
-		@leftMargin: @vui-headingLeftMargin,
-		@baseFontSize: @vui-fontSize
-	) {
-	.vui-heading( @fontColor, @fontWeight );
-	.vui-fontSizeEm( @fontSize, @baseFontSize );
-	.vui-lineHeightEm( @lineHeight, @fontSize );
-	.vui-marginEm( @topMargin, @rightMargin, @bottomMargin, @leftMargin, @fontSize );
-}
+	.heading(
+			@fontColor: @vui-headingFontColor,
+			@fontWeight: @vui-headingFontWeight
+		) {
+		color: @fontColor;
+		font-family: inherit;
+		font-weight: @fontWeight;
+	}
 
-.vui-heading-2(
-		@fontColor: @vui-headingFontColor,
-		@fontWeight: @vui-headingFontWeight,
-		@fontSize: @vui-heading2FontSize,
-		@lineHeight: @vui-headingLineHeight,
-		@topMargin: @vui-headingTopMargin,
-		@rightMargin: @vui-headingRightMargin,
-		@bottomMargin: @vui-headingBottomMargin,
-		@leftMargin: @vui-headingLeftMargin,
-		@baseFontSize: @vui-fontSize
-	) {
-	.vui-heading( @fontColor, @fontWeight );
-	.vui-fontSizeEm( @fontSize, @baseFontSize );
-	.vui-lineHeightEm( @lineHeight, @fontSize );
-	.vui-marginEm( @topMargin, @rightMargin, @bottomMargin, @leftMargin, @fontSize );
-}
+	.heading-1(
+			@fontColor: @vui-headingFontColor,
+			@fontWeight: @vui-headingFontWeight,
+			@fontSize: @vui-heading1FontSize,
+			@lineHeight: @vui-headingLineHeight,
+			@topMargin: @vui-headingTopMargin,
+			@rightMargin: @vui-headingRightMargin,
+			@bottomMargin: @vui-headingBottomMargin,
+			@leftMargin: @vui-headingLeftMargin,
+			@baseFontSize: @vui-fontSize
+		) {
+		#vui.heading( @fontColor, @fontWeight );
+		#vui.fontSizeEm( @fontSize, @baseFontSize );
+		#vui.lineHeightEm( @lineHeight, @fontSize );
+		#vui.marginEm( @topMargin, @rightMargin, @bottomMargin, @leftMargin, @fontSize );
+	}
 
-.vui-heading-3(
-		@fontColor: @vui-headingFontColor,
-		@fontWeight: @vui-headingFontWeight,
-		@fontSize: @vui-heading3FontSize,
-		@lineHeight: @vui-headingLineHeight,
-		@topMargin: @vui-headingTopMargin,
-		@rightMargin: @vui-headingRightMargin,
-		@bottomMargin: @vui-headingBottomMargin,
-		@leftMargin: @vui-headingLeftMargin,
-		@baseFontSize: @vui-fontSize
-	) {
-	.vui-heading( @fontColor, @fontWeight );
-	.vui-fontSizeEm( @fontSize, @baseFontSize );
-	.vui-lineHeightEm( @lineHeight, @fontSize );
-	.vui-marginEm( @topMargin, @rightMargin, @bottomMargin, @leftMargin, @fontSize );
-}
+	.heading-2(
+			@fontColor: @vui-headingFontColor,
+			@fontWeight: @vui-headingFontWeight,
+			@fontSize: @vui-heading2FontSize,
+			@lineHeight: @vui-headingLineHeight,
+			@topMargin: @vui-headingTopMargin,
+			@rightMargin: @vui-headingRightMargin,
+			@bottomMargin: @vui-headingBottomMargin,
+			@leftMargin: @vui-headingLeftMargin,
+			@baseFontSize: @vui-fontSize
+		) {
+		#vui.heading( @fontColor, @fontWeight );
+		#vui.fontSizeEm( @fontSize, @baseFontSize );
+		#vui.lineHeightEm( @lineHeight, @fontSize );
+		#vui.marginEm( @topMargin, @rightMargin, @bottomMargin, @leftMargin, @fontSize );
+	}
 
-.vui-heading-4(
-		@fontColor: @vui-headingFontColor,
-		@fontWeight: @vui-headingFontWeight,
-		@fontSize: @vui-heading4FontSize,
-		@lineHeight: @vui-headingLineHeight,
-		@topMargin: @vui-headingTopMargin,
-		@rightMargin: @vui-headingRightMargin,
-		@bottomMargin: @vui-headingBottomMargin,
-		@leftMargin: @vui-headingLeftMargin,
-		@baseFontSize: @vui-fontSize
-	) {
-	.vui-heading( @fontColor, @fontWeight );
-	.vui-fontSizeEm( @fontSize, @baseFontSize );
-	.vui-lineHeightEm( @lineHeight, @fontSize );
-	.vui-marginEm( @topMargin, @rightMargin, @bottomMargin, @leftMargin, @fontSize );
-}
+	.heading-3(
+			@fontColor: @vui-headingFontColor,
+			@fontWeight: @vui-headingFontWeight,
+			@fontSize: @vui-heading3FontSize,
+			@lineHeight: @vui-headingLineHeight,
+			@topMargin: @vui-headingTopMargin,
+			@rightMargin: @vui-headingRightMargin,
+			@bottomMargin: @vui-headingBottomMargin,
+			@leftMargin: @vui-headingLeftMargin,
+			@baseFontSize: @vui-fontSize
+		) {
+		#vui.heading( @fontColor, @fontWeight );
+		#vui.fontSizeEm( @fontSize, @baseFontSize );
+		#vui.lineHeightEm( @lineHeight, @fontSize );
+		#vui.marginEm( @topMargin, @rightMargin, @bottomMargin, @leftMargin, @fontSize );
+	}
 
-.vui-emphasis(
-		@fontColor: @vui-emphasisFontColor,
-		@fontStyle: @vui-emphasisFontStyle,
-		@topMargin: @vui-emphasisTopMargin, 
-		@rightMargin: @vui-emphasisRightMargin, 
-		@bottomMargin: @vui-emphasisBottomMargin, 
-		@leftMargin: @vui-emphasisLeftMargin,
-		@baseFontSize: @vui-fontSize
-	) {
-	color: @fontColor;
-	font-style: @fontStyle;
-	.vui-marginEm( @topMargin, @rightMargin, @bottomMargin, @leftMargin, @baseFontSize );
-}
+	.heading-4(
+			@fontColor: @vui-headingFontColor,
+			@fontWeight: @vui-headingFontWeight,
+			@fontSize: @vui-heading4FontSize,
+			@lineHeight: @vui-headingLineHeight,
+			@topMargin: @vui-headingTopMargin,
+			@rightMargin: @vui-headingRightMargin,
+			@bottomMargin: @vui-headingBottomMargin,
+			@leftMargin: @vui-headingLeftMargin,
+			@baseFontSize: @vui-fontSize
+		) {
+		#vui.heading( @fontColor, @fontWeight );
+		#vui.fontSizeEm( @fontSize, @baseFontSize );
+		#vui.lineHeightEm( @lineHeight, @fontSize );
+		#vui.marginEm( @topMargin, @rightMargin, @bottomMargin, @leftMargin, @fontSize );
+	}
 
-.vui-help(
-		@fontColor: @vui-helpFontColor,
-		@fontSize: @vui-helpFontSize,
-		@fontStyle: @vui-helpFontStyle,
-		@fontWeight: @vui-helpFontWeight,
-		@lineHeight: @vui-helpLineHeight,
-		@topMargin: @vui-helpTopMargin, 
-		@rightMargin: @vui-helpRightMargin, 
-		@bottomMargin: @vui-helpBottomMargin, 
-		@leftMargin: @vui-helpLeftMargin,
-		@baseFontSize: @vui-fontSize
-	) {
-	color: @fontColor;
-	font-style: @fontStyle;
-	font-weight: @fontWeight;
-	.vui-fontSizeEm( @fontSize, @baseFontSize );
-	.vui-lineHeightEm( @lineHeight, @fontSize );
-	.vui-marginEm( @topMargin, @rightMargin, @bottomMargin, @leftMargin, @fontSize );
-}
+	.emphasis(
+			@fontColor: @vui-emphasisFontColor,
+			@fontStyle: @vui-emphasisFontStyle,
+			@topMargin: @vui-emphasisTopMargin, 
+			@rightMargin: @vui-emphasisRightMargin, 
+			@bottomMargin: @vui-emphasisBottomMargin, 
+			@leftMargin: @vui-emphasisLeftMargin,
+			@baseFontSize: @vui-fontSize
+		) {
+		color: @fontColor;
+		font-style: @fontStyle;
+		#vui.marginEm( @topMargin, @rightMargin, @bottomMargin, @leftMargin, @baseFontSize );
+	}
 
-.vui-fontSizeEm( 
-		@targetPx: 13, 
-		@basePx: @vui-fontSize 
-	) {
-	font-size: unit( ( @targetPx / @basePx ), em );
-}
+	.help(
+			@fontColor: @vui-helpFontColor,
+			@fontSize: @vui-helpFontSize,
+			@fontStyle: @vui-helpFontStyle,
+			@fontWeight: @vui-helpFontWeight,
+			@lineHeight: @vui-helpLineHeight,
+			@topMargin: @vui-helpTopMargin, 
+			@rightMargin: @vui-helpRightMargin, 
+			@bottomMargin: @vui-helpBottomMargin, 
+			@leftMargin: @vui-helpLeftMargin,
+			@baseFontSize: @vui-fontSize
+		) {
+		color: @fontColor;
+		font-style: @fontStyle;
+		font-weight: @fontWeight;
+		#vui.fontSizeEm( @fontSize, @baseFontSize );
+		#vui.lineHeightEm( @lineHeight, @fontSize );
+		#vui.marginEm( @topMargin, @rightMargin, @bottomMargin, @leftMargin, @fontSize );
+	}
 
-.vui-lineHeightEm( 
-		@targetPx: 20, 
-		@basePx: @fontSize 
-	) {
-	line-height: unit( ( @targetPx / @basePx ), em );
-}
+	.fontSizeEm( 
+			@targetPx: 13, 
+			@basePx: @vui-fontSize 
+		) {
+		font-size: unit( ( @targetPx / @basePx ), em );
+	}
 
-.vui-marginEm( 
-		@targetTopPx: 0, 
-		@targetRightPx: 0, 
-		@targetBottomPx: 0, 
-		@targetLeftPx: 0, 
-		@basePx: @fontSize 
-	) {
-	margin: unit( ( @targetTopPx / @basePx ), em ) unit( ( @targetRightPx / @basePx ), em ) unit( ( @targetBottomPx / @basePx ), em ) unit( ( @targetLeftPx / @basePx ), em );
+	.lineHeightEm( 
+			@targetPx: 20, 
+			@basePx: @fontSize 
+		) {
+		line-height: unit( ( @targetPx / @basePx ), em );
+	}
+
+	.marginEm( 
+			@targetTopPx: 0, 
+			@targetRightPx: 0, 
+			@targetBottomPx: 0, 
+			@targetLeftPx: 0, 
+			@basePx: @fontSize 
+		) {
+		margin: unit( ( @targetTopPx / @basePx ), em ) unit( ( @targetRightPx / @basePx ), em ) unit( ( @targetBottomPx / @basePx ), em ) unit( ( @targetLeftPx / @basePx ), em );
+	}
+
 }
