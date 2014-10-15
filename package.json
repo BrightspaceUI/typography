@@ -1,7 +1,7 @@
 {
   "name": "vui-typography",
   "description": "LESS mixins and CSS for applying basic typography styles",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "D2L Corporation",
   "license": "Apache-2.0",
   "repository": {
@@ -12,8 +12,9 @@
     "test": "gulp && gulp test"
   },
   "devDependencies": {
+    "del": "^0.1.3",
     "gulp": "^3.8.8",
-    "vui-helpers": "^0.1.1"
+    "vui-helpers": "^0.3.0"
   },
   "keywords": [
     "d2l",
