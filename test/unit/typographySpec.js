@@ -6,7 +6,8 @@
 		var node, heading;
 
 		beforeEach( function () {
-			jasmine.addMatchers( d2l.jasmine.matchers );
+			jasmine.addMatchers( vui.jasmine.dom.matchers );
+
 			node = document.body.appendChild( document.createElement( 'div' ) );
 			node.className = 'vui-typography';
 		} );
@@ -15,7 +16,7 @@
 			document.body.removeChild( node );
 		} );
 
-		describe( 'typography', function() { 
+		describe( 'typography', function() {
 
 			it( 'defines a "vui-typography" selector', function() {
 				expect( document ).toHaveCssSelector( '.vui-typography' );
@@ -39,7 +40,7 @@
 
 		} );
 
-		describe( 'heading-1', function() { 
+		describe( 'heading-1', function() {
 
 			beforeEach( function () {
 				heading = node.appendChild( document.createElement( 'h1' ) );
@@ -60,7 +61,7 @@
 
 		} );
 
-		describe( 'heading-2', function() { 
+		describe( 'heading-2', function() {
 
 			beforeEach( function () {
 				heading = node.appendChild( document.createElement( 'h2' ) );
@@ -77,7 +78,7 @@
 
 		} );
 
-		describe( 'heading-3', function() { 
+		describe( 'heading-3', function() {
 
 			beforeEach( function () {
 				heading = node.appendChild( document.createElement( 'h3' ) );
@@ -94,7 +95,7 @@
 
 		} );
 
-		describe( 'heading-4', function() { 
+		describe( 'heading-4', function() {
 
 			beforeEach( function () {
 				heading = node.appendChild( document.createElement( 'h4' ) );
@@ -111,7 +112,7 @@
 
 		} );
 
-		describe( 'emphasis', function() { 
+		describe( 'emphasis', function() {
 
 			var emphasis;
 
@@ -130,7 +131,7 @@
 
 		} );
 
-		describe( 'help', function() { 
+		describe( 'help', function() {
 
 			var help;
 
