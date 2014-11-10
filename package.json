@@ -1,12 +1,12 @@
 {
   "name": "vui-typography",
   "description": "LESS mixins and CSS for applying basic typography styles",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "D2L Corporation",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Desire2Learn-Valence/valence-ui-typography.git"
+    "url": "https://github.com/Brightspace/valence-ui-typography.git"
   },
   "scripts": {
     "test": "gulp && gulp test"
