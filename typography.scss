@@ -1,3 +1,4 @@
+@import 'pxToEm';
 
 $vui-fontColor: #353535 !default;
 $vui-fontFamily: Arial !default;
@@ -32,19 +33,6 @@ $vui-help-topMargin: 0 !default;
 $vui-help-rightMargin: 0 !default;
 $vui-help-bottomMargin: 20px !default;
 $vui-help-leftMargin: 0 !default;
-
-@function pxToEm($targetPx, $basePx) {
-	@if (unitless($targetPx)) {
-		$targetPx: $targetPx * 1px;
-	}
-	@if (unitless($basePx)) {
-		$basePx: $basePx * 1px;
-	}
-	@if ($targetPx / $basePx == 0) {
-		@return 0;
-	}
-	@return ($targetPx / $basePx) * 1em;
-}
 
 @mixin vui-typography(
 		$fontColor: $vui-fontColor,

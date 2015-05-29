@@ -1,0 +1,13 @@
+
+@function pxToEm($targetPx, $basePx) {
+	@if (unitless($targetPx)) {
+		$targetPx: $targetPx * 1px;
+	}
+	@if (unitless($basePx)) {
+		$basePx: $basePx * 1px;
+	}
+	@if ($targetPx / $basePx == 0) {
+		@return 0;
+	}
+	@return ($targetPx / $basePx) * 1em;
+}
