@@ -1,0 +1,29 @@
+@import 'typography';
+
+.vui-typography {
+	@include vui-typography;
+}
+
+.vui-heading-1 {
+	@include vui-typography-heading1;
+}
+
+.vui-heading-2 {
+	@include vui-typography-heading2;
+}
+
+.vui-heading-3 {
+	@include vui-typography-heading3;
+}
+
+.vui-heading-4 {
+	@include vui-typography-heading4;
+}
+
+.vui-emphasis {
+	@include vui-typography-emphasis;
+}
+
+.vui-help {
+	@include vui-typography-help;
+}

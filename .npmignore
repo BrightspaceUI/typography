@@ -1,9 +1,12 @@
-.csslintrc
+.editorconfig
 .gitattributes
 .gitignore
 .npmignore
-.editorconfig
+.travis.yml
+.csslintrc
 node_modules
+karma.conf.js
 test
-gulpfile.js
 typography.css.less
+typography.css.scss
+typography-less.css
