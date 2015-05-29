@@ -1,0 +1,193 @@
+@import 'pxToEm';
+
+$vui-fontColor: #353535 !default;
+$vui-fontFamily: Arial !default;
+$vui-fontSize: 13px !default;
+$vui-lineHeight: 1.54em !default;
+
+$vui-heading-fontColor: #666666 !default;
+$vui-heading-fontWeight: normal !default;
+$vui-heading-topMargin: 0 !default;
+$vui-heading-rightMargin: 0 !default;
+$vui-heading-bottomMargin: 15px !default;
+$vui-heading-leftMargin: 0 !default;
+$vui-heading-lineHeight: 25px !default;
+$vui-heading1-fontSize: 23px !default;
+$vui-heading2-fontSize: 19px !default;
+$vui-heading3-fontSize: 17px !default;
+$vui-heading4-fontSize: 15px !default;
+
+$vui-emphasis-fontColor: #666666 !default;
+$vui-emphasis-fontStyle: italic !default;
+$vui-emphasis-topMargin: 0 !default;
+$vui-emphasis-rightMargin: 0 !default;
+$vui-emphasis-bottomMargin: 20px !default;
+$vui-emphasis-leftMargin: 0 !default;
+
+$vui-help-fontColor: #666666 !default;
+$vui-help-fontSize: 11px !default;
+$vui-help-fontStyle: italic !default;
+$vui-help-fontWeight: normal !default;
+$vui-help-lineHeight: 20px !default;
+$vui-help-topMargin: 0 !default;
+$vui-help-rightMargin: 0 !default;
+$vui-help-bottomMargin: 20px !default;
+$vui-help-leftMargin: 0 !default;
+
+@mixin vui-typography(
+		$fontColor: $vui-fontColor,
+		$fontFamily: $vui-fontFamily,
+		$fontSize: $vui-fontSize,
+		$lineHeight: $vui-lineHeight
+	) {
+
+	color: $fontColor;
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	font-weight: normal;
+	line-height: $lineHeight;
+
+}
+
+@mixin vui-typography-emphasis(
+		$fontColor: $vui-emphasis-fontColor,
+		$fontStyle: $vui-emphasis-fontStyle,
+		$topMargin: $vui-emphasis-topMargin,
+		$rightMargin: $vui-emphasis-rightMargin,
+		$bottomMargin: $vui-emphasis-bottomMargin,
+		$leftMargin: $vui-emphasis-leftMargin,
+		$baseFontSize: $vui-fontSize
+	) {
+
+	color: $fontColor;
+	font-style: $fontStyle;
+	margin: pxToEm($topMargin, $baseFontSize)
+			pxToEm($rightMargin, $baseFontSize)
+			pxToEm($bottomMargin, $baseFontSize)
+			pxToEm($leftMargin, $baseFontSize);
+
+}
+
+@mixin vui-typography-help(
+		$fontColor: $vui-help-fontColor,
+		$fontSize: $vui-help-fontSize,
+		$fontStyle: $vui-help-fontStyle,
+		$fontWeight: $vui-help-fontWeight,
+		$lineHeight: $vui-help-lineHeight,
+		$topMargin: $vui-help-topMargin,
+		$rightMargin: $vui-help-rightMargin,
+		$bottomMargin: $vui-help-bottomMargin,
+		$leftMargin: $vui-help-leftMargin,
+		$baseFontSize: $vui-fontSize
+	) {
+
+	color: $fontColor;
+	font-style: $fontStyle;
+	font-weight: $fontWeight;
+	font-size: pxToEm($fontSize, $baseFontSize);
+	line-height: pxToEm($lineHeight, $fontSize);
+	margin: pxToEm($topMargin, $fontSize)
+			pxToEm($rightMargin, $fontSize)
+			pxToEm($bottomMargin, $fontSize)
+			pxToEm($leftMargin, $fontSize);
+
+}
+
+@mixin vui-typography-heading(
+		$fontColor: $vui-heading-fontColor,
+		$fontWeight: $vui-heading-fontWeight
+	) {
+
+	color: $fontColor;
+	font-family: inherit;
+	font-weight: $fontWeight;
+
+}
+
+@mixin vui-typography-heading1(
+		$fontColor: $vui-heading-fontColor,
+		$fontWeight: $vui-heading-fontWeight,
+		$fontSize: $vui-heading1-fontSize,
+		$lineHeight: $vui-heading-lineHeight,
+		$topMargin: $vui-heading-topMargin,
+		$rightMargin: $vui-heading-rightMargin,
+		$bottomMargin: $vui-heading-bottomMargin,
+		$leftMargin: $vui-heading-leftMargin,
+		$baseFontSize: $vui-fontSize
+	) {
+
+	@include vui-typography-heading($fontColor, $fontWeight);
+	font-size: pxToEm($fontSize, $baseFontSize);
+	line-height: pxToEm($lineHeight, $fontSize);
+	margin: pxToEm($topMargin, $fontSize)
+			pxToEm($rightMargin, $fontSize)
+			pxToEm($bottomMargin, $fontSize)
+			pxToEm($leftMargin, $fontSize);
+
+}
+
+@mixin vui-typography-heading2(
+			$fontColor: $vui-heading-fontColor,
+			$fontWeight: $vui-heading-fontWeight,
+			$fontSize: $vui-heading2-fontSize,
+			$lineHeight: $vui-heading-lineHeight,
+			$topMargin: $vui-heading-topMargin,
+			$rightMargin: $vui-heading-rightMargin,
+			$bottomMargin: $vui-heading-bottomMargin,
+			$leftMargin: $vui-heading-leftMargin,
+			$baseFontSize: $vui-fontSize
+	) {
+
+	@include vui-typography-heading($fontColor, $fontWeight);
+	font-size: pxToEm($fontSize, $baseFontSize);
+	line-height: pxToEm($lineHeight, $fontSize);
+	margin: pxToEm($topMargin, $fontSize)
+			pxToEm($rightMargin, $fontSize)
+			pxToEm($bottomMargin, $fontSize)
+			pxToEm($leftMargin, $fontSize);
+
+}
+
+@mixin vui-typography-heading3(
+		$fontColor: $vui-heading-fontColor,
+		$fontWeight: $vui-heading-fontWeight,
+		$fontSize: $vui-heading3-fontSize,
+		$lineHeight: $vui-heading-lineHeight,
+		$topMargin: $vui-heading-topMargin,
+		$rightMargin: $vui-heading-rightMargin,
+		$bottomMargin: $vui-heading-bottomMargin,
+		$leftMargin: $vui-heading-leftMargin,
+		$baseFontSize: $vui-fontSize
+	) {
+
+	@include vui-typography-heading($fontColor, $fontWeight);
+	font-size: pxToEm($fontSize, $baseFontSize);
+	line-height: pxToEm($lineHeight, $fontSize);
+	margin: pxToEm($topMargin, $fontSize)
+			pxToEm($rightMargin, $fontSize)
+			pxToEm($bottomMargin, $fontSize)
+			pxToEm($leftMargin, $fontSize);
+
+}
+
+@mixin vui-typography-heading4(
+		$fontColor: $vui-heading-fontColor,
+		$fontWeight: $vui-heading-fontWeight,
+		$fontSize: $vui-heading4-fontSize,
+		$lineHeight: $vui-heading-lineHeight,
+		$topMargin: $vui-heading-topMargin,
+		$rightMargin: $vui-heading-rightMargin,
+		$bottomMargin: $vui-heading-bottomMargin,
+		$leftMargin: $vui-heading-leftMargin,
+		$baseFontSize: $vui-fontSize
+	) {
+
+	@include vui-typography-heading($fontColor, $fontWeight);
+	font-size: pxToEm($fontSize, $baseFontSize);
+	line-height: pxToEm($lineHeight, $fontSize);
+	margin: pxToEm($topMargin, $fontSize)
+			pxToEm($rightMargin, $fontSize)
+			pxToEm($bottomMargin, $fontSize)
+			pxToEm($leftMargin, $fontSize);
+
+}

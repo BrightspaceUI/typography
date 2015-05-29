@@ -1,24 +1,42 @@
 {
   "name": "vui-typography",
-  "description": "LESS mixins and CSS for applying basic typography styles",
-  "version": "0.3.1",
-  "author": "D2L Corporation",
-  "license": "Apache-2.0",
+  "version": "0.4.0",
+  "description": "Mixins and CSS for applying basic typography styles",
+  "scripts": {
+    "clean": "rimraf typography.css && rimraf typography-less.css",
+    "lint:css": "csslint typography.css",
+    "prebuild": "npm run clean",
+    "build:less": "lessc typography.css.less > typography-less.css",
+    "build:sass": "node-sass --output-style expanded typography.css.scss typography.css",
+    "build": "npm run build:sass && npm run build:less",
+    "postbuild": "npm run lint:css",
+    "pretest": "npm run build",
+    "test": "karma start karma.conf.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Brightspace/valence-ui-typography.git"
-  },
-  "scripts": {
-    "test": "gulp && gulp test"
-  },
-  "devDependencies": {
-    "del": "^0.1.3",
-    "gulp": "^3.8.8",
-    "vui-helpers": "^0.5.1"
   },
   "keywords": [
     "d2l",
     "valence-ui",
     "vui"
-  ]
+  ],
+  "author": "D2L Corporation",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Brightspace/valence-ui-typography/issues"
+  },
+  "homepage": "https://github.com/Brightspace/valence-ui-typography",
+  "devDependencies": {
+    "csslint": "^0.10.0",
+    "jasmine-dom-matchers": "^0.1.0",
+    "karma": "^0.12.32",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-jasmine": "^0.3.5",
+    "karma-cli": "0.0.4",
+    "less": "^2.5.1",
+    "node-sass": "^3.1.1",
+    "rimraf": "^2.3.4"
+  }
 }
