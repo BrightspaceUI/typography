@@ -166,14 +166,14 @@
 			@targetPx: 13,
 			@basePx: @vui-fontSize
 		) {
-		font-size: unit( ( @targetPx / @basePx ), em );
+		font-size: unit( round( @targetPx / @basePx, 5 ), em );
 	}
 
 	.lineHeightEm(
 			@targetPx: 20,
 			@basePx: @fontSize
 		) {
-		line-height: unit( ( @targetPx / @basePx ), em );
+		line-height: unit( round( @targetPx / @basePx, 5 ), em );
 	}
 
 	.marginEm(
@@ -183,7 +183,7 @@
 			@targetLeftPx: 0,
 			@basePx: @fontSize
 		) {
-		margin: unit( ( @targetTopPx / @basePx ), em ) unit( ( @targetRightPx / @basePx ), em ) unit( ( @targetBottomPx / @basePx ), em ) unit( ( @targetLeftPx / @basePx ), em );
+		margin: unit( round( @targetTopPx / @basePx, 5 ), em ) unit( round( @targetRightPx / @basePx, 5 ), em ) unit( round( @targetBottomPx / @basePx, 5 ), em ) unit( round( @targetLeftPx / @basePx, 5 ), em );
 	}
 
 }
