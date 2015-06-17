@@ -3,7 +3,7 @@
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][dependencies-image]][dependencies-url]
 
-This component contains Sass mixins and CSS that can be used to produce basic typography styles. LESS mixins are still include for backward compatibility, however these will likely be removed in a future version.
+This component contains Sass mixins and CSS that can be used to produce basic typography styles.
 
 For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
