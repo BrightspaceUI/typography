@@ -7,6 +7,4 @@
 node_modules
 karma.conf.js
 test
-typography.css.less
 typography.css.scss
-typography-less.css
