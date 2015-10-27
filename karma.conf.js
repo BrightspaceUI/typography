@@ -15,6 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      { pattern: 'test/reset.css', included: true },
       { pattern: 'typography.css', included: true },
       'node_modules/jasmine-dom-matchers/matchers.js',
       'test/**/*.js'
