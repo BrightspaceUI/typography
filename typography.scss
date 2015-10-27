@@ -51,14 +51,12 @@ $vui-small-strong-text-letterSpacing: px-to-rem(0.4px, $vui-base-fontSize) !defa
 	line-height: $vui-lineHeight;
 	letter-spacing: $vui-letterSpacing;
 
-	&.dyslexic,
-	& .dyslexic {
+	.dyslexic {
 		font-weight: 400;
 		font-family: 'Open Dyslexic', sans-serif;
 	}
 
-	&:lang(ar),
-	& :lang(ar) {
+	:lang(ar) {
 		font-family: 'Arabic Transparent', 'Arabic Typesetting', 'Geeza Pro', sans-serif;
 	}
 	:lang(zh-CN) {
