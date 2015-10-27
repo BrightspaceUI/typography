@@ -1,5 +1,5 @@
 
-@function pxToEm($targetPx, $basePx) {
+@function px-to-rem($targetPx, $basePx) {
 	@if (unitless($targetPx)) {
 		$targetPx: $targetPx * 1px;
 	}
@@ -9,5 +9,5 @@
 	@if ($targetPx / $basePx == 0) {
 		@return 0;
 	}
-	@return ($targetPx / $basePx) * 1em;
+	@return ($targetPx / $basePx) * 1rem;
 }

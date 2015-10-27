@@ -1,193 +1,143 @@
-@import 'pxToEm';
 
-$vui-fontColor: #353535 !default;
-$vui-fontFamily: Arial !default;
-$vui-fontSize: 13px !default;
-$vui-lineHeight: 1.54em !default;
+@import 'bower_components/vui-colors/colors';
+@import 'px-to-rem';
+@import 'fonts';
 
-$vui-heading-fontColor: #666666 !default;
-$vui-heading-fontWeight: normal !default;
-$vui-heading-topMargin: 0 !default;
-$vui-heading-rightMargin: 0 !default;
-$vui-heading-bottomMargin: 15px !default;
-$vui-heading-leftMargin: 0 !default;
-$vui-heading-lineHeight: 25px !default;
-$vui-heading1-fontSize: 23px !default;
-$vui-heading2-fontSize: 19px !default;
-$vui-heading3-fontSize: 17px !default;
-$vui-heading4-fontSize: 15px !default;
+$vui-base-fontSize: 19px;
 
-$vui-emphasis-fontColor: #666666 !default;
-$vui-emphasis-fontStyle: italic !default;
-$vui-emphasis-topMargin: 0 !default;
-$vui-emphasis-rightMargin: 0 !default;
-$vui-emphasis-bottomMargin: 20px !default;
-$vui-emphasis-leftMargin: 0 !default;
+$vui-fontColor: $vui-color-ferrite !default;
+$vui-fontFamily: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif !default;
+$vui-fontSize: px-to-rem(19px, $vui-base-fontSize) !default;
+$vui-fontWeight: 300 !default;
+$vui-lineHeight: 1.5rem !default;
+$vui-letterSpacing: px-to-rem(0.3px, $vui-base-fontSize) !default;
 
-$vui-help-fontColor: #666666 !default;
-$vui-help-fontSize: 11px !default;
-$vui-help-fontStyle: italic !default;
-$vui-help-fontWeight: normal !default;
-$vui-help-lineHeight: 20px !default;
-$vui-help-topMargin: 0 !default;
-$vui-help-rightMargin: 0 !default;
-$vui-help-bottomMargin: 20px !default;
-$vui-help-leftMargin: 0 !default;
+$vui-heading1-fontColor: $vui-fontColor !default;
+$vui-heading1-fontSize: px-to-rem(38px, $vui-base-fontSize) !default;
+$vui-heading1-fontWeight: $vui-fontWeight !default;
+$vui-heading1-lineHeight: 2rem !default;
+$vui-heading1-letterSpacing: px-to-rem(-0.5px, $vui-base-fontSize) !default;
 
-@mixin vui-typography(
-		$fontColor: $vui-fontColor,
-		$fontFamily: $vui-fontFamily,
-		$fontSize: $vui-fontSize,
-		$lineHeight: $vui-lineHeight
-	) {
+$vui-heading2-fontColor: $vui-fontColor !default;
+$vui-heading2-fontSize: px-to-rem(28px, $vui-base-fontSize) !default;
+$vui-heading2-fontWeight: $vui-fontWeight !default;
+$vui-heading2-lineHeight: 2rem !default;
+$vui-heading2-letterSpacing: px-to-rem(-0.3px, $vui-base-fontSize) !default;
 
-	color: $fontColor;
-	font-family: $fontFamily;
-	font-size: $fontSize;
-	font-weight: normal;
-	line-height: $lineHeight;
+$vui-heading3-fontColor: $vui-fontColor !default;
+$vui-heading3-fontSize: px-to-rem(19px, $vui-base-fontSize) !default;
+$vui-heading3-fontWeight: 400 !default;
+$vui-heading3-lineHeight: 2rem !default;
+$vui-heading3-letterSpacing: px-to-rem(0.5px, $vui-base-fontSize) !default;
 
-}
+$vui-small-text-fontColor: $vui-fontColor !default;
+$vui-small-text-fontSize: px-to-rem(14px, $vui-base-fontSize) !default;
+$vui-small-text-fontWeight: 400 !default;
+$vui-small-text-lineHeight: 1rem !default;
+$vui-small-text-letterSpacing: px-to-rem(0.2px, $vui-base-fontSize) !default;
 
-@mixin vui-typography-emphasis(
-		$fontColor: $vui-emphasis-fontColor,
-		$fontStyle: $vui-emphasis-fontStyle,
-		$topMargin: $vui-emphasis-topMargin,
-		$rightMargin: $vui-emphasis-rightMargin,
-		$bottomMargin: $vui-emphasis-bottomMargin,
-		$leftMargin: $vui-emphasis-leftMargin,
-		$baseFontSize: $vui-fontSize
-	) {
+$vui-small-strong-text-fontColor: $vui-fontColor !default;
+$vui-small-strong-text-fontSize: px-to-rem(14px, $vui-base-fontSize) !default;
+$vui-small-strong-text-fontWeight: 700 !default;
+$vui-small-strong-text-lineHeight: 1rem !default;
+$vui-small-strong-text-letterSpacing: px-to-rem(0.4px, $vui-base-fontSize) !default;
 
-	color: $fontColor;
-	font-style: $fontStyle;
-	margin: pxToEm($topMargin, $baseFontSize)
-			pxToEm($rightMargin, $baseFontSize)
-			pxToEm($bottomMargin, $baseFontSize)
-			pxToEm($leftMargin, $baseFontSize);
+@mixin vui-typography() {
 
-}
+	color: $vui-fontColor;
+	font-family: $vui-fontFamily;
+	font-size: $vui-fontSize;
+	font-weight: $vui-fontWeight;
+	line-height: $vui-lineHeight;
+	letter-spacing: $vui-letterSpacing;
 
-@mixin vui-typography-help(
-		$fontColor: $vui-help-fontColor,
-		$fontSize: $vui-help-fontSize,
-		$fontStyle: $vui-help-fontStyle,
-		$fontWeight: $vui-help-fontWeight,
-		$lineHeight: $vui-help-lineHeight,
-		$topMargin: $vui-help-topMargin,
-		$rightMargin: $vui-help-rightMargin,
-		$bottomMargin: $vui-help-bottomMargin,
-		$leftMargin: $vui-help-leftMargin,
-		$baseFontSize: $vui-fontSize
-	) {
+	&.dyslexic,
+	& .dyslexic {
+		font-weight: 400;
+		font-family: 'Open Dyslexic', sans-serif;
+	}
 
-	color: $fontColor;
-	font-style: $fontStyle;
-	font-weight: $fontWeight;
-	font-size: pxToEm($fontSize, $baseFontSize);
-	line-height: pxToEm($lineHeight, $fontSize);
-	margin: pxToEm($topMargin, $fontSize)
-			pxToEm($rightMargin, $fontSize)
-			pxToEm($bottomMargin, $fontSize)
-			pxToEm($leftMargin, $fontSize);
+	&:lang(ar),
+	& :lang(ar) {
+		font-family: 'Arabic Transparent', 'Arabic Typesetting', 'Geeza Pro', sans-serif;
+	}
+	:lang(zh-CN) {
+		font-family: 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+	}
+	:lang(zh-TW) {
+		font-family: 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+	}
+	:lang(ko) {
+		font-family: 'Apple SD Gothic Neo', Dotum, sans-serif;
+	}
+	:lang(ja) {
+		font-family: 'Hiragino Kaku Gothic Pro', 'Meiyro', sans-serif;
+	}
+
+	& p {
+		margin: 1rem 0;
+	}
 
 }
 
-@mixin vui-typography-heading(
-		$fontColor: $vui-heading-fontColor,
-		$fontWeight: $vui-heading-fontWeight
-	) {
+@mixin vui-typography-font() {
 
-	color: $fontColor;
 	font-family: inherit;
-	font-weight: $fontWeight;
 
 }
 
-@mixin vui-typography-heading1(
-		$fontColor: $vui-heading-fontColor,
-		$fontWeight: $vui-heading-fontWeight,
-		$fontSize: $vui-heading1-fontSize,
-		$lineHeight: $vui-heading-lineHeight,
-		$topMargin: $vui-heading-topMargin,
-		$rightMargin: $vui-heading-rightMargin,
-		$bottomMargin: $vui-heading-bottomMargin,
-		$leftMargin: $vui-heading-leftMargin,
-		$baseFontSize: $vui-fontSize
-	) {
+@mixin vui-typography-heading1() {
+	@include vui-typography-font;
 
-	@include vui-typography-heading($fontColor, $fontWeight);
-	font-size: pxToEm($fontSize, $baseFontSize);
-	line-height: pxToEm($lineHeight, $fontSize);
-	margin: pxToEm($topMargin, $fontSize)
-			pxToEm($rightMargin, $fontSize)
-			pxToEm($bottomMargin, $fontSize)
-			pxToEm($leftMargin, $fontSize);
-
+	color: $vui-heading1-fontColor;
+	font-size: $vui-heading1-fontSize;
+	font-weight: $vui-heading1-fontWeight;
+	line-height: $vui-heading1-lineHeight;
+	letter-spacing: $vui-heading1-letterSpacing;
+	margin: 2rem 0 1rem 0;
 }
 
-@mixin vui-typography-heading2(
-			$fontColor: $vui-heading-fontColor,
-			$fontWeight: $vui-heading-fontWeight,
-			$fontSize: $vui-heading2-fontSize,
-			$lineHeight: $vui-heading-lineHeight,
-			$topMargin: $vui-heading-topMargin,
-			$rightMargin: $vui-heading-rightMargin,
-			$bottomMargin: $vui-heading-bottomMargin,
-			$leftMargin: $vui-heading-leftMargin,
-			$baseFontSize: $vui-fontSize
-	) {
+@mixin vui-typography-heading2() {
+	@include vui-typography-font;
 
-	@include vui-typography-heading($fontColor, $fontWeight);
-	font-size: pxToEm($fontSize, $baseFontSize);
-	line-height: pxToEm($lineHeight, $fontSize);
-	margin: pxToEm($topMargin, $fontSize)
-			pxToEm($rightMargin, $fontSize)
-			pxToEm($bottomMargin, $fontSize)
-			pxToEm($leftMargin, $fontSize);
-
+	color: $vui-heading2-fontColor;
+	font-size: $vui-heading2-fontSize;
+	font-weight: $vui-heading2-fontWeight;
+	line-height: $vui-heading2-lineHeight;
+	letter-spacing: $vui-heading2-letterSpacing;
+	margin: 1rem 0 1rem 0;
 }
 
-@mixin vui-typography-heading3(
-		$fontColor: $vui-heading-fontColor,
-		$fontWeight: $vui-heading-fontWeight,
-		$fontSize: $vui-heading3-fontSize,
-		$lineHeight: $vui-heading-lineHeight,
-		$topMargin: $vui-heading-topMargin,
-		$rightMargin: $vui-heading-rightMargin,
-		$bottomMargin: $vui-heading-bottomMargin,
-		$leftMargin: $vui-heading-leftMargin,
-		$baseFontSize: $vui-fontSize
-	) {
+@mixin vui-typography-heading3() {
+	@include vui-typography-font;
 
-	@include vui-typography-heading($fontColor, $fontWeight);
-	font-size: pxToEm($fontSize, $baseFontSize);
-	line-height: pxToEm($lineHeight, $fontSize);
-	margin: pxToEm($topMargin, $fontSize)
-			pxToEm($rightMargin, $fontSize)
-			pxToEm($bottomMargin, $fontSize)
-			pxToEm($leftMargin, $fontSize);
-
+	color: $vui-heading3-fontColor;
+	font-size: $vui-heading3-fontSize;
+	font-weight: $vui-heading3-fontWeight;
+	line-height: $vui-heading3-lineHeight;
+	letter-spacing: $vui-heading3-letterSpacing;
+	margin: 1rem 0 1rem 0;
 }
 
-@mixin vui-typography-heading4(
-		$fontColor: $vui-heading-fontColor,
-		$fontWeight: $vui-heading-fontWeight,
-		$fontSize: $vui-heading4-fontSize,
-		$lineHeight: $vui-heading-lineHeight,
-		$topMargin: $vui-heading-topMargin,
-		$rightMargin: $vui-heading-rightMargin,
-		$bottomMargin: $vui-heading-bottomMargin,
-		$leftMargin: $vui-heading-leftMargin,
-		$baseFontSize: $vui-fontSize
-	) {
+@mixin vui-typography-small-text() {
+	@include vui-typography-font;
 
-	@include vui-typography-heading($fontColor, $fontWeight);
-	font-size: pxToEm($fontSize, $baseFontSize);
-	line-height: pxToEm($lineHeight, $fontSize);
-	margin: pxToEm($topMargin, $fontSize)
-			pxToEm($rightMargin, $fontSize)
-			pxToEm($bottomMargin, $fontSize)
-			pxToEm($leftMargin, $fontSize);
+	color: $vui-small-text-fontColor;
+	font-size: $vui-small-text-fontSize;
+	font-weight: $vui-small-text-fontWeight;
+	line-height: $vui-small-text-lineHeight;
+	letter-spacing: $vui-small-text-letterSpacing;
+	margin: 1rem 0 1rem 0;
+}
 
+@mixin vui-typography-small-strong-text() {
+	@include vui-typography-font;
+
+	color: $vui-small-strong-text-fontColor;
+	font-size: $vui-small-strong-text-fontSize;
+	font-weight: $vui-small-strong-text-fontWeight;
+	line-height: $vui-small-strong-text-lineHeight;
+	letter-spacing: $vui-small-strong-text-letterSpacing;
+	margin: 1rem 0 1rem 0;
+	text-transform: uppercase;
 }

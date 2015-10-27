@@ -1,11 +1,12 @@
 {
   "name": "vui-typography",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Mixins and CSS for applying basic typography styles",
   "scripts": {
     "clean": "rimraf *.css",
     "prebuild": "npm run clean",
     "build": "node-sass --output-style expanded typography.css.scss typography.css",
+    "postinstall": "bower install",
     "pretest": "npm run build",
     "test": "csslint typography.css && karma start karma.conf.js"
   },
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/Brightspace/valence-ui-typography",
   "devDependencies": {
+    "bower": "^1.5.3",
     "csslint": "^0.10.0",
     "jasmine-dom-matchers": "^0.1.0",
     "karma": "^0.12.32",

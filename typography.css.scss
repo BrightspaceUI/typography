@@ -16,14 +16,10 @@
 	@include vui-typography-heading3;
 }
 
-.vui-heading-4 {
-	@include vui-typography-heading4;
+.vui-typography-small-text {
+	@include vui-typography-small-text;
 }
 
-.vui-emphasis {
-	@include vui-typography-emphasis;
-}
-
-.vui-help {
-	@include vui-typography-help;
+.vui-typography-small-strong-text {
+	@include vui-typography-small-strong-text;
 }
