@@ -1,1 +1,1 @@
---ignore=zero-units
+--ignore=zero-units,adjoining-classes,import

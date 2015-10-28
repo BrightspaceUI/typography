@@ -11,6 +11,10 @@
     ".npmignore",
     ".travis.yml",
     "karma.conf.js",
-    "package.json"
-  ]
+    "package.json",
+    "typography.css.scss"
+  ],
+  "dependencies": {
+    "vui-colors": "^0.0.4"
+  }
 }

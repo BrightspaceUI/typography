@@ -3,7 +3,7 @@
 
 	describe( 'vui', function() {
 
-		var node, heading;
+		var node, heading, text;
 
 		beforeEach( function () {
 			jasmine.addMatchers( vui.jasmine.dom.matchers );
@@ -23,19 +23,23 @@
 			} );
 
 			it( 'applies the font color', function() {
-				expect( node ).toHaveColor( 'rgb(53, 53, 53)' );
+				expect( node ).toHaveColor( 'rgb(86, 90, 92)' );
 			} );
 
 			it( 'applies the font family', function() {
-				expect( node ).toHaveFontFamily( 'Arial' );
+				expect( node ).toHaveFontFamily( "Lato, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif" );
 			} );
 
 			it( 'applies the font size', function() {
-				expect( node ).toHaveFontSize( '13px' );
+				expect( node ).toHaveFontSize( '19px' );
+			} );
+
+			it( 'applies the font weight', function() {
+				expect( node ).toHaveFontWeight( '300' );
 			} );
 
 			it( 'applies the line height', function() {
-				expect( node ).toHaveLineHeight( '20px' );
+				expect( node ).toHaveLineHeight( '28px' );
 			} );
 
 		} );
@@ -52,11 +56,15 @@
 			} );
 
 			it( 'applies the color', function() {
-				expect( heading ).toHaveColor( 'rgb(102, 102, 102)' );
+				expect( heading ).toHaveColor( 'rgb(86, 90, 92)' );
 			} );
 
 			it( 'applies the font size', function() {
-				expect( heading ).toHaveFontSize( '23px' );
+				expect( heading ).toHaveFontSize( '38px' );
+			} );
+
+			it( 'applies the font weight', function() {
+				expect( heading ).toHaveFontWeight( '300' );
 			} );
 
 		} );
@@ -73,7 +81,11 @@
 			} );
 
 			it( 'applies the font size', function() {
-				expect( heading ).toHaveFontSize( '19px' );
+				expect( heading ).toHaveFontSize( '28px' );
+			} );
+
+			it( 'applies the font weight', function() {
+				expect( heading ).toHaveFontWeight( '300' );
 			} );
 
 		} );
@@ -90,62 +102,53 @@
 			} );
 
 			it( 'applies the font size', function() {
-				expect( heading ).toHaveFontSize( '17px' );
+				expect( heading ).toHaveFontSize( '19px' );
+			} );
+
+			it( 'applies the font weight', function() {
+				expect( heading ).toHaveFontWeight( 'normal' );
 			} );
 
 		} );
 
-		describe( 'heading-4', function() {
+		describe( 'small text', function() {
 
 			beforeEach( function () {
-				heading = node.appendChild( document.createElement( 'h4' ) );
-				heading.className = 'vui-heading-4';
+				text = node.appendChild( document.createElement( 'div' ) );
+				text.className = 'vui-typography-small-text';
 			} );
 
-			it( 'defines a ".vui-heading-4" selector', function() {
-				expect( document ).toHaveCssSelector( '.vui-heading-4' );
+			it( 'defines a ".vui-typography-small-text" selector', function() {
+				expect( document ).toHaveCssSelector( '.vui-typography-small-text' );
 			} );
 
 			it( 'applies the font size', function() {
-				expect( heading ).toHaveFontSize( '15px' );
+				expect( text ).toHaveFontSize( '14px' );
+			} );
+
+			it( 'applies the font weight', function() {
+				expect( text ).toHaveFontWeight( 'normal' );
 			} );
 
 		} );
 
-		describe( 'emphasis', function() {
-
-			var emphasis;
+		describe( 'small strong text', function() {
 
 			beforeEach( function () {
-				emphasis = node.appendChild( document.createElement( 'p' ) );
-				emphasis.className = 'vui-emphasis';
+				text = node.appendChild( document.createElement( 'div' ) );
+				text.className = 'vui-typography-small-strong-text';
 			} );
 
-			it( 'defines a ".vui-emphasis" selector', function() {
-				expect( document ).toHaveCssSelector( '.vui-emphasis' );
+			it( 'defines a ".vui-typography-small-strong-text" selector', function() {
+				expect( document ).toHaveCssSelector( '.vui-typography-small-strong-text' );
 			} );
 
 			it( 'applies the font size', function() {
-				expect( emphasis ).toHaveFontSize( '13px' );
+				expect( text ).toHaveFontSize( '14px' );
 			} );
 
-		} );
-
-		describe( 'help', function() {
-
-			var help;
-
-			beforeEach( function () {
-				help = node.appendChild( document.createElement( 'p' ) );
-				help.className = 'vui-help';
-			} );
-
-			it( 'defines a ".vui-help" selector', function() {
-				expect( document ).toHaveCssSelector( '.vui-help' );
-			} );
-
-			it( 'applies the font size', function() {
-				expect( help ).toHaveFontSize( '11px' );
+			it( 'applies the font weight', function() {
+				expect( text ).toHaveFontWeight( 'bold' );
 			} );
 
 		} );
