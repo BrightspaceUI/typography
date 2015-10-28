@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-- '0.12'
+- '4.1.1'
 sudo: false
 deploy:
   provider: npm
   email: d2ltravisdeploy@d2l.com
   api_key:
-    secure: LbU5AX3mCoeI9tAJjpTyPWfjIWKW2bDgC0LIfsH6/NEliz5DZaKrY9CrlrGHG3/PjHl3goZf1gslwiDfBAjLUMTGm+2B7lyOTwG6mNaX5mFlFSL5KrMjUyle0Vk6D5CtgBXm4QO3en5KRBR8aygDnRnvkUMQKrg8+XhlhA+wTj0=
+    secure: lh51pn6JgbDjHlcvWWGJWxO/JwAMurTk/TFFYO6447lvP1QsMogcs5nUNNp7045YpEFcc7v94tlz42UMrFCXRoRVKy0g3AWKtATVl1FQ4oY7X18C3KuQMOVBZt89uQVX5X2+LOkDnlGEzYNerFWcDAV8FoBOUIKwPeUvCNZJO5s=
   on:
     tags: true
     all_branches: true
