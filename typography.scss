@@ -5,51 +5,14 @@
 
 $vui-base-fontSize: 19px;
 
-$vui-fontColor: $vui-color-ferrite !default;
-$vui-fontFamily: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif !default;
-$vui-fontSize: px-to-rem(19px, $vui-base-fontSize) !default;
-$vui-fontWeight: 300 !default;
-$vui-lineHeight: 1.5rem !default;
-$vui-letterSpacing: px-to-rem(0.3px, $vui-base-fontSize) !default;
-
-$vui-heading1-fontColor: $vui-fontColor !default;
-$vui-heading1-fontSize: px-to-rem(38px, $vui-base-fontSize) !default;
-$vui-heading1-fontWeight: $vui-fontWeight !default;
-$vui-heading1-lineHeight: 2rem !default;
-$vui-heading1-letterSpacing: px-to-rem(-0.5px, $vui-base-fontSize) !default;
-
-$vui-heading2-fontColor: $vui-fontColor !default;
-$vui-heading2-fontSize: px-to-rem(28px, $vui-base-fontSize) !default;
-$vui-heading2-fontWeight: $vui-fontWeight !default;
-$vui-heading2-lineHeight: 2rem !default;
-$vui-heading2-letterSpacing: px-to-rem(-0.3px, $vui-base-fontSize) !default;
-
-$vui-heading3-fontColor: $vui-fontColor !default;
-$vui-heading3-fontSize: px-to-rem(19px, $vui-base-fontSize) !default;
-$vui-heading3-fontWeight: 400 !default;
-$vui-heading3-lineHeight: 2rem !default;
-$vui-heading3-letterSpacing: px-to-rem(0.5px, $vui-base-fontSize) !default;
-
-$vui-small-text-fontColor: $vui-fontColor !default;
-$vui-small-text-fontSize: px-to-rem(14px, $vui-base-fontSize) !default;
-$vui-small-text-fontWeight: 400 !default;
-$vui-small-text-lineHeight: 1rem !default;
-$vui-small-text-letterSpacing: px-to-rem(0.2px, $vui-base-fontSize) !default;
-
-$vui-small-strong-text-fontColor: $vui-fontColor !default;
-$vui-small-strong-text-fontSize: px-to-rem(14px, $vui-base-fontSize) !default;
-$vui-small-strong-text-fontWeight: 700 !default;
-$vui-small-strong-text-lineHeight: 1rem !default;
-$vui-small-strong-text-letterSpacing: px-to-rem(0.4px, $vui-base-fontSize) !default;
-
 @mixin vui-typography() {
 
-	color: $vui-fontColor;
-	font-family: $vui-fontFamily;
-	font-size: $vui-fontSize;
-	font-weight: $vui-fontWeight;
-	line-height: $vui-lineHeight;
-	letter-spacing: $vui-letterSpacing;
+	color: $vui-color-ferrite;
+	font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.5rem;
+	letter-spacing: px-to-rem(0.3px, $vui-base-fontSize);
 
 	.dyslexic {
 		font-weight: 400;
@@ -87,55 +50,55 @@ $vui-small-strong-text-letterSpacing: px-to-rem(0.4px, $vui-base-fontSize) !defa
 @mixin vui-typography-heading1() {
 	@include vui-typography-font;
 
-	color: $vui-heading1-fontColor;
-	font-size: $vui-heading1-fontSize;
-	font-weight: $vui-heading1-fontWeight;
-	line-height: $vui-heading1-lineHeight;
-	letter-spacing: $vui-heading1-letterSpacing;
+	color: $vui-color-ferrite;
+	font-size: px-to-rem(38px, $vui-base-fontSize);
+	font-weight: 300;
+	line-height: 2rem;
+	letter-spacing: px-to-rem(-0.5px, $vui-base-fontSize);
 	margin: 2rem 0 1rem 0;
 }
 
 @mixin vui-typography-heading2() {
 	@include vui-typography-font;
 
-	color: $vui-heading2-fontColor;
-	font-size: $vui-heading2-fontSize;
-	font-weight: $vui-heading2-fontWeight;
-	line-height: $vui-heading2-lineHeight;
-	letter-spacing: $vui-heading2-letterSpacing;
+	color: $vui-color-ferrite;
+	font-size: px-to-rem(28px, $vui-base-fontSize);
+	font-weight: 300;
+	line-height: 2rem;
+	letter-spacing: px-to-rem(-0.3px, $vui-base-fontSize);
 	margin: 1rem 0 1rem 0;
 }
 
 @mixin vui-typography-heading3() {
 	@include vui-typography-font;
 
-	color: $vui-heading3-fontColor;
-	font-size: $vui-heading3-fontSize;
-	font-weight: $vui-heading3-fontWeight;
-	line-height: $vui-heading3-lineHeight;
-	letter-spacing: $vui-heading3-letterSpacing;
+	color: $vui-color-ferrite;
+	font-size: px-to-rem(19px, $vui-base-fontSize);
+	font-weight: 400;
+	line-height: 2rem;
+	letter-spacing: px-to-rem(0.5px, $vui-base-fontSize);
 	margin: 1rem 0 1rem 0;
 }
 
 @mixin vui-typography-small-text() {
 	@include vui-typography-font;
 
-	color: $vui-small-text-fontColor;
-	font-size: $vui-small-text-fontSize;
-	font-weight: $vui-small-text-fontWeight;
-	line-height: $vui-small-text-lineHeight;
-	letter-spacing: $vui-small-text-letterSpacing;
+	color: $vui-color-ferrite;
+	font-size: px-to-rem(14px, $vui-base-fontSize);
+	font-weight: 400;
+	line-height: 1rem;
+	letter-spacing: px-to-rem(0.2px, $vui-base-fontSize);
 	margin: 1rem 0 1rem 0;
 }
 
 @mixin vui-typography-small-strong-text() {
 	@include vui-typography-font;
 
-	color: $vui-small-strong-text-fontColor;
-	font-size: $vui-small-strong-text-fontSize;
-	font-weight: $vui-small-strong-text-fontWeight;
-	line-height: $vui-small-strong-text-lineHeight;
-	letter-spacing: $vui-small-strong-text-letterSpacing;
+	color: $vui-color-ferrite;
+	font-size: px-to-rem(14px, $vui-base-fontSize);
+	font-weight: 700;
+	line-height: 1rem;
+	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);
 	margin: 1rem 0 1rem 0;
 	text-transform: uppercase;
 }
