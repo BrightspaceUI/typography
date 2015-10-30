@@ -14,7 +14,8 @@ $vui-base-fontSize: 19px;
 	line-height: 1.5rem;
 	letter-spacing: px-to-rem(0.3px, $vui-base-fontSize);
 
-	.dyslexic {
+	&.vui-dyslexic,
+	.vui-dyslexic {
 		font-weight: 400;
 		font-family: 'Open Dyslexic', sans-serif;
 	}
