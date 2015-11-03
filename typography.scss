@@ -7,6 +7,16 @@ $vui-base-fontSize: 19px;
 
 @mixin vui-typography() {
 
+	@include vui-typography-font();
+
+	& p {
+		margin: 1rem 0;
+	}
+
+}
+
+@mixin vui-typography-font() {
+
 	color: $vui-color-ferrite;
 	font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 	font-size: 1rem;
@@ -36,70 +46,65 @@ $vui-base-fontSize: 19px;
 		font-family: 'Hiragino Kaku Gothic Pro', 'Meiyro', sans-serif;
 	}
 
-	& p {
-		margin: 1rem 0;
-	}
-
-}
-
-@mixin vui-typography-font() {
-
-	font-family: inherit;
-
 }
 
 @mixin vui-typography-heading1() {
-	@include vui-typography-font;
 
 	color: $vui-color-ferrite;
+	font-family: inherit;
 	font-size: px-to-rem(38px, $vui-base-fontSize);
 	font-weight: 300;
 	line-height: 2rem;
 	letter-spacing: px-to-rem(-0.5px, $vui-base-fontSize);
 	margin: 2rem 0 1rem 0;
+
 }
 
 @mixin vui-typography-heading2() {
-	@include vui-typography-font;
 
 	color: $vui-color-ferrite;
+	font-family: inherit;
 	font-size: px-to-rem(28px, $vui-base-fontSize);
 	font-weight: 300;
 	line-height: 2rem;
 	letter-spacing: px-to-rem(-0.3px, $vui-base-fontSize);
 	margin: 1rem 0 1rem 0;
+
 }
 
 @mixin vui-typography-heading3() {
-	@include vui-typography-font;
 
 	color: $vui-color-ferrite;
+	font-family: inherit;
 	font-size: px-to-rem(19px, $vui-base-fontSize);
 	font-weight: 400;
 	line-height: 2rem;
 	letter-spacing: px-to-rem(0.5px, $vui-base-fontSize);
 	margin: 1rem 0 1rem 0;
+
 }
 
 @mixin vui-typography-small-text() {
-	@include vui-typography-font;
 
 	color: $vui-color-ferrite;
+	font-family: inherit;
 	font-size: px-to-rem(14px, $vui-base-fontSize);
 	font-weight: 400;
 	line-height: 1rem;
 	letter-spacing: px-to-rem(0.2px, $vui-base-fontSize);
 	margin: 1rem 0 1rem 0;
+
 }
 
 @mixin vui-typography-small-strong-text() {
-	@include vui-typography-font;
 
 	color: $vui-color-ferrite;
+	font-family: inherit;
 	font-size: px-to-rem(14px, $vui-base-fontSize);
 	font-weight: 700;
 	line-height: 1rem;
 	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);
 	margin: 1rem 0 1rem 0;
 	text-transform: uppercase;
+
 }
