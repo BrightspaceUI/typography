@@ -21,7 +21,7 @@ $vui-base-fontSize: 19px;
 	font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
-	line-height: 1.5rem;
+	line-height: 1.5;
 	letter-spacing: px-to-rem(0.3px, $vui-base-fontSize);
 
 	&.vui-dyslexic,
