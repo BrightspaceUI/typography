@@ -106,6 +106,27 @@
 			} );
 
 			it( 'applies the font weight', function() {
+				expect( heading ).toHaveFontWeight( 'bold' );
+			} );
+
+		} );
+
+		describe( 'heading-4', function() {
+
+			beforeEach( function () {
+				heading = node.appendChild( document.createElement( 'h4' ) );
+				heading.className = 'vui-heading-4';
+			} );
+
+			it( 'defines a ".vui-heading-4" selector', function() {
+				expect( document ).toHaveCssSelector( '.vui-heading-4' );
+			} );
+
+			it( 'applies the font size', function() {
+				expect( heading ).toHaveFontSize( '19px' );
+			} );
+
+			it( 'applies the font weight', function() {
 				expect( heading ).toHaveFontWeight( 'normal' );
 			} );
 
