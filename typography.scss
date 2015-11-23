@@ -76,6 +76,18 @@ $vui-base-fontSize: 19px;
 	color: $vui-color-ferrite;
 	font-family: inherit;
 	font-size: px-to-rem(19px, $vui-base-fontSize);
+	font-weight: 700;
+	line-height: 2rem;
+	letter-spacing: px-to-rem(0.5px, $vui-base-fontSize);
+	margin: 1rem 0 1rem 0;
+
+}
+
+@mixin vui-typography-heading4() {
+
+	color: $vui-color-ferrite;
+	font-family: inherit;
+	font-size: px-to-rem(19px, $vui-base-fontSize);
 	font-weight: 400;
 	line-height: 2rem;
 	letter-spacing: px-to-rem(0.5px, $vui-base-fontSize);
