@@ -95,24 +95,24 @@ $vui-base-fontSize: 20px;
 
 }
 
-@mixin vui-typography-small-text($margin: 1rem 0 1rem 0) {
+@mixin vui-typography-small-text($fontWeight: 400, $margin: 1rem 0 1rem 0) {
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
 	font-size: 0.7rem;
-	font-weight: 400;
+	font-weight: $fontWeight;
 	line-height: 1rem;
 	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);
 	margin: $margin;
 
 }
 
-@mixin vui-typography-small-strong-text($margin: 1rem 0 1rem 0) {
+@mixin vui-typography-small-strong-text($fontWeight: 700, $margin: 1rem 0 1rem 0) {
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
 	font-size: 0.7rem;
-	font-weight: 700;
+	font-weight: $fontWeight;
 	line-height: 1rem;
 	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);
 	margin: $margin;
