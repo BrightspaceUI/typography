@@ -95,7 +95,7 @@ $vui-base-fontSize: 20px;
 
 }
 
-@mixin vui-typography-small-text() {
+@mixin vui-typography-small-text($margin: 1rem 0 1rem 0) {
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
@@ -103,11 +103,11 @@ $vui-base-fontSize: 20px;
 	font-weight: 400;
 	line-height: 1rem;
 	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);
-	margin: 1rem 0 1rem 0;
+	margin: $margin;
 
 }
 
-@mixin vui-typography-small-strong-text() {
+@mixin vui-typography-small-strong-text($margin: 1rem 0 1rem 0) {
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
@@ -115,7 +115,7 @@ $vui-base-fontSize: 20px;
 	font-weight: 700;
 	line-height: 1rem;
 	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);
-	margin: 1rem 0 1rem 0;
+	margin: $margin;
 	text-transform: uppercase;
 
 }
