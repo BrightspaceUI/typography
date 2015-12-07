@@ -2,14 +2,14 @@
 @import 'px-to-rem.scss';
 @import 'fonts.scss';
 
-$vui-base-fontSize: 19px;
+$vui-base-fontSize: 20px;
 
 @mixin vui-typography() {
 
 	@include vui-typography-font();
 
 	& p {
-		margin: 1rem 0;
+		margin: 1.5rem 0;
 	}
 
 }
@@ -51,9 +51,9 @@ $vui-base-fontSize: 19px;
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
-	font-size: px-to-rem(38px, $vui-base-fontSize);
+	font-size: 2rem;
 	font-weight: 300;
-	line-height: 2rem;
+	line-height: 3rem;
 	letter-spacing: px-to-rem(-0.5px, $vui-base-fontSize);
 	margin: 1.5rem 0 1.5rem 0;
 
@@ -63,11 +63,11 @@ $vui-base-fontSize: 19px;
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
-	font-size: px-to-rem(28px, $vui-base-fontSize);
+	font-size: 1.5rem;
 	font-weight: 300;
-	line-height: 2rem;
+	line-height: 2.25rem;
 	letter-spacing: px-to-rem(-0.3px, $vui-base-fontSize);
-	margin: 1rem 0 1rem 0;
+	margin: 1.5rem 0 1.5rem 0;
 
 }
 
@@ -75,11 +75,11 @@ $vui-base-fontSize: 19px;
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
-	font-size: px-to-rem(19px, $vui-base-fontSize);
+	font-size: 1rem;
 	font-weight: 700;
-	line-height: 2rem;
+	line-height: 1.5rem;
 	letter-spacing: px-to-rem(0.5px, $vui-base-fontSize);
-	margin: 1rem 0 1rem 0;
+	margin: 1.5rem 0 1.5rem 0;
 
 }
 
@@ -87,11 +87,11 @@ $vui-base-fontSize: 19px;
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
-	font-size: px-to-rem(19px, $vui-base-fontSize);
+	font-size: 1rem;
 	font-weight: 400;
-	line-height: 2rem;
-	letter-spacing: px-to-rem(0.5px, $vui-base-fontSize);
-	margin: 1rem 0 1rem 0;
+	line-height: 1.5rem;
+	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);
+	margin: 1.5rem 0 1.5rem 0;
 
 }
 
@@ -99,10 +99,10 @@ $vui-base-fontSize: 19px;
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
-	font-size: px-to-rem(14px, $vui-base-fontSize);
+	font-size: 0.7rem;
 	font-weight: 400;
 	line-height: 1rem;
-	letter-spacing: px-to-rem(0.2px, $vui-base-fontSize);
+	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);
 	margin: 1rem 0 1rem 0;
 
 }
@@ -111,7 +111,7 @@ $vui-base-fontSize: 19px;
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
-	font-size: px-to-rem(14px, $vui-base-fontSize);
+	font-size: 0.7rem;
 	font-weight: 700;
 	line-height: 1rem;
 	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);

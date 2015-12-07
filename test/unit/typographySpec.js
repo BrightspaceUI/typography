@@ -81,7 +81,7 @@
 			} );
 
 			it( 'applies the font size', function() {
-				expect( heading ).toHaveFontSize( '28px' );
+				expect( heading ).toHaveFontSize( '29px' );
 			} );
 
 			it( 'applies the font weight', function() {
@@ -144,7 +144,7 @@
 			} );
 
 			it( 'applies the font size', function() {
-				expect( text ).toHaveFontSize( '14px' );
+				expect( text ).toHaveFontSize( '13px' );
 			} );
 
 			it( 'applies the font weight', function() {
@@ -165,7 +165,7 @@
 			} );
 
 			it( 'applies the font size', function() {
-				expect( text ).toHaveFontSize( '14px' );
+				expect( text ).toHaveFontSize( '13px' );
 			} );
 
 			it( 'applies the font weight', function() {
