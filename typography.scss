@@ -46,7 +46,7 @@
 
 }
 
-@mixin vui-typography-heading1() {
+@mixin vui-typography-heading1($margin: 1.5rem 0 1.5rem 0) {
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
@@ -54,11 +54,11 @@
 	font-weight: 300;
 	line-height: 3rem;
 	letter-spacing: px-to-rem(-0.5px, $vui-base-fontSize);
-	margin: 1.5rem 0 1.5rem 0;
+	margin: $margin;
 
 }
 
-@mixin vui-typography-heading2() {
+@mixin vui-typography-heading2($margin: 1.5rem 0 1.5rem 0) {
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
@@ -66,11 +66,11 @@
 	font-weight: 300;
 	line-height: 2.25rem;
 	letter-spacing: px-to-rem(-0.3px, $vui-base-fontSize);
-	margin: 1.5rem 0 1.5rem 0;
+	margin: $margin;
 
 }
 
-@mixin vui-typography-heading3() {
+@mixin vui-typography-heading3($margin: 1.5rem 0 1.5rem 0) {
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
@@ -78,11 +78,11 @@
 	font-weight: 700;
 	line-height: 1.5rem;
 	letter-spacing: px-to-rem(0.5px, $vui-base-fontSize);
-	margin: 1.5rem 0 1.5rem 0;
+	margin: $margin;
 
 }
 
-@mixin vui-typography-heading4() {
+@mixin vui-typography-heading4($margin: 1.5rem 0 1.5rem 0) {
 
 	color: $vui-color-ferrite;
 	font-family: inherit;
@@ -90,7 +90,7 @@
 	font-weight: 400;
 	line-height: 1.5rem;
 	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);
-	margin: 1.5rem 0 1.5rem 0;
+	margin: $margin;
 
 }
 
