@@ -30,7 +30,7 @@ bower install vui-typography
 
 **Body:**
 
-Note: for UMD FRAs, the body style is already applied in the host document. However for an IFrame FRA it's necessary to apply general typography to the document to setup the font properties, typically on the body element.
+The `vui-typography` mixin can be used to setup the base font properties, typically applied to the `body` element.
 
 ```scss
 body {
