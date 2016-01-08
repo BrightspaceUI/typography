@@ -20,6 +20,11 @@
 	@include vui-typography-heading4;
 }
 
+p.vui-help,
+.vui-help {
+	@include vui-typography-help-text;
+}
+
 .vui-typography-small-text {
 	@include vui-typography-small-text;
 }
