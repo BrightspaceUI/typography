@@ -62,12 +62,24 @@ body {
 }
 ```
 
+**Help Text:**
+
+```scss
+.app {
+
+	.help {
+		@include vui-typography-help-text;
+	}
+
+}
+```
+
 **Other:** 
 
 ```scss
 .app {
 
-	.text2 {
+	.text1 {
 		@include vui-typography-small-text;
 	}
 
