@@ -4,95 +4,90 @@
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][dependencies-image]][dependencies-url]
 
-This component contains Sass mixins and CSS that can be used to produce basic typography styles.
+This component contains [Sass mixins](http://sass-lang.com) and CSS that can be used to produce basic typography styles.
+
+For further information on this and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
 ## Installation
 
-Install from NPM:
-```shell
-npm install vui-typography
-```
-
-Install from Bower:
+`vui-typography` can be installed from [Bower][bower-url]:
 ```shell
 bower install vui-typography
 ```
 
-## Usage
+Or alternatively from [NPM][npm-url]:
+```shell
+npm install vui-typography
+```
 
-**Import the mixins:**
+Depending on which installation method you choose, use that path when doing the SASS import:
 
 ```scss
-@import 'bower_components/vui-typography/typography.scss'; // or...
-
+@import 'bower_components/vui-typography/typography.scss';
+// or...
 @import "node_modules/vui-typography/typography.scss";
 ```
 
+## Usage
+
 **Body:**
 
-The `vui-typography` mixin can be used to setup the base font properties, typically applied to the `body` element.
+The `vui-typography` mixin can be used to setup the base font properties, typically applied to the `<body>` element.
 
 ```scss
+@import '<path-to-component>/typography.scss';
 body {
 	@include vui-typography;
 }
 ```
 
-**Headings:** 
+**Headings:**
 
 ```scss
-.app {
+@import '<path-to-component>/headings.scss';
 
-	h1 {
-		@include vui-typography-heading1;
-	}
+h1 {
+	@include vui-typography-heading1;
+}
 
-	h2 {
-		@include vui-typography-heading2;
-	}
+h2 {
+	@include vui-typography-heading2;
+}
 
-	h3 {
-		@include vui-typography-heading3;
-	}
+h3 {
+	@include vui-typography-heading3;
+}
 
-	h4 {
-		@include vui-typography-heading4;
-	}
-
+h4 {
+	@include vui-typography-heading4;
 }
 ```
 
 **Help Text:**
 
 ```scss
-.app {
+@import '<path-to-component>/help-text.scss';
 
-	.help {
-		@include vui-typography-help-text;
-	}
-
+.help {
+	@include vui-typography-help-text;
 }
 ```
 
-**Other:** 
+**Other:**
 
 ```scss
-.app {
+@import '<path-to-component>/small-text.scss';
 
-	.text1 {
-		@include vui-typography-small-text;
-	}
+.text1 {
+	@include vui-typography-small-text;
+}
 
-	.text2 {
-		@include vui-typography-small-strong-text;
-	}
-
+.text2 {
+	@include vui-typography-small-strong-text;
 }
 ```
 
-For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
-
-#### Coding styles
+## Coding styles
 
 See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on VUI naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
 
