@@ -1,7 +1,10 @@
 @import 'bower_components/vui-colors/colors.scss';
-@import 'px-to-rem.scss';
-@import 'fonts.scss';
-@import 'base-font-size.scss';
+@import 'px-to-base-rem.scss';
+@import 'import-once.scss';
+
+@include import-once('brightspace fonts') {
+	@import url(https://s.brightspace.com/lib/fonts/0.2.0/fonts.css);
+}
 
 @mixin vui-typography() {
 
@@ -20,7 +23,7 @@
 	font-size: 1rem;
 	font-weight: 300;
 	line-height: 1.5;
-	letter-spacing: px-to-rem(0.3px, $vui-base-fontSize);
+	letter-spacing: px-to-base-rem(0.3px);
 
 	&.vui-dyslexic,
 	.vui-dyslexic {
@@ -43,88 +46,5 @@
 	:lang(ja) {
 		font-family: 'Hiragino Kaku Gothic Pro', 'Meiyro', sans-serif;
 	}
-
-}
-
-@mixin vui-typography-heading1($margin: 1.5rem 0 1.5rem 0) {
-
-	color: $vui-color-ferrite;
-	font-family: inherit;
-	font-size: 2rem;
-	font-weight: 300;
-	line-height: 3rem;
-	letter-spacing: px-to-rem(-0.5px, $vui-base-fontSize);
-	margin: $margin;
-
-}
-
-@mixin vui-typography-heading2($margin: 1.5rem 0 1.5rem 0) {
-
-	color: $vui-color-ferrite;
-	font-family: inherit;
-	font-size: 1.5rem;
-	font-weight: 300;
-	line-height: 2.25rem;
-	letter-spacing: px-to-rem(-0.3px, $vui-base-fontSize);
-	margin: $margin;
-
-}
-
-@mixin vui-typography-heading3($margin: 1.5rem 0 1.5rem 0) {
-
-	color: $vui-color-ferrite;
-	font-family: inherit;
-	font-size: 1rem;
-	font-weight: 700;
-	line-height: 1.5rem;
-	letter-spacing: px-to-rem(0.5px, $vui-base-fontSize);
-	margin: $margin;
-
-}
-
-@mixin vui-typography-heading4($margin: 1.5rem 0 1.5rem 0) {
-
-	color: $vui-color-ferrite;
-	font-family: inherit;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5rem;
-	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);
-	margin: $margin;
-
-}
-
-@mixin vui-typography-small-text(
-		$fontWeight: 400,
-		$margin: 1rem 0 1rem 0,
-		$line-height: 1rem
-	) {
-
-	color: $vui-color-ferrite;
-	font-family: inherit;
-	font-size: 0.7rem;
-	font-weight: $fontWeight;
-	line-height: $line-height;
-	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);
-	margin: $margin;
-
-}
-
-@mixin vui-typography-small-strong-text($fontWeight: 700, $margin: 1rem 0 1rem 0) {
-
-	color: $vui-color-ferrite;
-	font-family: inherit;
-	font-size: 0.7rem;
-	font-weight: $fontWeight;
-	line-height: 1rem;
-	letter-spacing: px-to-rem(0.4px, $vui-base-fontSize);
-	margin: $margin;
-	text-transform: uppercase;
-
-}
-
-@mixin vui-typography-help-text() {
-
-	@include vui-typography-small-text($margin: auto);
 
 }
