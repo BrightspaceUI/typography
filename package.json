@@ -8,9 +8,10 @@
     "build:sass": "node-sass --output-style expanded typography.css.scss typography.css",
     "build:sass:test": "node-sass --output-style expanded ./test/test.scss ./test/test.css",
     "build": "npm run build:sass && npm run build:sass:test",
+    "perceptual-diff": "percy snapshot test/",
     "postinstall": "bower install",
     "pretest": "npm run build",
-    "test": "csslint typography.css && karma start karma.conf.js"
+    "test": "csslint typography.css"
   },
   "repository": {
     "type": "git",
@@ -32,11 +33,6 @@
   },
   "devDependencies": {
     "csslint": "^0.10.0",
-    "jasmine-dom-matchers": "^0.1.0",
-    "karma": "^0.12.32",
-    "karma-phantomjs-launcher": "^0.1.4",
-    "karma-jasmine": "^0.3.5",
-    "karma-cli": "0.0.4",
     "node-sass": "^3.1.1",
     "rimraf": "^2.3.4"
   }

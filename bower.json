@@ -10,7 +10,6 @@
     ".gitignore",
     ".npmignore",
     ".travis.yml",
-    "karma.conf.js",
     "package.json"
   ],
   "dependencies": {
