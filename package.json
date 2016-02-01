@@ -1,11 +1,13 @@
 {
   "name": "vui-typography",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Mixins and CSS for applying basic typography styles",
   "scripts": {
-    "clean": "rimraf *.css",
+    "clean": "rimraf *.css && rimraf ./test/*.css",
     "prebuild": "npm run clean",
-    "build": "node-sass --output-style expanded typography.css.scss typography.css",
+    "build:sass": "node-sass --output-style expanded typography.css.scss typography.css",
+    "build:sass:test": "node-sass --output-style expanded ./test/test.scss ./test/test.css",
+    "build": "npm run build:sass && npm run build:sass:test",
     "postinstall": "bower install",
     "pretest": "npm run build",
     "test": "csslint typography.css && karma start karma.conf.js"
