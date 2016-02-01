@@ -1,31 +1,34 @@
 @import 'bower_components/vui-colors/colors.scss';
-@import 'px-to-base-rem.scss';
 
 @mixin vui-typography-small-text(
+		$color: $vui-color-ferrite,
 		$fontWeight: 400,
 		$margin: 1rem 0 1rem 0,
 		$line-height: 1rem
 	) {
 
-	color: $vui-color-ferrite;
+	color: $color;
 	font-family: inherit;
 	font-size: 0.7rem;
 	font-weight: $fontWeight;
 	line-height: $line-height;
-	letter-spacing: px-to-base-rem(0.4px);
+	letter-spacing: 0.02rem;
 	margin: $margin;
 
 }
 
-@mixin vui-typography-small-strong-text($fontWeight: 700, $margin: 1rem 0 1rem 0) {
+@mixin vui-typography-small-strong-text(
+		$color: $vui-color-ferrite,
+		$fontWeight: 700, 
+		$margin: 1rem 0 1rem 0
+	) {
 
-	color: $vui-color-ferrite;
-	font-family: inherit;
-	font-size: 0.7rem;
-	font-weight: $fontWeight;
-	line-height: 1rem;
-	letter-spacing: px-to-base-rem(0.4px);
-	margin: $margin;
+	@include vui-typography-small-text(
+			$color: $color,
+			$fontWeight: $fontWeight,
+			$margin: $margin
+		);
+
 	text-transform: uppercase;
 
 }

@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '4.1.1'
+- 4.1.1
 sudo: false
 deploy:
   provider: npm
@@ -10,3 +10,6 @@ deploy:
   on:
     tags: true
     all_branches: true
+env:
+  global:
+    secure: Z291fOPTg/3XEw/pBgA/9s4y0cyc/CkFdn0YRIbLyk66y9FWVIwacytGsl2hs2+hQZXXizrx6GK+NEUCuOB+CpFzFi9sE0+b+HIQ/hAnPC8L9AdGWKiIS6skekjJC+ZhQRJq+/DnSe8/N8Mr3YA6rO3PiqHlVJ5787y5vId4w2E=
