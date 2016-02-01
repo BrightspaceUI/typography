@@ -1,12 +1,13 @@
 @import 'bower_components/vui-colors/colors.scss';
 
 @mixin vui-typography-small-text(
+		$color: $vui-color-ferrite,
 		$fontWeight: 400,
 		$margin: 1rem 0 1rem 0,
 		$line-height: 1rem
 	) {
 
-	color: $vui-color-ferrite;
+	color: $color;
 	font-family: inherit;
 	font-size: 0.7rem;
 	font-weight: $fontWeight;
@@ -17,11 +18,13 @@
 }
 
 @mixin vui-typography-small-strong-text(
+		$color: $vui-color-ferrite,
 		$fontWeight: 700, 
 		$margin: 1rem 0 1rem 0
 	) {
 
 	@include vui-typography-small-text(
+			$color: $color,
 			$fontWeight: $fontWeight,
 			$margin: $margin
 		);
