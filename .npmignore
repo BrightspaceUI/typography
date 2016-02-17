@@ -1,10 +1,9 @@
+.csslintrc
 .editorconfig
 .gitattributes
 .gitignore
 .npmignore
-.csslintrc
 .travis.yml
 bower_components
 node_modules
-test
-typography.css.scss
+test/test.scss
