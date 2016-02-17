@@ -6,11 +6,10 @@
     "clean": "rimraf *.css && rimraf ./test/*.css",
     "prebuild": "npm run clean",
     "build:sass": "node-sass --output-style expanded typography.css.scss typography.css",
-    "build:sass:test": "node-sass --output-style expanded ./test/test.scss ./test/test.css",
-    "build": "npm run build:sass && npm run build:sass:test",
+    "build": "npm run build:sass",
     "perceptual-diff": "percy snapshot test/",
     "postinstall": "bower install",
-    "pretest": "npm run build",
+    "pretest": "npm run build && cpy typography.css test",
     "test": "csslint typography.css"
   },
   "repository": {
@@ -32,6 +31,7 @@
     "bower": "^1.7.7"
   },
   "devDependencies": {
+    "cpy-cli": "^1.0.0",
     "csslint": "^0.10.0",
     "node-sass": "^3.4.2",
     "rimraf": "^2.5.2"
