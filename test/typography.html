@@ -2,9 +2,24 @@
 <html>
 	<head>
 		<title>Typography Sample</title>
-		<link rel="stylesheet" type="text/css" href="test.css" />
+		<link rel="stylesheet" type="text/css" href="typography.css" />
+		<style>
+		html {
+			font-size: 20px;
+		}
+		body {
+			margin: 1rem;
+		}
+		table {
+			max-width: 1000px;
+		}
+		td, th {
+			padding: 0.5rem;
+			text-align: left;
+		}
+		</style>
 	</head>
-	<body>
+	<body class="vui-typography">
 		<h1>Typography</h1>
 		<table>
 			<thead>
@@ -15,53 +30,39 @@
 			</thead>
 			<tbody>
 				<tr>
-					<th>Heading 1</th>
-					<td>
-						<div class="heading-1">Grumpy Wizards</div>
-					</td>
-				</tr>
-				<tr>
-					<th>Heading 2</th>
-					<td>
-						<div class="heading-2">Grumpy Wizards</div>
-					</td>
-				</tr>
-				<tr>
-					<th>Heading 3</th>
-					<td>
-						<div class="heading-3">Grumpy Wizards</div>
-					</td>
-				</tr>
-				<tr>
-					<th>Heading 4</th>
-					<td>
-						<div class="heading-4">Grumpy Wizards</div>
-					</td>
-				</tr>
-				<tr>
-					<th>Paragraph</th>
-					<td>
-						<p style="width: 430px;">Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.</div>
+					<th>Headings</th>
+					<td class="screenshot-headings">
+						<h1 class="vui-heading-1">Heading 1</h1>
+						<h2 class="vui-heading-2">Heading 2</h2>
+						<h3 class="vui-heading-3">Heading 3</h3>
+						<h4 class="vui-heading-4">Heading 4</h4>
 					</td>
 				</tr>
 				<tr>
 					<th>Small Text</th>
 					<td>
-						<div class="small-text">Grumpy Wizards</div>
+						<p class="vui-typography-small-text screenshot-small">Small Text</p>
 					</td>
 				</tr>
 				<tr>
 					<th>Small Strong Text</th>
 					<td>
-						<div class="small-strong-text">Grumpy Wizards</div>
+						<p class="vui-typography-small-strong-text screenshot-small-strong">Small Strong Text</p>
 					</td>
 				</tr>
 				<tr>
 					<th>Help Text</th>
 					<td>
-						<div style="width: 460px;" class="help-text">Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.</div>
+						<p class="vui-help">Help Text</p>
 					</td>
 				</tr>
+				<tr>
+					<th>Paragraph</th>
+					<td>
+						<p style="width: 430px;" class="screenshot-paragraph">
+							Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.
+						</p>
+					</td>
 			</tbody>
 		</table>
 	</body>
