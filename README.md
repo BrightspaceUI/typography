@@ -30,62 +30,76 @@ Depending on which installation method you choose, use that path when doing the 
 
 ## Usage
 
-**Body:**
+### Body
 
-The `vui-typography` mixin can be used to setup the base font properties, typically applied to the `<body>` element.
+The `vui-typography` mixin can be used to set up the base font properties, typically applied to the `<body>` element.
 
 ```scss
 @import '<path-to-component>/typography.scss';
 body {
-	@include vui-typography;
+	@include vui-typography();
 }
 ```
 
-**Headings:**
+The default font family, color and line/character spacing will look like this:
+
+![screenshot of paragraph text](/screenshots/paragraph.png?raw=true)
+
+### Headings
+
+There are four separate mixins for the available heading styles. These would typically be applied to the `<h1>`, `<h2>`, `<h3>` and `<h4>` HTML elements, though it's not a requirement.
 
 ```scss
 @import '<path-to-component>/headings.scss';
 
 h1 {
-	@include vui-typography-heading1;
+	@include vui-typography-heading1();
 }
 
 h2 {
-	@include vui-typography-heading2;
+	@include vui-typography-heading2();
 }
 
 h3 {
-	@include vui-typography-heading3;
+	@include vui-typography-heading3();
 }
 
 h4 {
-	@include vui-typography-heading4;
+	@include vui-typography-heading4();
 }
 ```
 
-**Help Text:**
+![screenshot of paragraph text](/screenshots/headings.png?raw=true)
+
+The margins around each heading style can be customized by passing in an override value to the mixin:
 
 ```scss
-@import '<path-to-component>/help-text.scss';
-
-.help {
-	@include vui-typography-help-text;
+h2.no-margin {
+	@include vui-typography-heading2($margin: 0);
 }
 ```
 
-**Other:**
+### Small Text
 
+There are two mixins available to achieve a smaller look. They're both available by importing `small-text.scss`.
+
+The first is `vui-typography-small-text()`:
 ```scss
-@import '<path-to-component>/small-text.scss';
-
-.text1 {
-	@include vui-typography-small-text;
-}
-
-.text2 {
-	@include vui-typography-small-strong-text;
+.small {
+	@include vui-typography-small-text();
 }
 ```
+
+![screenshot of small text](/screenshots/small.png?raw=true)
+
+The second, `vui-typography-small-strong-text()` has a heavier font-weight:
+```scss
+.small-strong {
+	@include vui-typography-small-strong-text();
+}
+```
+
+![screenshot of small strong text](/screenshots/small-strong.png?raw=true)
 
 ## Coding styles
 
