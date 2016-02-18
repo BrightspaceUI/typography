@@ -1,5 +1,4 @@
-@import 'bower_components/vui-colors/colors.scss';
-@import 'px-to-base-rem.scss';
+@import 'font.scss';
 @import 'import-once.scss';
 
 @include import-once('brightspace fonts') {
@@ -12,39 +11,6 @@
 
 	& p {
 		margin: 1.5rem 0;
-	}
-
-}
-
-@mixin vui-typography-font() {
-
-	color: $vui-color-ferrite;
-	font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-	font-size: 1rem;
-	font-weight: 300;
-	line-height: 1.5;
-	letter-spacing: px-to-base-rem(0.3px);
-
-	&.vui-dyslexic,
-	.vui-dyslexic {
-		font-weight: 400;
-		font-family: 'Open Dyslexic', sans-serif;
-	}
-
-	:lang(ar) {
-		font-family: 'Arabic Transparent', 'Arabic Typesetting', 'Geeza Pro', sans-serif;
-	}
-	:lang(zh-CN) {
-		font-family: 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
-	}
-	:lang(zh-TW) {
-		font-family: 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
-	}
-	:lang(ko) {
-		font-family: 'Apple SD Gothic Neo', Dotum, sans-serif;
-	}
-	:lang(ja) {
-		font-family: 'Hiragino Kaku Gothic Pro', 'Meiyro', sans-serif;
 	}
 
 }
