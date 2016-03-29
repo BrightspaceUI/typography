@@ -15,6 +15,5 @@
     "vui-colors": "^1.0.1"
   },
   "devDependencies": {
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.20"
   }
 }
