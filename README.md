@@ -1,10 +1,10 @@
+**Looking for SASS-based `vui-typography`?** It's [over here](https://github.com/Brightspace/valence-ui-typography/tree/sass).
+
 # vui-typography
 [![Bower version][bower-image]][bower-url]
-[![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
-[![Dependency Status][dependencies-image]][dependencies-url]
 
-This component contains [Sass mixins](http://sass-lang.com) and CSS that can be used to produce basic typography styles.
+A Valence UI, [Polymer](https://www.polymer-project.org/1.0/)-based web component for typography styles.
 
 For further information on this and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
@@ -15,30 +15,26 @@ For further information on this and other VUI components, see the docs at [ui.va
 bower install vui-typography
 ```
 
-Or alternatively from [NPM][npm-url]:
-```shell
-npm install vui-typography
-```
-
-Depending on which installation method you choose, use that path when doing the SASS import:
-
-```scss
-@import 'bower_components/vui-typography/typography.scss';
-// or...
-@import "node_modules/vui-typography/typography.scss";
-```
-
 ## Usage
+
+Include the [webcomponents.js](http://webcomponents.org/polyfills/) "lite" polyfill (for browsers who don't natively support web components), import `typography.html`, and include the `vui-typography` style:
+
+```html
+<head>
+	<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
+	<link rel="import" href="../vui-typography/typography.html">
+	<style is="custom-style" include="vui-typography"></style>
+</head>
+```
 
 ### Body
 
-The `vui-typography` mixin can be used to set up the base font properties, typically applied to the `<body>` element.
+The `vui-typography` class can be used to set base font properties, typically applied to the `<body>` element.
 
-```scss
-@import '<path-to-component>/typography.scss';
-body {
-	@include vui-typography();
-}
+```html
+<body class="vui-typography">
+	...
+</body>
 ```
 
 The default font family, color and line/character spacing will look like this:
@@ -47,59 +43,38 @@ The default font family, color and line/character spacing will look like this:
 
 ### Headings
 
-There are four separate mixins for the available heading styles. These would typically be applied to the `<h1>`, `<h2>`, `<h3>` and `<h4>` HTML elements, though it's not a requirement.
+There are four separate classes for the available heading styles. These would typically be applied to the `<h1>`, `<h2>`, `<h3>` and `<h4>` HTML elements, though it's not a requirement.
 
-```scss
-@import '<path-to-component>/headings.scss';
+```html
+<h1 class="vui-heading-1">...</h1>
+<h2 class="vui-heading-2">...</h2>
+<h3 class="vui-heading-3">...</h3>
+<h4 class="vui-heading-4">...</h4>
+```
 
-h1 {
-	@include vui-typography-heading1();
-}
+![screenshot of headings](/screenshots/headings.png?raw=true)
 
-h2 {
-	@include vui-typography-heading2();
-}
+### Help Text
 
-h3 {
-	@include vui-typography-heading3();
-}
+The custom `vui-help-text` element can be used to apply styling to help text.
 
-h4 {
-	@include vui-typography-heading4();
+```html
+<vui-help-text>...</vui-help-text>
+```
+
+### Note About Font Size
+
+Normally within Brightspace, the user-configured base font size will automatically be present, and requires no additional work to opt-in. However, if your application exists outside of Brightspace, you should set your desired font size on the `<html>` element. The default recommended size is `20px`:
+
+```css
+html {
+    font-size: 20px;
 }
 ```
 
-![screenshot of paragraph text](/screenshots/headings.png?raw=true)
+### Usage in Production
 
-The margins around each heading style can be customized by passing in an override value to the mixin:
-
-```scss
-h2.no-margin {
-	@include vui-typography-heading2($margin: 0);
-}
-```
-
-### Small Text
-
-There are two mixins available to achieve a smaller look. They're both available by importing `small-text.scss`.
-
-The first is `vui-typography-small-text()`:
-```scss
-.small {
-	@include vui-typography-small-text();
-}
-```
-
-![screenshot of small text](/screenshots/small.png?raw=true)
-
-The second, `vui-typography-small-strong-text()` has a heavier font-weight:
-```scss
-.small-strong {
-	@include vui-typography-small-strong-text();
-}
-```
-
-![screenshot of small strong text](/screenshots/small-strong.png?raw=true)
+In production, it's recommended to use a build tool like [Vulcanize](https://github.com/Polymer/vulcanize) to combine all your web components into a single import file. [More from the Polymer Docs: Optimize for Production](https://www.polymer-project.org/1.0/tools/optimize-for-production.html)...
 
 ## Coding styles
 
@@ -107,9 +82,5 @@ See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valenc
 
 [bower-url]: http://bower.io/search/?q=vui-typography
 [bower-image]: https://img.shields.io/bower/v/vui-typography.svg
-[npm-url]: https://www.npmjs.org/package/vui-typography
-[npm-image]: https://img.shields.io/npm/v/vui-typography.svg
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-typography
 [ci-image]: https://img.shields.io/travis-ci/Brightspace/valence-ui-typography.svg
-[dependencies-url]: https://david-dm.org/brightspace/valence-ui-typography
-[dependencies-image]: https://img.shields.io/david/Brightspace/valence-ui-typography.svg

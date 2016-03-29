@@ -14,14 +14,15 @@ function capture(name, width) {
 		width:  width || clipRect.width,
 		height: clipRect.height
 	};
+
 	page.render('./screenshots/' + name + '.png');
 
 }
 
-page.open('./test/typography.html', function() {
-	capture('paragraph');
-	capture('headings', 200);
-	capture('small', 200);
-	capture('small-strong', 200);
-	phantom.exit();
+page.open('./test/perceptual/typography.html', function() {
+	setTimeout(function() {
+			capture('paragraph');
+			capture('headings', 200);
+			phantom.exit();
+	}, 500);
 });

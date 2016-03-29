@@ -1,4 +1,3 @@
 bower_components/
 node_modules/
-test/test.css
-typography.css
+test/perceptual/typography.html.ignore

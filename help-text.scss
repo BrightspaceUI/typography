@@ -1,5 +1,0 @@
-@import 'small-text.scss';
-
-@mixin vui-typography-help-text() {
-	@include vui-typography-small-text($margin: auto);
-}

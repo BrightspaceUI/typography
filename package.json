@@ -1,41 +1,30 @@
 {
   "name": "vui-typography",
-  "version": "2.0.2",
-  "description": "Mixins and CSS for applying basic typography styles",
+  "version": "3.0.0",
+  "description": "Web component with shared typography styles",
+  "private": true,
   "scripts": {
-    "clean": "rimraf *.css && rimraf ./test/*.css",
-    "prebuild": "npm run clean",
-    "build:sass": "node-sass --output-style expanded typography.css.scss typography.css",
-    "build": "npm run build:sass",
-    "perceptual-diff": "percy snapshot test/",
+    "prebuild": "cpy *.html ./bower_components/temp",
+    "build": "vulcanize ./bower_components/temp/typography.html > ./test/perceptual/typography.html.ignore",
+    "postbuild": "rimraf ./bower_components/temp",
+    "preperceptual-diff": "npm run build",
+    "perceptual-diff": "percy snapshot test/perceptual --enable_javascript",
     "postinstall": "bower install",
     "screenshot": "phantomjs ./screenshots/build.js",
-    "pretest": "npm run build && cpy typography.css test",
-    "test": "csslint typography.css"
+    "test": "polylint"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Brightspace/valence-ui-typography.git"
   },
-  "keywords": [
-    "d2l",
-    "valence-ui",
-    "vui"
-  ],
   "author": "D2L Corporation",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/Brightspace/valence-ui-typography/issues"
-  },
-  "homepage": "https://github.com/Brightspace/valence-ui-typography",
-  "dependencies": {
-    "bower": "^1.7.7"
-  },
   "devDependencies": {
+    "bower": "^1.7.7",
     "cpy-cli": "^1.0.0",
-    "csslint": "^0.10.0",
-    "node-sass": "^3.4.2",
     "phantomjs-prebuilt": "^2.1.4",
-    "rimraf": "^2.5.2"
+    "polylint": "^2.10.0",
+    "rimraf": "^2.5.2",
+    "vulcanize": "^1.14.7"
   }
 }

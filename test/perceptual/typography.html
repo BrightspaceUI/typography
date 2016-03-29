@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Typography Snapshot</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+		<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
+		<link rel="import" href="typography.html.ignore">
+		<style is="custom-style" include="vui-typography">
+
+			html {
+				font-size: 20px;
+			}
+			table {
+				max-width: 1000px;
+			}
+			td, th {
+				padding: 0.5rem;
+				white-space: nowrap;
+			}
+			th {
+				text-align: center;
+			}
+			.small-text {
+				@apply(--vui-small-text);
+			}
+			.small-strong-text {
+				@apply(--vui-small-strong-text);
+			}
+
+		</style>
+	</head>
+	<body class="vui-typography" unresolved>
+		<h1>Typography</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Element</th>
+					<th>Style</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Headings</th>
+					<td class="screenshot-headings">
+						<h1 class="vui-heading-1">Heading 1</h1>
+						<h2 class="vui-heading-2">Heading 2</h2>
+						<h3 class="vui-heading-3">Heading 3</h3>
+						<h4 class="vui-heading-4">Heading 4</h4>
+					</td>
+				</tr>
+				<tr>
+					<th>Small Text</th>
+					<td>
+						<p class="small-text screenshot-small">Small Text</p>
+					</td>
+				</tr>
+				<tr>
+					<th>Small Strong Text</th>
+					<td>
+						<p class="small-strong-text screenshot-small-strong">Small Strong Text</p>
+					</td>
+				</tr>
+				<tr>
+					<th>Help Text</th>
+					<td class="screenshot-help-text">
+						<vui-help-text class="vui-help">Help Text</vui-help-text>
+					</td>
+				</tr>
+				<tr>
+					<th>Paragraph</th>
+					<td>
+						<p style="width: 435px; text-align: left; white-space: normal;" class="screenshot-paragraph">
+							Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.
+						</p>
+					</td>
+			</tbody>
+		</table>
+	</body>
+</html>
