@@ -52,7 +52,7 @@ There are four separate classes for the available heading styles. These would ty
 <h4 class="vui-heading-4">...</h4>
 ```
 
-![screenshot of paragraph text](/screenshots/headings.png?raw=true)
+![screenshot of headings](/screenshots/headings.png?raw=true)
 
 ### Help Text
 
