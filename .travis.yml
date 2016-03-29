@@ -1,19 +1,13 @@
 language: node_js
-node_js:
-- 5.6
+node_js: stable
 before_script:
 - gem install percy-cli
+script:
+- polylint
+- wct --skip-plugin local
 after_success:
 - '[ "$TRAVIS_SECURE_ENV_VARS" = "true" ] && npm run perceptual-diff'
 sudo: false
-deploy:
-  provider: npm
-  email: d2ltravisdeploy@d2l.com
-  api_key:
-    secure: lh51pn6JgbDjHlcvWWGJWxO/JwAMurTk/TFFYO6447lvP1QsMogcs5nUNNp7045YpEFcc7v94tlz42UMrFCXRoRVKy0g3AWKtATVl1FQ4oY7X18C3KuQMOVBZt89uQVX5X2+LOkDnlGEzYNerFWcDAV8FoBOUIKwPeUvCNZJO5s=
-  on:
-    tags: true
-    all_branches: true
 env:
   global:
     secure: Z291fOPTg/3XEw/pBgA/9s4y0cyc/CkFdn0YRIbLyk66y9FWVIwacytGsl2hs2+hQZXXizrx6GK+NEUCuOB+CpFzFi9sE0+b+HIQ/hAnPC8L9AdGWKiIS6skekjJC+ZhQRJq+/DnSe8/N8Mr3YA6rO3PiqHlVJ5787y5vId4w2E=

@@ -1,6 +1,0 @@
-@import 'base-font-size.scss';
-@import 'px-to-rem.scss';
-
-@function px-to-base-rem($targetPx) {
-	@return px-to-rem($targetPx, $vui-base-fontSize);
-}

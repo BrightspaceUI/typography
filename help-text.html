@@ -1,0 +1,21 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../vui-colors/colors.html">
+<link rel="import" href="./small-text.html">
+
+<dom-module id="vui-help-text">
+	<template>
+		<style include="vui-colors">
+
+			:host {
+				@apply(--vui-small-text);
+			}
+
+		</style>
+		<content></content>
+	</template>
+	<script>
+		Polymer({
+			is: 'vui-help-text'
+		});
+	</script>
+</dom-module>
