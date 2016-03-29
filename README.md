@@ -62,6 +62,16 @@ The custom `vui-help-text` element can be used to apply styling to help text.
 <vui-help-text>...</vui-help-text>
 ```
 
+### Note About Font Size
+
+Normally within Brightspace, the user-configured base font size will automatically be present, and requires no additional work to opt-in. However, if your application exists outside of Brightspace, you should set your desired font size on the `<html>` element. The default recommended size is `20px`:
+
+```css
+html {
+    font-size: 20px;
+}
+```
+
 ### Usage in Production
 
 In production, it's recommended to use a build tool like [Vulcanize](https://github.com/Polymer/vulcanize) to combine all your web components into a single import file. [More from the Polymer Docs: Optimize for Production](https://www.polymer-project.org/1.0/tools/optimize-for-production.html)...
