@@ -1,6 +1,4 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="./fonts.html">
-<link rel="import" href="./headings.html">
 <link rel="import" href="./help-text.html">
 <link rel="import" href="./small-text.html">
 <link href="https://s.brightspace.com/lib/fonts/0.3.0/fonts.css" rel="stylesheet">
@@ -13,57 +11,92 @@
 		<style>
 
 			.vui-typography {
-				@apply(--vui-font);
+				color: var(--vui-color-ferrite);
+				display: block;
+				font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				font-size: 1rem;
+				font-weight: 300;
+				line-height: 1.5;
+				letter-spacing: 0.015rem;
+				@apply(--d2l-font-custom);
 			}
 
 			.vui-typography p {
-				@apply(--vui-font-paragraph);
+				margin: 1.5rem 0;
+				@apply(--d2l-font-paragraph-custom);
 			}
 
 			.vui-typography.vui-dyslexic,
 			.vui-typography .vui-dyslexic {
-				@apply(--vui-font-dyslexic);
+				font-weight: 400;
+				font-family: 'Open Dyslexic', sans-serif;
+				@apply(--d2l-font-dyslexic-custom);
 			}
 
 			.vui-typography[:lang(ar)],
 			.vui-typography [:lang(ar)] {
-				@apply(--vui-font-ar);
+				font-family: 'Arabic Transparent', 'Arabic Typesetting', 'Geeza Pro', sans-serif;
+				@apply(--d2l-font-ar-custom);
 			}
 
 			.vui-typography[:lang(zh-CN)],
 			.vui-typography [:lang(zh-CN)] {
-				@apply(--vui-font-zh-cn);
+				font-family: 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+				@apply(--d2l-font-zh-cn-custom);
 			}
 
 			.vui-typography[:lang(zh-TW)],
 			.vui-typography [:lang(zh-TW)] {
-				@apply(--vui-font-zh-tw);
+				font-family: 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+				@apply(--d2l-font-zh-tw-custom);
 			}
 
 			.vui-typography[:lang(ko)],
 			.vui-typography [:lang(ko)] {
-				@apply(--vui-font-ko);
+				font-family: 'Apple SD Gothic Neo', Dotum, sans-serif;
+				@apply(--d2l-font-ko-custom);
 			}
 
 			.vui-typography[:lang(ja)],
 			.vui-typography [:lang(ja)] {
-				@apply(--vui-font-ja);
+				font-family: 'Hiragino Kaku Gothic Pro', 'Meiyro', sans-serif;
+				@apply(--d2l-font-ja-custom);
 			}
 
 			.vui-typography .vui-heading-1 {
-				@apply(--vui-heading-1);
+				font-size: 2rem;
+				font-weight: 300;
+				line-height: 3rem;
+				letter-spacing: -0.025rem;
+				margin: 1.5rem 0 1.5rem 0;
+				@apply(--d2l-heading-1-custom);
 			}
 
 			.vui-typography .vui-heading-2 {
-				@apply(--vui-heading-2);
+				font-size: 1.5rem;
+				font-weight: 300;
+				line-height: 2.25rem;
+				letter-spacing: -0.015rem;
+				margin: 1.5rem 0 1.5rem 0;
+				@apply(--d2l-heading-2-custom);
 			}
 
 			.vui-typography .vui-heading-3 {
-				@apply(--vui-heading-3);
+				font-size: 1rem;
+				font-weight: 700;
+				line-height: 1.5rem;
+				letter-spacing: 0.025rem;
+				margin: 1.5rem 0 1.5rem 0;
+				@apply(--d2l-heading-3-custom);
 			}
 
 			.vui-typography .vui-heading-4 {
-				@apply(--vui-heading-4);
+				font-size: 1rem;
+				font-weight: 400;
+				line-height: 1.5rem;
+				letter-spacing: 0.02rem;
+				margin: 1.5rem 0 1.5rem 0;
+				@apply(--d2l-heading-4-custom);
 			}
 
 		</style>
