@@ -7,9 +7,8 @@
     "prebuild": "cpy *.html ./bower_components/temp",
     "build": "vulcanize ./bower_components/temp/typography.html > ./test/perceptual/typography.html.ignore",
     "postbuild": "rimraf ./bower_components/temp",
-    "preperceptual-diff": "npm run build",
-    "perceptual-diff": "percy snapshot test/perceptual --enable_javascript",
     "postinstall": "bower install",
+    "prescreenshot": "npm run build",
     "screenshot": "phantomjs ./screenshots/build.js",
     "test": "polylint"
   },
