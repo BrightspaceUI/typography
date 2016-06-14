@@ -11,9 +11,7 @@
     "package.json"
   ],
   "dependencies": {
-    "polymer": "^1.4.0",
-    "vui-colors": "^1.0.1"
-  },
-  "devDependencies": {
+    "d2l-colors": "^2.0.0",
+    "polymer": "^1.4.0"
   }
 }
