@@ -1,38 +1,38 @@
-**Looking for SASS-based `vui-typography`?** It's [over here](https://github.com/Brightspace/valence-ui-typography/tree/sass).
+**Looking for SASS-based `d2l-typography`?** It's [over here](https://github.com/Brightspace/d2l-typography-ui/tree/sass).
 
-# vui-typography
+# d2l-typography
 [![Bower version][bower-image]][bower-url]
 [![Build status][ci-image]][ci-url]
 
-A Valence UI, [Polymer](https://www.polymer-project.org/1.0/)-based web component for typography styles.
+A set of [Polymer](https://www.polymer-project.org/1.0/)-based web components and shared styles for applying D2L typography.
 
-For further information on this and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
+For further information on this and other D2L UI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
 ## Installation
 
-`vui-typography` can be installed from [Bower][bower-url]:
+`d2l-typography` can be installed from [Bower][bower-url]:
 ```shell
-bower install vui-typography
+bower install d2l-typography
 ```
 
 ## Usage
 
-Include the [webcomponents.js](http://webcomponents.org/polyfills/) "lite" polyfill (for browsers who don't natively support web components), import `typography.html`, and include the `vui-typography` style:
+Include the [webcomponents.js](http://webcomponents.org/polyfills/) "lite" polyfill (for browsers who don't natively support web components), import `d2l-typography.html`, and include the `d2l-typography` shared style:
 
 ```html
 <head>
 	<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
-	<link rel="import" href="../vui-typography/typography.html">
-	<style is="custom-style" include="vui-typography"></style>
+	<link rel="import" href="../d2l-typography/d2l-typography.html">
+	<style is="custom-style" include="d2l-typography"></style>
 </head>
 ```
 
 ### Body
 
-The `vui-typography` class can be used to set base font properties, typically applied to the `<body>` element.
+The `d2l-typography` class can be used to set base font properties, typically applied to the `<body>` element.
 
 ```html
-<body class="vui-typography">
+<body class="d2l-typography">
 	...
 </body>
 ```
@@ -46,20 +46,20 @@ The default font family, color and line/character spacing will look like this:
 There are four separate classes for the available heading styles. These would typically be applied to the `<h1>`, `<h2>`, `<h3>` and `<h4>` HTML elements, though it's not a requirement.
 
 ```html
-<h1 class="vui-heading-1">...</h1>
-<h2 class="vui-heading-2">...</h2>
-<h3 class="vui-heading-3">...</h3>
-<h4 class="vui-heading-4">...</h4>
+<h1 class="d2l-heading-1">...</h1>
+<h2 class="d2l-heading-2">...</h2>
+<h3 class="d2l-heading-3">...</h3>
+<h4 class="d2l-heading-4">...</h4>
 ```
 
 ![screenshot of headings](/screenshots/headings.png?raw=true)
 
 ### Help Text
 
-The custom `vui-help-text` element can be used to apply styling to help text.
+The custom `d2l-help-text` element can be used to apply styling to help text.
 
 ```html
-<vui-help-text>...</vui-help-text>
+<d2l-help-text>...</d2l-help-text>
 ```
 
 ### Note About Font Size
@@ -78,9 +78,9 @@ In production, it's recommended to use a build tool like [Vulcanize](https://git
 
 ## Coding styles
 
-See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on VUI naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
+See the [Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
 
-[bower-url]: http://bower.io/search/?q=vui-typography
-[bower-image]: https://img.shields.io/bower/v/vui-typography.svg
-[ci-url]: https://travis-ci.org/Brightspace/valence-ui-typography
-[ci-image]: https://img.shields.io/travis-ci/Brightspace/valence-ui-typography.svg
+[bower-url]: http://bower.io/search/?q=d2l-typography
+[bower-image]: https://img.shields.io/bower/v/d2l-typography.svg
+[ci-url]: https://travis-ci.org/Brightspace/d2l-typography-ui
+[ci-image]: https://img.shields.io/travis-ci/Brightspace/d2l-typography-ui.svg

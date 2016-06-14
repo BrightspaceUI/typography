@@ -1,21 +1,18 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="./small-text.html">
-
-<dom-module id="vui-help-text">
+<link rel="import" href="d2l-typography-shared-styles.html">
+<dom-module id="d2l-help-text">
 	<template>
-		<style>
-
+		<style include="d2l-typography-shared-styles">
 			:host {
-				@apply(--vui-small-text);
+				@apply(--d2l-small-text);
 				@apply(--d2l-help-text-custom);
 			}
-
 		</style>
 		<content></content>
 	</template>
 	<script>
 		Polymer({
-			is: 'vui-help-text'
+			is: 'd2l-help-text'
 		});
 	</script>
 </dom-module>
