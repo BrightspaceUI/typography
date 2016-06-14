@@ -5,9 +5,10 @@
 		<title>Typography Snapshot</title>
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
 		<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
-		<link rel="import" href="../typography.html">
-		<link rel="import" href="../help-text.html">
-		<style is="custom-style" include="vui-typography">
+		<link rel="import" href="../d2l-typography.html">
+		<link rel="import" href="../d2l-typography-shared-styles.html">
+		<link rel="import" href="../d2l-help-text.html">
+		<style is="custom-style" include="d2l-typography d2l-typography-shared-styles">
 
 			html {
 				font-size: 20px;
@@ -23,15 +24,15 @@
 				text-align: center;
 			}
 			.small-text {
-				@apply(--vui-small-text);
+				@apply(--d2l-small-text);
 			}
 			.small-strong-text {
-				@apply(--vui-small-strong-text);
+				@apply(--d2l-small-strong-text);
 			}
 
 		</style>
 	</head>
-	<body class="vui-typography" unresolved>
+	<body class="d2l-typography" unresolved>
 		<h1>Typography</h1>
 		<table>
 			<thead>
@@ -44,10 +45,10 @@
 				<tr>
 					<th>Headings</th>
 					<td>
-						<h1 class="vui-heading-1">Heading 1</h1>
-						<h2 class="vui-heading-2">Heading 2</h2>
-						<h3 class="vui-heading-3">Heading 3</h3>
-						<h4 class="vui-heading-4">Heading 4</h4>
+						<h1 class="d2l-heading-1">Heading 1</h1>
+						<h2 class="d2l-heading-2">Heading 2</h2>
+						<h3 class="d2l-heading-3">Heading 3</h3>
+						<h4 class="d2l-heading-4">Heading 4</h4>
 					</td>
 				</tr>
 				<tr>
@@ -65,7 +66,7 @@
 				<tr>
 					<th>Help Text</th>
 					<td>
-						<vui-help-text class="vui-help">Help Text</vui-help-text>
+						<d2l-help-text>Help Text</d2l-help-text>
 					</td>
 				</tr>
 				<tr>

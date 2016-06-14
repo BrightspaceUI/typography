@@ -1,13 +1,12 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../d2l-colors/d2l-colors.html">
-<link rel="import" href="./help-text.html">
-<link rel="import" href="./small-text.html">
+<link rel="import" href="d2l-help-text.html">
 <link href="https://s.brightspace.com/lib/fonts/0.3.0/fonts.css" rel="stylesheet">
-
-<dom-module id="vui-typography">
+<dom-module id="d2l-typography">
 	<template>
-		<style include="vui-small-text d2l-colors">
+		<style include="d2l-colors">
 
+			.d2l-typography,
 			.vui-typography {
 				color: var(--d2l-color-ferrite);
 				display: block;
@@ -19,11 +18,14 @@
 				@apply(--d2l-font-custom);
 			}
 
+			.d2l-typography p,
 			.vui-typography p {
 				margin: 1.5rem 0;
 				@apply(--d2l-font-paragraph-custom);
 			}
 
+			.d2l-typography.d2l-dyslexic,
+			.d2l-typography .d2l-dyslexic,
 			.vui-typography.vui-dyslexic,
 			.vui-typography .vui-dyslexic {
 				font-weight: 400;
@@ -31,37 +33,48 @@
 				@apply(--d2l-font-dyslexic-custom);
 			}
 
+			.d2l-typography[:lang(ar)],
+			.d2l-typography [:lang(ar)],
 			.vui-typography[:lang(ar)],
 			.vui-typography [:lang(ar)] {
 				font-family: 'Arabic Transparent', 'Arabic Typesetting', 'Geeza Pro', sans-serif;
 				@apply(--d2l-font-ar-custom);
 			}
 
+			.d2l-typography[:lang(zh-CN)],
+			.d2l-typography [:lang(zh-CN)],
 			.vui-typography[:lang(zh-CN)],
 			.vui-typography [:lang(zh-CN)] {
 				font-family: 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
 				@apply(--d2l-font-zh-cn-custom);
 			}
 
+			.d2l-typography[:lang(zh-TW)],
+			.d2l-typography [:lang(zh-TW)],
 			.vui-typography[:lang(zh-TW)],
 			.vui-typography [:lang(zh-TW)] {
 				font-family: 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
 				@apply(--d2l-font-zh-tw-custom);
 			}
 
+			.d2l-typography[:lang(ko)],
+			.d2l-typography [:lang(ko)],
 			.vui-typography[:lang(ko)],
 			.vui-typography [:lang(ko)] {
 				font-family: 'Apple SD Gothic Neo', Dotum, sans-serif;
 				@apply(--d2l-font-ko-custom);
 			}
 
+			.d2l-typography[:lang(ja)],
+			.d2l-typography [:lang(ja)],
 			.vui-typography[:lang(ja)],
 			.vui-typography [:lang(ja)] {
 				font-family: 'Hiragino Kaku Gothic Pro', 'Meiyro', sans-serif;
 				@apply(--d2l-font-ja-custom);
 			}
 
-			.vui-typography .vui-heading-1 {
+			.vui-typography .vui-heading-1,
+			.d2l-typography .d2l-heading-1 {
 				font-size: 2rem;
 				font-weight: 300;
 				line-height: 3rem;
@@ -70,7 +83,8 @@
 				@apply(--d2l-heading-1-custom);
 			}
 
-			.vui-typography .vui-heading-2 {
+			.vui-typography .vui-heading-2,
+			.d2l-typography .d2l-heading-2 {
 				font-size: 1.5rem;
 				font-weight: 300;
 				line-height: 2.25rem;
@@ -79,7 +93,8 @@
 				@apply(--d2l-heading-2-custom);
 			}
 
-			.vui-typography .vui-heading-3 {
+			.vui-typography .vui-heading-3,
+			.d2l-typography .d2l-heading-3 {
 				font-size: 1rem;
 				font-weight: 700;
 				line-height: 1.5rem;
@@ -88,7 +103,8 @@
 				@apply(--d2l-heading-3-custom);
 			}
 
-			.vui-typography .vui-heading-4 {
+			.vui-typography .vui-heading-4,
+			.d2l-typography .d2l-heading-4 {
 				font-size: 1rem;
 				font-weight: 400;
 				line-height: 1.5rem;

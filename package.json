@@ -1,16 +1,15 @@
 {
-  "name": "vui-typography",
-  "version": "3.1.1",
-  "description": "Web component with shared typography styles",
+  "name": "d2l-typography",
+  "description": "Polymer-based web components and shared styles for applying D2L typography",
   "private": true,
   "scripts": {
     "prebuild": "cpy *.html ./bower_components/temp",
-    "build": "vulcanize ./bower_components/temp/typography.html > ./test/perceptual/typography.html.ignore",
+    "build": "vulcanize ./bower_components/temp/d2l-typography.html > ./test/perceptual/d2l-typography.html.ignore",
     "postbuild": "rimraf ./bower_components/temp",
     "postinstall": "bower install",
     "prescreenshot": "npm run build",
     "screenshot": "phantomjs ./screenshots/build.js",
-    "test": "polylint"
+    "test": "polylint -i d2l-typography.html d2l-help-text.html d2l-typography-shared-styles.html"
   },
   "repository": {
     "type": "git",
