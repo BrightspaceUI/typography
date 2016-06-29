@@ -1,6 +1,7 @@
 @import 'typography.scss';
 @import 'headings.scss';
 @import 'help-text.scss';
+@import 'body.scss';
 
 .vui-typography {
 	@include vui-typography;
@@ -20,6 +21,10 @@
 
 .vui-heading-4 {
 	@include vui-typography-heading4;
+}
+
+.vui-body-2 {
+	@include vui-typography-body2;
 }
 
 p.vui-help,
