@@ -1,0 +1,13 @@
+@import 'bower_components/vui-colors/colors.scss';
+@import 'px-to-base-rem.scss';
+
+@mixin vui-typography-body2() {
+
+	color: $vui-color-ferrite;
+	font-family: inherit;
+	font-size: px-to-base-rem(16px);
+	font-weight: 400;
+	line-height: px-to-base-rem(20px);
+	letter-spacing: px-to-base-rem(0.1px);
+
+}
