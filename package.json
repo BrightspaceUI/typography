@@ -1,6 +1,6 @@
 {
   "name": "vui-typography",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Mixins and CSS for applying basic typography styles",
   "scripts": {
     "clean": "rimraf *.css && rimraf ./test/*.css",
