@@ -1,10 +1,11 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../d2l-colors/d2l-colors.html">
 <link rel="import" href="d2l-help-text.html">
+<link rel="import" href="d2l-typography-shared-styles.html">
 <link href="https://s.brightspace.com/lib/fonts/0.3.0/fonts.css" rel="stylesheet">
 <dom-module id="d2l-typography">
 	<template>
-		<style include="d2l-colors">
+		<style include="d2l-colors d2l-typography-shared-styles">
 
 			.d2l-typography,
 			.vui-typography {
@@ -18,12 +19,8 @@
 				@apply(--d2l-font-custom);
 			}
 
-			.vui-typography .vui-body-2,
 			.d2l-typography .d2l-body-2 {
-				font-size: 0.8rem;
-				font-weight: 400;
-				line-height: 1rem;
-				letter-spacing: 0.005rem;
+				@apply(--d2l-body-2-text);
 			}
 
 			.d2l-typography p,
