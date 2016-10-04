@@ -41,14 +41,14 @@ The default font family, color and line/character spacing will look like this:
 
 ![screenshot of paragraph text](/screenshots/paragraph.png?raw=true)
 
-### Body 2
+### Compact Body
 
-The body 2 class is a smaller version of the default body class, styling text to be 16px normal weight.
+The compact body class is a smaller version of the default body class, for use in areas that prefer to be conservative with the amount of real estate used by text.
 
 ```html
-<p class="d2l-body-2">
+<div class="d2l-body-compact">
 	...
-</p>
+</div>
 ```
 
 ![screenshot of paragraph text](/screenshots/body-2.png?raw=true)
