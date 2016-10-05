@@ -45,6 +45,8 @@ The default font family, color and line/character spacing will look like this:
 
 The compact body class is a smaller version of the default body class, for use in areas that prefer to be conservative with the amount of real estate used by text.
 
+The compact style is not recommended for blocks of readable text, particularly in paragraph form. Rather, it is best employed for brief informative text or calls to action.
+
 ```html
 <div class="d2l-body-compact">
 	...
