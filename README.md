@@ -62,6 +62,10 @@ The custom `d2l-help-text` element can be used to apply styling to help text.
 <d2l-help-text>...</d2l-help-text>
 ```
 
+### Responsive Breakpoint   
+
+The fonts for headings and help text will all be styled to be smaller at a responsive breakpoint, defined as when the viewport width is 615px or smaller.
+
 ### Note About Font Size
 
 Normally within Brightspace, the user-configured base font size will automatically be present, and requires no additional work to opt-in. However, if your application exists outside of Brightspace, you should set your desired font size on the `<html>` element. The default recommended size is `20px`:
