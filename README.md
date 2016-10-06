@@ -41,6 +41,20 @@ The default font family, color and line/character spacing will look like this:
 
 ![screenshot of paragraph text](/screenshots/paragraph.png?raw=true)
 
+### Compact Body
+
+The compact body class is a smaller version of the default body class, for use in areas that prefer to be conservative with the amount of real estate used by text.
+
+The compact style is not recommended for blocks of readable text, particularly in paragraph form. Rather, it is best employed for brief informative text or calls to action.
+
+```html
+<div class="d2l-body-compact">
+	...
+</div>
+```
+
+![screenshot of paragraph text](/screenshots/body-2.png?raw=true)
+
 ### Headings
 
 There are four separate classes for the available heading styles. These would typically be applied to the `<h1>`, `<h2>`, `<h3>` and `<h4>` HTML elements, though it's not a requirement.

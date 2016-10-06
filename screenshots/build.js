@@ -23,6 +23,7 @@ page.open('./test/perceptual/typography.html', function() {
 	setTimeout(function() {
 			capture('paragraph');
 			capture('headings', 200);
+			capture('compact');
 			phantom.exit();
 	}, 500);
 });
