@@ -53,7 +53,7 @@ The compact style is not recommended for blocks of readable text, particularly i
 </div>
 ```
 
-![screenshot of paragraph text](/screenshots/body-2.png?raw=true)
+![screenshot of paragraph text](/screenshots/compact.png?raw=true)
 
 ### Headings
 
