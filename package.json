@@ -10,7 +10,7 @@
     "postinstall": "bower install",
     "prescreenshot": "npm run build",
     "screenshot": "phantomjs ./screenshots/build.js",
-    "test": "polylint -i d2l-typography.html d2l-help-text.html d2l-typography-shared-styles.html & npm run galen"
+    "test": "polylint -i d2l-typography.html d2l-help-text.html d2l-typography-shared-styles.html"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "galenframework": "^2.3.1",
     "phantomjs-prebuilt": "^2.1.4",
     "polylint": "^2.10.0",
+    "polymer-cli": "^0.16.0",
     "rimraf": "^2.5.2",
     "vulcanize": "^1.14.7"
   }
