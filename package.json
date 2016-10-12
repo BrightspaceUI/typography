@@ -5,12 +5,13 @@
   "scripts": {
     "prebuild": "cpy *.html ./bower_components/temp",
     "build": "vulcanize ./bower_components/temp/d2l-typography.html > ./test/perceptual/d2l-typography.html.ignore",
-    "galen": "concurrently -k -s first \"polymer serve\" \"galen test typography.test\"",
+    "pregalen": "npm run build",
+    "galen": "concurrently -k -s first \"polymer serve --port 8088\" \"galen test typography.test\"",
     "postbuild": "rimraf ./bower_components/temp",
     "postinstall": "bower install",
     "prescreenshot": "npm run build",
     "screenshot": "phantomjs ./screenshots/build.js",
-    "test": "polylint -i d2l-typography.html d2l-help-text.html d2l-typography-shared-styles.html"
+    "test": "polylint -i d2l-typography.html d2l-help-text.html d2l-typography-shared-styles.html && npm run galen"
   },
   "repository": {
     "type": "git",
