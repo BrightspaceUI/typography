@@ -5,6 +5,7 @@
   "scripts": {
     "prebuild": "cpy *.html ./bower_components/temp",
     "build": "vulcanize ./bower_components/temp/d2l-typography.html > ./test/perceptual/d2l-typography.html.ignore",
+    "galen": "concurrently -k -s first \"polymer serve\" \"galen test typography.test\"",
     "postbuild": "rimraf ./bower_components/temp",
     "postinstall": "bower install",
     "prescreenshot": "npm run build",
@@ -19,9 +20,12 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "bower": "^1.7.7",
+    "concurrently": "^3.1.0",
     "cpy-cli": "^1.0.0",
+    "galenframework": "^2.3.1",
     "phantomjs-prebuilt": "^2.1.4",
     "polylint": "^2.10.0",
+    "polymer-cli": "^0.16.0",
     "rimraf": "^2.5.2",
     "vulcanize": "^1.14.7"
   }
