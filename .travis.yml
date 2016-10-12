@@ -1,3 +1,11 @@
 language: node_js
 node_js: stable
 sudo: false
+addons:
+  apt:
+    packages:
+    - oracle-java8-installer
+
+before_install:
+- export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+- export PATH=$JAVA_HOME/bin:$PATH
