@@ -1,4 +1,4 @@
-**Looking for SASS-based `d2l-typography`?** It's [over here](https://github.com/Brightspace/d2l-typography-ui/tree/sass).
+**Looking for SASS-based `d2l-typography`?** It's [over here](https://github.com/BrightspaceUI/typography/tree/sass).
 
 # d2l-typography
 [![Bower version][bower-image]][bower-url]
@@ -100,5 +100,5 @@ See the [Best Practices & Style Guide](https://github.com/Brightspace/valence-ui
 
 [bower-url]: http://bower.io/search/?q=d2l-typography
 [bower-image]: https://img.shields.io/bower/v/d2l-typography.svg
-[ci-url]: https://travis-ci.org/Brightspace/d2l-typography-ui
-[ci-image]: https://img.shields.io/travis-ci/Brightspace/d2l-typography-ui.svg
+[ci-url]: https://travis-ci.org/BrightspaceUI/typography
+[ci-image]: https://img.shields.io/travis-ci/BrightspaceUI/typography.svg
