@@ -39,7 +39,11 @@ The `d2l-typography` class can be used to set base font properties, typically ap
 
 The default font family, color and line/character spacing will look like this:
 
-![screenshot of paragraph text](/screenshots/paragraph.png?raw=true)
+![screenshot of paragraph text](/screenshots/standard.png?raw=true)
+
+## Standard Body
+
+The `d2l-standard` class can also be used to apply base font properties, but will also respond to viewport width changes.
 
 ### Compact Body
 
@@ -78,7 +82,7 @@ The custom `d2l-help-text` element can be used to apply styling to help text.
 
 ### Responsive Breakpoint   
 
-The fonts for headings and help text will all be styled to be smaller at a responsive breakpoint, defined as when the viewport width is 615px or smaller.
+The fonts for headings, standard body, and compact body will all be styled to be smaller at a responsive breakpoint, defined as when the viewport width is 615px or smaller.
 
 ### Note About Font Size
 
