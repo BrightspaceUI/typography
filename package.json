@@ -11,7 +11,7 @@
     "postinstall": "bower install",
     "prescreenshot": "npm run build",
     "screenshot": "phantomjs ./screenshots/build.js",
-    "test": "polylint -i d2l-typography.html d2l-help-text.html d2l-typography-shared-styles.html && npm run galen"
+    "test": "polylint -i d2l-typography-shared-styles.html && npm run galen"
   },
   "repository": {
     "type": "git",
