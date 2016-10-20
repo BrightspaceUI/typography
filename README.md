@@ -43,7 +43,7 @@ The default font family, color and line/character spacing will look like this:
 
 ## Standard Body
 
-The `d2l-standard` class can also be used to apply base font properties, but will also respond to viewport width changes.
+The `d2l-body-standard` class can also be used to apply base font properties, but will also respond to viewport width changes.
 
 ### Compact Body
 
@@ -57,7 +57,19 @@ The compact style is not recommended for blocks of readable text, particularly i
 </div>
 ```
 
-![screenshot of paragraph text](/screenshots/compact.png?raw=true)
+![screenshot of compact text](/screenshots/compact.png?raw=true)
+
+### Small Body
+
+The small body class can be used to set font properties for text that needs to be smaller than the standard body class. Unlike the compact body class, this style is appropriate for blocks of readable text.
+
+```html
+<div class="d2l-body-small">
+	...
+</div>
+```
+
+![screenshot of small text](/screenshots/small.png?raw=true)
 
 ### Headings
 

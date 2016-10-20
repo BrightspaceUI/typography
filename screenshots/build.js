@@ -24,6 +24,8 @@ page.open('./test/perceptual/typography.html', function() {
 			capture('standard');
 			capture('headings', 200);
 			capture('compact');
+			capture('small');
+			            
 			phantom.exit();
 	}, 500);
 });
