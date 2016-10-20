@@ -21,9 +21,11 @@ function capture(name, width) {
 
 page.open('./test/perceptual/typography.html', function() {
 	setTimeout(function() {
-			capture('paragraph');
+			capture('standard');
 			capture('headings', 200);
 			capture('compact');
+			capture('small');
+			            
 			phantom.exit();
 	}, 500);
 });
