@@ -12,12 +12,12 @@
         heading-1:
             css font-size is "40px"
             css font-weight is "300"
-#            css line-height is "50px"
+            css line-height is "50px"
             css letter-spacing is "-0.5px"
         heading-2:
             css font-size is "30px"
             css font-weight is "300"
-#            css line-height is "40px"
+            css line-height is "40px"
             css letter-spacing matches "-0\.30+.*px"
         heading-3:
             css font-size is "20px"
@@ -38,7 +38,7 @@
             css font-size is "14px"
             css font-weight is "normal"
             css line-height is "20px"
-#            css letter-spacing matches "0\.30+.*px"
+            css letter-spacing matches "0\.30+.*px"
     @on mobile
         heading-1:
             css font-size is "30px"
