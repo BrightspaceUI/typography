@@ -41,7 +41,7 @@ The default font family, color and line/character spacing will look like this:
 
 ![screenshot of paragraph text](/screenshots/standard.png?raw=true)
 
-## Standard Body
+#### Standard Body
 
 The `d2l-body-standard` class can also be used to apply base font properties, but will also respond to viewport width changes.
 
