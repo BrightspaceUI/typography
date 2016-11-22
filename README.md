@@ -84,14 +84,6 @@ There are four separate classes for the available heading styles. These would ty
 
 ![screenshot of headings](/screenshots/headings.png?raw=true)
 
-### Help Text
-
-The custom `d2l-help-text` element can be used to apply styling to help text.
-
-```html
-<d2l-help-text>...</d2l-help-text>
-```
-
 ### Responsive Breakpoint   
 
 The fonts for headings, standard body, and compact body will all be styled to be smaller at a responsive breakpoint, defined as when the viewport width is 615px or smaller.
