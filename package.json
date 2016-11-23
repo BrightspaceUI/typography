@@ -12,8 +12,8 @@
     "prescreenshot": "npm run build",
     "screenshot": "phantomjs ./screenshots/build.js",
     "test": "polylint -i d2l-typography-shared-styles.html && npm run galen",
-    "galen:local:run": "d2l-galen -- test galen.local.config.js",
-    "galen:sauce:run": "sc-run -- d2l-galen -- test galen.sauce.config.js -i SAUCE_USERNAME SAUCE_ACCESS_KEY TRAVIS_REPO_SLUG TRAVIS_BUILD_NUMBER -- -p4",
+    "galen:local:run": "d2l-galen test galen.local.config.js",
+    "galen:sauce:run": "sc-run -- d2l-galen test galen.sauce.config.js -i SAUCE_USERNAME SAUCE_ACCESS_KEY TRAVIS_REPO_SLUG TRAVIS_BUILD_NUMBER -- -p4",
     "test:galen:local": "concurrently -p name -n serve,galen -s first -k \"polymer serve\" \"npm run galen:local:run\"",
     "test:galen:sauce": "concurrently -p name -n serve,galen -s first -k \"polymer serve\" \"npm run galen:sauce:run\""
   },
