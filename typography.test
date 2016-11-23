@@ -1,8 +1,0 @@
-@@ parameterized
-    | deviceType    | tags      | size      |
-    | Mobile        | mobile    | 320x600   |
-    | Desktop       | desktop   | 1024x768  |
-
-Fonts rendered on ${deviceType}
-    http://localhost:8088/components/d2l-typography/test/perceptual/typography.html ${size}
-        check test/font-classes.gspec --include "${tags}"
