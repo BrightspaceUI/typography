@@ -7,17 +7,18 @@
 		<style include="d2l-colors d2l-typography-shared-styles">
 
 			.d2l-typography,
-			.d2l-typography .d2l-body-standard,
-			.vui-typography,
-			.vui-typography .d2l-body-standard {
+			.vui-typography {
 				color: var(--d2l-color-ferrite);
 				display: block;
 				font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-				font-size: 1rem;
-				font-weight: 300;
-				line-height: 1.5;
-				letter-spacing: 0.015rem;
+				font-weight: 400;
+				letter-spacing: 0.01rem;
 				@apply(--d2l-font-custom);
+			}
+
+			.d2l-typography .d2l-body-standard,
+			.d2l-typography.d2l-body-standard {
+				@apply(--d2l-body-standard-text);
 			}
 
 			.d2l-typography .d2l-body-compact {
@@ -27,10 +28,10 @@
 			.d2l-typography .d2l-body-small {
 				@apply(--d2l-body-small-text);
 			}
-            
+
 			.d2l-typography p,
 			.vui-typography p {
-				margin: 1.5rem 0;
+				margin: 1rem 0;
 				@apply(--d2l-font-paragraph-custom);
 			}
 
@@ -38,8 +39,8 @@
 			.d2l-typography .d2l-dyslexic,
 			.vui-typography.vui-dyslexic,
 			.vui-typography .vui-dyslexic {
-				font-weight: 400;
 				font-family: 'Open Dyslexic', sans-serif;
+				font-weight: 400;
 				@apply(--d2l-font-dyslexic-custom);
 			}
 
@@ -74,9 +75,8 @@
 			.vui-typography .vui-heading-1,
 			.d2l-typography .d2l-heading-1 {
 				font-size: 2rem;
-				font-weight: 300;
-				line-height: 2.5rem;
-				letter-spacing: -0.025rem;
+				font-weight: 400;
+				line-height: 2.4rem;
 				margin: 1.5rem 0 1.5rem 0;
 				@apply(--d2l-heading-1-custom);
 			}
@@ -84,9 +84,8 @@
 			.vui-typography .vui-heading-2,
 			.d2l-typography .d2l-heading-2 {
 				font-size: 1.5rem;
-				font-weight: 300;
-				line-height: 2rem;
-				letter-spacing: -0.015rem;
+				font-weight: 400;
+				line-height: 1.8rem;
 				margin: 1.5rem 0 1.5rem 0;
 				@apply(--d2l-heading-2-custom);
 			}
@@ -96,17 +95,15 @@
 				font-size: 1rem;
 				font-weight: 700;
 				line-height: 1.5rem;
-				letter-spacing: 0.025rem;
 				margin: 1.5rem 0 1.5rem 0;
 				@apply(--d2l-heading-3-custom);
 			}
 
 			.vui-typography .vui-heading-4,
 			.d2l-typography .d2l-heading-4 {
-				font-size: 1rem;
-				font-weight: 400;
-				line-height: 1.5rem;
-				letter-spacing: 0.02rem;
+				font-size: 0.8rem;
+				font-weight: 700;
+				line-height: 1.2rem;
 				margin: 1.5rem 0 1.5rem 0;
 				@apply(--d2l-heading-4-custom);
 			}
@@ -115,11 +112,13 @@
 				.d2l-typography .d2l-heading-1,
 				.d2l-typography .vui-heading-1 {
 					font-size: 1.5rem;
-					line-height: 2rem;
+					font-weight: 400;
+					line-height: 1.8rem;
 				}
 				.d2l-typography .d2l-heading-2,
 				.d2l-typography .vui-heading-2 {
 					font-size: 1rem;
+					font-weight: 700;
 					line-height: 1.5rem;
 				}
 				.d2l-typography .d2l-heading-3,
@@ -127,23 +126,20 @@
 				.d2l-typography .d2l-heading-4,
 				.d2l-typography .vui-heading-4 {
 					font-size: 0.8rem;
+					font-weight: 700;
 					line-height: 1.2rem;
 				}
 				.d2l-typography .d2l-body-standard {
-					font-size: 0.7rem;
-					font-weight: 400;
-					line-height: 1.1rem;
-					letter-spacing: 0;
+					font-size: 0.8rem;
+					line-height: 1.2rem;
 				}
 				.d2l-typography .d2l-body-compact {
-					font-size: 0.7rem;
-					font-weight: 700;
-					letter-spacing: 0.02rem;
+					font-size: 0.8rem;
+					line-height: 1.2rem;
 				}
 				.d2l-typography .d2l-body-small {
 					font-size: 0.6rem;
-					line-height: 0.8rem;
-					letter-spacing: 0.015rem;
+					line-height: 0.9rem;
 				}
 			}
 
