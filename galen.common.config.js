@@ -4,23 +4,18 @@
 var endpoint = 'http://localhost:8080/components/d2l-typography/test/perceptual/typography.html';
 var spec = 'test/font-classes.gspec';
 
-this.specs = {
-	'typography-mobile': {
-		name: 'typography mobile',
+polymerTests(this.browsers, function(test) {
+	test('typography-mobile', {
 		endpoint: endpoint,
 		spec: spec,
 		size: '320x600',
-		opts: {
-			tags: ['mobile']
-		}
-	},
-	'typography-desktop': {
-		name: 'typography desktop',
+		tags: ['mobile']
+	});
+
+	test('typography-desktop', {
 		endpoint: endpoint,
 		spec: spec,
 		size: '1024x768',
-		opts: {
-			tags: ['desktop']
-		}
-	}
-};
+		tags: ['desktop']
+	});
+});

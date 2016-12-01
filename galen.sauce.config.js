@@ -1,7 +1,5 @@
 /* global SauceBrowserFactory, load */
 
-load('galen.common.config.js');
-
 this.browsers = {
 	chromeWindows: new SauceBrowserFactory({
 		browser: 'Chrome',
@@ -38,3 +36,5 @@ this.browsers = {
 		platform: 'EL_CAPITAN'
 	})
 };
+
+load('galen.common.config.js');
