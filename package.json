@@ -27,7 +27,7 @@
     "bower": "^1.7.7",
     "concurrently": "^3.1.0",
     "cpy-cli": "^1.0.0",
-    "d2l-galen-utils": "git+https://github.com/Brightspace/d2l-galen-utils.git#v0.2.2",
+    "d2l-galen-utils": "git+https://github.com/Brightspace/d2l-galen-utils.git#v0.2.4",
     "galenframework": "^2.3.2",
     "phantomjs-prebuilt": "^2.1.4",
     "polylint": "^2.10.0",
