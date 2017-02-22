@@ -18,14 +18,14 @@
   "author": "D2L Corporation",
   "license": "Apache-2.0",
   "devDependencies": {
-    "bower": "^1.7.7",
+    "bower": "^1.8.0",
     "chromedriver": "^2.27.3",
-    "concurrently": "^3.1.0",
+    "concurrently": "^3.3.0",
     "d2l-galen-utils": "git+https://github.com/Brightspace/d2l-galen-utils.git#v0.2.4",
     "galenframework": "^2.3.2",
     "polylint": "^2.10.0",
     "polymer-cli": "^0.16.0",
     "sauceconnect-runner": "git+https://github.com/Brightspace/sauceconnect-runner.git#v0.3.0",
-    "vulcanize": "^1.14.7"
+    "vulcanize": "^1.15.3"
   }
 }
