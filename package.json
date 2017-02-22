@@ -3,14 +3,8 @@
   "description": "Polymer-based web components and shared styles for applying D2L typography",
   "private": true,
   "scripts": {
-    "prebuild": "cpy *.html ./bower_components/temp",
-    "build": "vulcanize ./bower_components/temp/d2l-typography.html > ./test/perceptual/d2l-typography.html.ignore",
-    "pregalen": "npm run build",
     "galen": "npm run test:galen:sauce",
-    "postbuild": "rimraf ./bower_components/temp",
     "postinstall": "bower install",
-    "prescreenshot": "npm run build",
-    "screenshot": "phantomjs ./screenshots/build.js",
     "test": "polylint -i d2l-typography-shared-styles.html && npm run galen",
     "galen:local:run": "d2l-galen test typography.test.js -g factory:local",
     "galen:sauce:run": "sc-run -- d2l-galen test typography.test.js -g factory:sauce -i SAUCE_USERNAME SAUCE_ACCESS_KEY TRAVIS_REPO_SLUG TRAVIS_BUILD_NUMBER -- -p4",
@@ -26,13 +20,10 @@
   "devDependencies": {
     "bower": "^1.7.7",
     "concurrently": "^3.1.0",
-    "cpy-cli": "^1.0.0",
     "d2l-galen-utils": "git+https://github.com/Brightspace/d2l-galen-utils.git#v0.2.4",
     "galenframework": "^2.3.2",
-    "phantomjs-prebuilt": "^2.1.4",
     "polylint": "^2.10.0",
     "polymer-cli": "^0.16.0",
-    "rimraf": "^2.5.2",
     "sauceconnect-runner": "git+https://github.com/Brightspace/sauceconnect-runner.git#v0.3.0",
     "vulcanize": "^1.14.7"
   }
