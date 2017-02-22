@@ -1,3 +1,4 @@
 bower_components/
 node_modules/
 test/perceptual/d2l-typography.html.ignore
+reports

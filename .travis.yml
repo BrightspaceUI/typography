@@ -4,7 +4,11 @@ addons:
   apt:
     packages:
     - oracle-java8-installer
-
+  jwt:
+    secure: iTaeM0EflH3+O6TxrURkAaQe4NHPOCyes94Gf15zsy77Uwow9tl1xT88udM5aHLeSO4e/4KK+vJeIPIwpNZVfhU6k6nI+Xd99t8bDo3BZ9hkFEp8uRam9Fr7uHZhQ15iBZX0i6tVYOEPEoIsW2r7oRJoRnEcCQX2KDCKMao7u6c=
 before_install:
 - export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 - export PATH=$JAVA_HOME/bin:$PATH
+env:
+  global:
+    SAUCE_USERNAME: Desire2Learn
