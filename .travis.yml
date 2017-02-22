@@ -9,6 +9,9 @@ addons:
 before_install:
 - export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 - export PATH=$JAVA_HOME/bin:$PATH
+script:
+- npm run test:lint
+- npm run test:galen:sauce
 env:
   global:
     SAUCE_USERNAME: Desire2Learn
