@@ -5,7 +5,7 @@ addons:
     packages:
     - oracle-java8-installer
   jwt:
-    secure: WQNzyKAhga24X/hdMIOIPBcr4na1Ihzxd45M7J6b22sfArkvKkt1UrNt5tpiVgp/ZxfzDNDkU7ZBjppssCPm/+C7pTHURou8P5XX22oDVCgbTe1Y24ztoauZ0rBf4vjXqcdtc1ws0jApST3Z99in/P3pzt+71wG7G2BN6fujj20=
+    secure: iTaeM0EflH3+O6TxrURkAaQe4NHPOCyes94Gf15zsy77Uwow9tl1xT88udM5aHLeSO4e/4KK+vJeIPIwpNZVfhU6k6nI+Xd99t8bDo3BZ9hkFEp8uRam9Fr7uHZhQ15iBZX0i6tVYOEPEoIsW2r7oRJoRnEcCQX2KDCKMao7u6c=
 before_install:
 - export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 - export PATH=$JAVA_HOME/bin:$PATH
