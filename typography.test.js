@@ -49,8 +49,8 @@ var mobileBrowsers = {
 	})
 };
 
-var endpoint = 'http://localhost:8080/components/d2l-typography/test/perceptual/typography.html';
-var spec = 'test/font-classes.gspec';
+var endpoint = 'http://localhost:8080/components/d2l-typography/test/acceptance/typography.html';
+var spec = 'test/acceptance/font-classes.gspec';
 
 polymerTests(browsers, function(test) {
 	test('typography-mobile', {
