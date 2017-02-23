@@ -18,11 +18,6 @@ var browsers = {
 		version: '11',
 		platform: 'WIN10'
 	}),
-	ie10Windows: new SauceBrowserFactory({
-		browser: 'internet explorer',
-		version: '10',
-		platform: 'WIN8'
-	}),
 	edgeWindows: new SauceBrowserFactory({
 		browser: 'microsoftedge',
 		platform: 'WIN10'
