@@ -6,10 +6,13 @@
     "postinstall": "bower install",
     "test": "npm run test:lint && npm run test:galen:local",
     "test:lint": "polymer lint --input d2l-typography.html d2l-typography-shared-styles.html",
-    "galen:local:run": "d2l-galen test typography.test.js -g factory:local",
-    "galen:sauce:run": "sc-run -- d2l-galen test typography.test.js -g factory:sauce -i SAUCE_USERNAME SAUCE_ACCESS_KEY TRAVIS_REPO_SLUG TRAVIS_BUILD_NUMBER -- -p4",
+    "galen:local:run": "d2l-galen test test/acceptance/typography.test.js -g factory:local",
+    "galen:local:dump": "d2l-galen dump test/acceptance/typography.test.js -d test/acceptance/dumps -g factory:local",
+    "galen:sauce:run": "sc-run -- d2l-galen test test/acceptance/typography.test.js -g factory:sauce -i SAUCE_USERNAME SAUCE_ACCESS_KEY TRAVIS_REPO_SLUG TRAVIS_BUILD_NUMBER -- -p4",
     "test:galen:local": "concurrently -p name -n serve,galen -s first -k \"polymer serve\" \"npm run galen:local:run\"",
-    "test:galen:sauce": "concurrently -p name -n serve,galen -s first -k \"polymer serve\" \"npm run galen:sauce:run\""
+    "test:galen:sauce": "concurrently -p name -n serve,galen -s first -k \"polymer serve\" \"npm run galen:sauce:run\"",
+    "predump": "rimraf test/acceptance/dumps",
+    "dump": "concurrently -p name -n serve,galen -s first -k \"polymer serve\" \"npm run galen:local:dump\""
   },
   "repository": {
     "type": "git",

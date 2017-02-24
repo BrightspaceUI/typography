@@ -1,10 +1,10 @@
 @objects
 	paragraph				.paragraph
 	dyslexic				.d2l-dyslexic
-	arabic					#arabic
-	chinese					#chinese
-	korean					#korean
-	japanese				#japanese
+	lang-arabic					#arabic
+	lang-chinese					#chinese
+	lang-korean					#korean
+	lang-japanese				#japanese
 	heading-1-class-*       .d2l-heading-1
 	heading-2-class-*       .d2l-heading-2
 	heading-3-class-*       .d2l-heading-3
@@ -39,13 +39,13 @@
 			css margin-left is "0px"
 		dyslexic:
 			css font-family matches "(?i)['|\"]open dyslexic['|\"],\\s*sans-serif"
-		arabic:
+		lang-arabic:
 			css font-family matches "(?i)['|\"]arabic transparent['|\"],\\s*['|\"]arabic typesetting['|\"],\\s*['|\"]geeza pro['|\"],\\s*sans-serif"
-		chinese:
+		lang-chinese:
 			css font-family matches "(?i)['|\"]microsoft yahei['|\"],\\s*['|\"]hiragino sans gb['|\"],\\s*sans-serif"
-		korean:
+		lang-korean:
 			css font-family matches "(?i)['|\"]apple sd gothic neo['|\"],\\s*['|\"]*dotum['|\"]*,\\s*sans-serif"
-		japanese:
+		lang-japanese:
 			css font-family matches "(?i)['|\"]hiragino kaku gothic pro['|\"],\\s*['|\"]*meiyro['|\"]*,\\s*sans-serif"
 		&all:
 			css color matches "#565a5c|rgba\\(86, 90, 92, 1\\)|rgb\\(86, 90, 92\\)"
