@@ -1,20 +1,20 @@
 @objects
 	paragraph				.paragraph
 	dyslexic				.d2l-dyslexic
-	lang-arabic					#arabic
-	lang-chinese					#chinese
-	lang-korean					#korean
-	lang-japanese				#japanese
+	lang-arabic				#arabic
+	lang-chinese			#chinese
+	lang-korean				#korean
+	lang-japanese			#japanese
 	heading-1-class-*       .d2l-heading-1
 	heading-2-class-*       .d2l-heading-2
 	heading-3-class-*       .d2l-heading-3
 	heading-4-class-*       .d2l-heading-4
 	standard-class          .d2l-body-standard
-	standard-mixin			d2l-typography-test-standard
+	standard-mixin			.standard-mixin
 	compact-class           .d2l-body-compact
-	compact-mixin			d2l-typography-test-compact
+	compact-mixin			.compact-mixin
 	small-class             .d2l-body-small
-	small-mixin				d2l-typography-test-small
+	small-mixin				.small-mixin
 
 @groups
 	heading-1s	heading-1-class-1, heading-1-class-2, heading-1-class-3, heading-1-class-4

@@ -3,13 +3,16 @@
   "description": "Polymer-based web components and shared styles for applying D2L typography",
   "private": true,
   "scripts": {
+    "build:sass": "node-sass --output-style expanded ./test/acceptance/typography.css.scss ./test/acceptance/typography.css",
     "postinstall": "bower install",
     "test": "npm run test:lint && npm run test:galen:local",
     "test:lint": "polymer lint --input d2l-typography.html d2l-typography-shared-styles.html",
     "galen:local:run": "d2l-galen test test/acceptance/typography.test.js -g factory:local",
     "galen:local:dump": "d2l-galen dump test/acceptance/typography.test.js -d test/acceptance/dumps -g factory:local",
     "galen:sauce:run": "sc-run -- d2l-galen test test/acceptance/typography.test.js -g factory:sauce -i SAUCE_USERNAME SAUCE_ACCESS_KEY TRAVIS_REPO_SLUG TRAVIS_BUILD_NUMBER -- -p4",
+    "pretest:galen:local": "npm run build:sass",
     "test:galen:local": "concurrently -p name -n serve,galen -s first -k \"polymer serve\" \"npm run galen:local:run\"",
+    "pretest:galen:sauce": "npm run build:sass",
     "test:galen:sauce": "concurrently -p name -n serve,galen -s first -k \"polymer serve\" \"npm run galen:sauce:run\"",
     "predump": "rimraf test/acceptance/dumps",
     "dump": "concurrently -p name -n serve,galen -s first -k \"polymer serve\" \"npm run galen:local:dump\""
@@ -26,6 +29,7 @@
     "concurrently": "^3.3.0",
     "d2l-galen-utils": "git+https://github.com/Brightspace/d2l-galen-utils.git#v0.2.4",
     "galenframework": "^2.3.2",
+    "node-sass": "^4.5.0",
     "polymer-cli": "^0.17.0",
     "sauceconnect-runner": "git+https://github.com/Brightspace/sauceconnect-runner.git#v0.3.0",
     "vulcanize": "^1.15.3"
