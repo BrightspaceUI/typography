@@ -36,19 +36,6 @@ var browsers = {
 	})
 };
 
-var mobileBrowsers = {
-	chromeNexus5: new ChromeBrowserFactory({
-		tags: ['mobile'],
-		desiredCapabilities: {
-			chromeOptions: {
-				mobileEmulation: {
-					deviceName: 'Google Nexus 5'
-				}
-			}
-		}
-	})
-};
-
 var endpoint = 'http://localhost:8080/components/d2l-typography/test/acceptance/typography.html';
 var spec = 'test/acceptance/font-classes.gspec';
 
@@ -65,12 +52,5 @@ polymerTests(browsers, function(test) {
 		spec: spec,
 		size: '1024x768',
 		tags: ['desktop']
-	});
-});
-
-polymerTests(mobileBrowsers, function(test) {
-	test('typography', {
-		endpoint: endpoint,
-		spec: spec
 	});
 });
