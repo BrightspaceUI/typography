@@ -6,20 +6,23 @@
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
 		<script src="../../../webcomponentsjs/webcomponents-lite.min.js"></script>
 		<link rel="import" href="../../d2l-typography.html">
-		<link rel="import" href="mixin-elems.html">
-		<style is="custom-style" include="d2l-typography">
-			html {
-				font-size: 20px;
-			}
-		</style>
+		<custom-style include="d2l-typography">
+			<style is="custom-style" include="d2l-typography">
+				html {
+					font-size: 20px;
+				}
+			</style>
+		</custom-style>
 	</head>
 	<body class="d2l-typography" unresolved>
 		<p class="paragraph">
 			Grumpy wizards make toxic brew for the evil Queen and Jack.
 		</p>
+		<hr />
 		<p class="d2l-dyslexic">
 			Grumpy wizards make toxic brew for the evil Queen and Jack.
 		</p>
+		<hr />
 		<p lang="ar" id="arabic">
 			المعالجات غاضب تجعل المشروب السام للملكة الشر وجاك.
 		</p>
@@ -32,6 +35,7 @@
 		<p lang="ja" id="japanese">
 			厄介な魔法使いは邪悪な女王とジャックのために有毒な醸造所を作る。
 		</p>
+		<hr />
 		<h1 class="d2l-heading-1">Heading 1 as &lt;h1&gt;</h1>
 		<h2 class="d2l-heading-1">Heading 1 as &lt;h2&gt;</h2>
 		<h3 class="d2l-heading-1">Heading 1 as &lt;h3&gt;</h3>
@@ -53,21 +57,14 @@
 			<p class="d2l-body-standard">
 				Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.
 			</p>
-			<d2l-typography-test-standard class="standard-mixin">
-				<p>Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
-			</d2l-typography-test-standard>
 		</div>
 		<hr />
 		<div class="d2l-body-compact">Lorem Ipsum</div>
-		<d2l-typography-test-compact class="compact-mixin">Lorem Ipsum</d2l-typography-test-compact>
 		<hr />
 		<div style="width: 435px">
 			<p class="d2l-body-small">
 				Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.
 			</p>
-			<d2l-typography-test-small class="small-mixin">
-				<p>Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
-			</d2l-typography-test-small>
 		</div>
 	</body>
 </html>
