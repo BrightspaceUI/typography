@@ -37,13 +37,13 @@ var browsers = {
 };
 
 var endpoint = 'http://localhost:8080/components/d2l-typography/test/acceptance/typography.html';
-var spec = 'test/acceptance/font-classes.gspec';
+var spec = 'test/acceptance/typography.gspec';
 
 polymerTests(browsers, function(test) {
 	test('typography-mobile', {
 		endpoint: endpoint,
 		spec: spec,
-		size: '320x600',
+		size: '420x600',
 		tags: ['mobile']
 	});
 
