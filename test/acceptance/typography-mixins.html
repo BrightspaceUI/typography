@@ -2,18 +2,16 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Typography</title>
+		<title>Typography Mixins</title>
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
-		<script src="../../../webcomponentsjs/webcomponents-lite.min.js"></script>
-		<link rel="import" href="../../d2l-typography.html">
-		<link rel="import" href="mixin-elems.html">
-		<style is="custom-style" include="d2l-typography">
+		<link rel="stylesheet" href="typography.css">
+		<style>
 			html {
 				font-size: 20px;
 			}
 		</style>
 	</head>
-	<body class="d2l-typography" unresolved>
+	<body class="custom-typography">
 		<p class="paragraph">
 			Grumpy wizards make toxic brew for the evil Queen and Jack.
 		</p>
@@ -50,24 +48,17 @@
 		<h3 class="d2l-heading-4">Heading 4 as &lt;h4&gt;</h4>
 		<hr />
 		<div style="width: 435px;">
-			<p class="d2l-body-standard">
+			<p class="d2l-body-standard standard-mixin">
 				Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.
 			</p>
-			<d2l-typography-test-standard class="standard-mixin">
-				<p>Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
-			</d2l-typography-test-standard>
 		</div>
 		<hr />
-		<div class="d2l-body-compact">Lorem Ipsum</div>
-		<d2l-typography-test-compact class="compact-mixin">Lorem Ipsum</d2l-typography-test-compact>
+		<div class="d2l-body-compact compact-mixin">Lorem Ipsum</div>
 		<hr />
 		<div style="width: 435px">
-			<p class="d2l-body-small">
+			<p class="d2l-body-small small-mixin">
 				Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.
 			</p>
-			<d2l-typography-test-small class="small-mixin">
-				<p>Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
-			</d2l-typography-test-small>
 		</div>
 	</body>
 </html>
