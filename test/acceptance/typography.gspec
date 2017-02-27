@@ -1,37 +1,32 @@
 @objects
-	paragraph				.paragraph
-	dyslexic				.d2l-dyslexic
-	lang-arabic				#arabic
-	lang-chinese			#chinese
-	lang-korean				#korean
-	lang-japanese			#japanese
-	heading-1-class-*       .d2l-heading-1
-	heading-2-class-*       .d2l-heading-2
-	heading-3-class-*       .d2l-heading-3
-	heading-4-class-*       .d2l-heading-4
-	standard-class          .d2l-body-standard
-	standard-mixin			.standard-mixin
-	compact-class           .d2l-body-compact
-	compact-mixin			.compact-mixin
-	small-class             .d2l-body-small
-	small-mixin				.small-mixin
+	paragraph		.paragraph
+	dyslexic		.d2l-dyslexic
+	lang-arabic		#arabic
+	lang-chinese	#chinese
+	lang-korean		#korean
+	lang-japanese	#japanese
+	heading-1-*		.d2l-heading-1
+	heading-2-*		.d2l-heading-2
+	heading-3-*		.d2l-heading-3
+	heading-4-*		.d2l-heading-4
+	standard		.d2l-body-standard
+	compact			.d2l-body-compact
+	small			.d2l-body-small
 
 @groups
-	heading-1s	heading-1-class-1, heading-1-class-2, heading-1-class-3, heading-1-class-4
-	heading-2s	heading-2-class-1, heading-2-class-2, heading-2-class-3, heading-2-class-4
-	heading-3s	heading-3-class-1, heading-3-class-2, heading-3-class-3, heading-3-class-4
-	heading-4s	heading-4-class-1, heading-4-class-2, heading-4-class-3, heading-4-class-4
-	standard	standard-class, standard-mixin
-	compact		compact-class, compact-mixin
-	small		small-class, small-mixin
-	all			paragraph, &heading-1s, &heading-2s, &heading-3s, &heading-4s, &standard, &compact, &small
+	heading-1s	heading-1-1, heading-1-2, heading-1-3, heading-1-4
+	heading-2s	heading-2-1, heading-2-2, heading-2-3, heading-2-4
+	heading-3s	heading-3-1, heading-3-2, heading-3-3, heading-3-4
+	heading-4s	heading-4-1, heading-4-2, heading-4-3, heading-4-4
 
 = Typography classes =
 	@on desktop
 		paragraph:
+			css color matches "#565a5c|rgba\\(86, 90, 92, 1\\)|rgb\\(86, 90, 92\\)"
 			css font-family matches "(?i)['|\"]*lato['|\"]*,\\s*['|\"]lucida sans unicode['|\"],\\s*['|\"]lucida grande['|\"],\\s*sans-serif"
 			css font-size is "19px"
 			css font-weight matches "normal|400"
+			css letter-spacing matches "0\.2(0+.*)?px"
 			css line-height is "28px"
 			css margin-top is "20px"
 			css margin-right is "0px"
@@ -47,9 +42,6 @@
 			css font-family matches "(?i)['|\"]apple sd gothic neo['|\"],\\s*['|\"]*dotum['|\"]*,\\s*sans-serif"
 		lang-japanese:
 			css font-family matches "(?i)['|\"]hiragino kaku gothic pro['|\"],\\s*['|\"]*meiyro['|\"]*,\\s*sans-serif"
-		&all:
-			css color matches "#565a5c|rgba\\(86, 90, 92, 1\\)|rgb\\(86, 90, 92\\)"
-			css letter-spacing matches "0\.2(0+.*)?px"
 		&heading-1s:
 			css font-size is "40px"
 			css font-weight matches "normal|400"
@@ -82,13 +74,13 @@
 			css margin-right is "0px"
 			css margin-bottom is "30px"
 			css margin-left is "0px"
-		&standard:
+		standard:
 			css font-size is "19px"
 			css line-height is "28px"
-		&compact:
+		compact:
 			css font-size is "16px"
 			css line-height is "24px"
-		&small:
+		small:
 			css font-size is "14px"
 			css line-height is "21px"
 	@on mobile
@@ -104,12 +96,12 @@
 		&heading-4s:
 			css font-size is "16px"
 			css line-height is "24px"
-		standard-class:
+		standard:
 			css font-size is "16px"
 			css line-height is "24px"
-		compact-class:
+		compact:
 			css font-size is "16px"
 			css line-height is "24px"
-		small-class:
+		small:
 			css font-size is "12px"
 			css line-height is "18px"
