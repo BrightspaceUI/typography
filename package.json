@@ -7,7 +7,6 @@
     "prebuild": "npm run clean",
     "build:sass": "node-sass --output-style expanded typography.css.scss typography.css",
     "build": "npm run build:sass",
-    "perceptual-diff": "percy snapshot test/",
     "postinstall": "bower install",
     "screenshot": "phantomjs ./screenshots/build.js",
     "pretest": "npm run build && cpy typography.css test",

@@ -1,16 +1,15 @@
 @import 'bower_components/vui-colors/colors.scss';
-@import 'px-to-base-rem.scss';
 
 @mixin vui-typography-font(
-		$line-height: 1.5
+		$line-height: 1.4rem
 	) {
 
 	color: $vui-color-ferrite;
 	font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-	font-size: 1rem;
-	font-weight: 300;
+	font-size: 0.95rem;
+	font-weight: 400;
 	line-height: $line-height;
-	letter-spacing: px-to-base-rem(0.3px);
+	letter-spacing: 0.01rem;
 
 	&.vui-dyslexic,
 	.vui-dyslexic {
