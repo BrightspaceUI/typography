@@ -1,6 +1,6 @@
 {
   "name": "d2l-typography",
-  "description": "Polymer-based web components and shared styles for applying D2L typography",
+  "description": "Polymer and Sass custom styles/mixins for applying D2L typography",
   "private": true,
   "scripts": {
     "build:sass": "node-sass --output-style expanded ./test/acceptance/typography.css.scss ./test/acceptance/typography.css",

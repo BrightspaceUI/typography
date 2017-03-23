@@ -1,6 +1,6 @@
 {
   "name": "d2l-typography",
-  "description": "Polymer-based web components and shared styles for applying D2L typography",
+  "description": "Polymer and Sass custom styles/mixins for applying D2L typography",
   "main": "d2l-typography.html",
   "license": "Apache-2.0",
   "ignore": [
