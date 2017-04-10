@@ -31,7 +31,6 @@
     "galenframework": "^2.3.2",
     "node-sass": "^4.5.0",
     "polymer-cli": "^0.17.0",
-    "sauceconnect-runner": "git+https://github.com/Brightspace/sauceconnect-runner.git#v0.3.0",
-    "vulcanize": "^1.15.3"
+    "sauceconnect-runner": "git+https://github.com/Brightspace/sauceconnect-runner.git#v0.3.0"
   }
 }
