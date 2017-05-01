@@ -37,6 +37,12 @@ Small body can be used to set font properties for text that needs to be smaller 
 
 ![screenshot of small text](/screenshots/small.png?raw=true)
 
+### Inline Supporting Text
+
+Inline supporting text is never used by itself; always in support of another piece of content on the page. Used for inline assistive text in forms, and also for specifying metadata or properties of an existing piece of content.
+
+![screenshot of inline supporting text](/screenshots/inline.png?raw=true)
+
 ### Headings
 
 There are four available heading styles. These would typically be applied to the `<h1>`, `<h2>`, `<h3>` and `<h4>` HTML elements, though it's not a requirement.
@@ -61,7 +67,7 @@ body {
 }
 ```
 
-Mixins are also available for standard body, compact body, small body and heading styles:
+Mixins are also available for standard body, compact body, small body, inline supporting text and heading styles:
 
 ```sass
 .standard {
@@ -74,6 +80,9 @@ Mixins are also available for standard body, compact body, small body and headin
 
 .small {
 	@include d2l-body-small();
+}
+.inline {
+	@include d2l-inline-text();
 }
 
 h1 {
@@ -112,7 +121,7 @@ The `d2l-typography` class can be used to set base font properties, typically ap
 </body>
 ```
 
-Additional CSS classes are available for standard body, compact body, small body and headings:
+Additional CSS classes are available for standard body, compact body, small body, inline supporting text and headings:
 
 ```html
 <!-- standard body -->
@@ -127,6 +136,10 @@ Additional CSS classes are available for standard body, compact body, small body
 <div class="d2l-body-compact">
 	...
 </div>
+<!-- inline body -->
+<div class="d2l-inline-text">
+	...
+</div>
 <!-- headings -->
 <h1 class="d2l-heading-1">...</h1>
 <h2 class="d2l-heading-2">...</h2>
@@ -136,7 +149,7 @@ Additional CSS classes are available for standard body, compact body, small body
 
 ### Responsive Breakpoint
 
-The fonts for headings, standard body, and compact body will all be styled to be smaller at a responsive breakpoint, defined as when the viewport width is 615px or smaller.
+The fonts for headings, standard body, compact body and inline supporting text will all be styled to be smaller at a responsive breakpoint, defined as when the viewport width is 615px or smaller.
 
 ### Note About Font Size
 
