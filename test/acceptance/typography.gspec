@@ -81,8 +81,9 @@
 			css font-size is "16px"
 			css line-height is "24px"
 		small:
+			css color matches "#72777a|rgba\\(114, 119, 122, 1\\)|rgb\\(114, 119, 122\\)"
 			css font-size is "14px"
-			css line-height is "21px"
+			css line-height is "20px"
 	@on mobile
 		&heading-1s:
 			css font-size is "30px"

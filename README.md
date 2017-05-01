@@ -33,7 +33,7 @@ The compact style is not recommended for blocks of readable text, particularly i
 
 ### Small Body
 
-Small body can be used to set font properties for text that needs to be smaller than the standard body style. Unlike  compact body, this style is appropriate for blocks of readable text.
+Never used by itself; always in support of another piece of content on the page. Used for inline assistive text in forms, and for specifying metadata or properties of an existing piece of content.
 
 ![screenshot of small text](/screenshots/small.png?raw=true)
 
