@@ -24,15 +24,20 @@ var browsers = {
 	}),
 	chromeMac: new SauceBrowserFactory({
 		browser: 'Chrome',
-		platform: 'EL_CAPITAN'
+		platform: 'SIERRA',
+		/* crashes during screenshot command on > 2.24
+			https://bugs.chromium.org/p/chromedriver/issues/detail?id=1770# */
+		desiredCapabilities: {
+			chromedriverVersion: '2.24'
+		}
 	}),
 	safariMac: new SauceBrowserFactory({
 		browser: 'Safari',
-		platform: 'EL_CAPITAN'
+		platform: 'SIERRA'
 	}),
 	firefoxMac: new SauceBrowserFactory({
 		browser: 'Firefox',
-		platform: 'EL_CAPITAN'
+		platform: 'SIERRA'
 	})
 };
 
