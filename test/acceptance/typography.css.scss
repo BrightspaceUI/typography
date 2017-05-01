@@ -18,6 +18,10 @@
 	@include d2l-body-small();
 }
 
+.d2l-inline-text {
+	@include d2l-inline-text();
+}
+
 .d2l-heading-1 {
 	@include d2l-heading-1();
 }
