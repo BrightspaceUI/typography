@@ -41,8 +41,8 @@ var browsers = {
 	})
 };
 
-var endpoint = 'http://localhost:8080/components/d2l-typography/test/acceptance/typography.html';
-var endpointMixins = 'http://localhost:8080/components/d2l-typography/test/acceptance/typography-mixins.html';
+var endpoint = 'http://localhost:8000/components/d2l-typography/test/acceptance/typography.html';
+var endpointMixins = 'http://localhost:8000/components/d2l-typography/test/acceptance/typography-mixins.html';
 var spec = 'test/acceptance/typography.gspec';
 
 polymerTests(browsers, function(test) {

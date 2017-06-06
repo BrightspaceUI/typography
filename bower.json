@@ -13,7 +13,21 @@
     "package.json"
   ],
   "dependencies": {
-    "d2l-colors": "^2.2.3",
-    "polymer": "^1.7.0"
+    "polymer": "Polymer/polymer#^1.9.1 || ^2.0.0",
+    "d2l-colors": "^3.0.0"
+  },
+  "variants": {
+    "1.x": {
+      "dependencies": {
+        "polymer": "Polymer/polymer#^1.9.1",
+        "d2l-colors": "^3.0.0"
+      },
+      "resolutions": {
+        "webcomponentsjs": "^0.7"
+      }
+    }
+  },
+  "resolutions": {
+    "webcomponentsjs": "^v1.0.0"
   }
 }
