@@ -1,4 +1,5 @@
 # d2l-typography
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/BrightspaceUI/typography)
 [![Bower version][bower-image]][bower-url]
 [![Build status][ci-image]][ci-url]
 
@@ -153,6 +154,6 @@ html {
 See the [Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
 
 [bower-url]: http://bower.io/search/?q=d2l-typography
-[bower-image]: https://img.shields.io/bower/v/d2l-typography.svg
+[bower-image]: https://badge.fury.io/bo/d2l-typography.svg
 [ci-url]: https://travis-ci.org/BrightspaceUI/typography
 [ci-image]: https://img.shields.io/travis-ci/BrightspaceUI/typography.svg
