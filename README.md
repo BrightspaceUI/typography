@@ -84,6 +84,10 @@ Mixins are also available for standard body, compact body, small body and headin
 	@include d2l-body-small();
 }
 
+.label {
+	@include d2l-label-text();
+}
+
 h1 {
 	@include d2l-heading-1();
 }
@@ -131,6 +135,9 @@ Additional CSS classes are available for standard body, compact body, small body
 <div class="d2l-body-small">
 	...
 </div>
+<!-- label text -->
+<label class="d2l-label-text">Lorem Ipsum</label>
+
 <!-- compact body -->
 <div class="d2l-body-compact">
 	...
