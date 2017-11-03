@@ -38,6 +38,13 @@ Never used by itself; always in support of another piece of content on the page.
 
 ![screenshot of small text](/screenshots/small.png?raw=true)
 
+### Label Text
+
+Used for labels. Its font size/line spacing is relative to the root font
+and respond to viewport width changes.
+
+![screenshot of small text](/screenshots/label.png?raw=true)
+
 ### Headings
 
 There are four available heading styles. These would typically be applied to the `<h1>`, `<h2>`, `<h3>` and `<h4>` HTML elements, though it's not a requirement.
@@ -75,6 +82,10 @@ Mixins are also available for standard body, compact body, small body and headin
 
 .small {
 	@include d2l-body-small();
+}
+
+.label {
+	@include d2l-label-text();
 }
 
 h1 {
@@ -124,6 +135,9 @@ Additional CSS classes are available for standard body, compact body, small body
 <div class="d2l-body-small">
 	...
 </div>
+<!-- label text -->
+<label class="d2l-label-text">Lorem Ipsum</label>
+
 <!-- compact body -->
 <div class="d2l-body-compact">
 	...
