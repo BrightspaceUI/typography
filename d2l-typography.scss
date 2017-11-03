@@ -162,13 +162,13 @@
 }
 
 @mixin d2l-label-text() {
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 0.8rem;
+	line-height: 1rem;
 	font-weight: 700;
 	letter-spacing: 0.2px;
 	@media (max-width: 615px) {
-		font-size: 12px;
-		line-height: 18px;
+		font-size: 0.7rem;
+		line-height: 0.9rem;
 		font-weight: 700;
 		letter-spacing: 0.2px;
 	}
