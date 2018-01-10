@@ -10,7 +10,8 @@
     ".gitattributes",
     ".gitignore",
     ".travis.yml",
-    "package.json"
+    "package.json",
+    "polymer.json"
   ],
   "dependencies": {
     "polymer": "1 - 2",
