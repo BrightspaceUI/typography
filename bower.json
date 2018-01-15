@@ -13,7 +13,10 @@
     "package.json"
   ],
   "dependencies": {
-    "d2l-colors": "^2.2.3",
-    "polymer": "^1.7.0"
+    "d2l-colors": "^3.1.2",
+    "polymer": "^1.11.2"
+  },
+  "resolutions": {
+    "webcomponentsjs": "^0.7.24"
   }
 }
