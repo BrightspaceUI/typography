@@ -52,7 +52,7 @@ polymerTests(browsers, function(test) {
 	test('typography-desktop', {
 		endpoint: endpoint,
 		spec: spec,
-		size: '1900x1200',
+		size: '1024x768',
 		tags: ['desktop']
 	});
 
@@ -66,7 +66,7 @@ polymerTests(browsers, function(test) {
 	test('typography-mixins-desktop', {
 		endpoint: endpointMixins,
 		spec: spec,
-		size: '1900x1200',
+		size: '1024x768',
 		tags: ['desktop']
 	});
 });
