@@ -25,7 +25,7 @@ var browsers = {
 	chromeMac: new SauceBrowserFactory({
 		browser: 'Chrome',
 		platform: 'SIERRA',
-		size: '1920x1200'
+		size: '1900x1200'
 	}),
 	safariMac: new SauceBrowserFactory({
 		browser: 'Safari',
@@ -52,7 +52,7 @@ polymerTests(browsers, function(test) {
 	test('typography-desktop', {
 		endpoint: endpoint,
 		spec: spec,
-		size: '1920x1080',
+		size: '1900x1200',
 		tags: ['desktop']
 	});
 
@@ -66,7 +66,7 @@ polymerTests(browsers, function(test) {
 	test('typography-mixins-desktop', {
 		endpoint: endpointMixins,
 		spec: spec,
-		size: '1920x1080',
+		size: '1900x1200',
 		tags: ['desktop']
 	});
 });
