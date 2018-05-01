@@ -25,6 +25,8 @@ var browsers = {
 	chromeMac: new SauceBrowserFactory({
 		browser: 'Chrome',
 		platform: 'SIERRA',
+		/* fails sometimes on resize without initial size being set. See:
+			https://bugs.chromium.org/p/chromedriver/issues/detail?id=2173 */
 		size: '1900x1200'
 	}),
 	safariMac: new SauceBrowserFactory({
