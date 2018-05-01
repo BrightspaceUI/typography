@@ -24,7 +24,8 @@ var browsers = {
 	}),
 	chromeMac: new SauceBrowserFactory({
 		browser: 'Chrome',
-		platform: 'SIERRA'
+		platform: 'SIERRA',
+		size: '1920x1200'
 	}),
 	safariMac: new SauceBrowserFactory({
 		browser: 'Safari',
