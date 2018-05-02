@@ -29,7 +29,10 @@ var browsers = {
 			https://bugs.chromium.org/p/chromedriver/issues/detail?id=2173 */
 		size: '1900x1200',
 		desiredCapabilities: {
-			screenResolution: '2360x1770'
+			screenResolution: '2360x1770',
+			'ChromeOptions.CAPABILITY': {
+			  'args': ['--window-size=1900x1200']
+			}
 		}
 	}),
 	safariMac: new SauceBrowserFactory({
