@@ -30,7 +30,7 @@ var browsers = {
 		size: '1900x1200',
 		desiredCapabilities: {
 			screenResolution: '2360x1770',
-			'ChromeOptions.CAPABILITY': {
+			'chromeOptions': {
 			  'args': ['--window-size=1900x1200']
 			}
 		}
