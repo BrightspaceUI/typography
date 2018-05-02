@@ -24,7 +24,11 @@ var browsers = {
 	}),
 	chromeMac: new SauceBrowserFactory({
 		browser: 'Chrome',
-		platform: 'SIERRA'
+		platform: 'SIERRA',
+		desiredCapabilities: {
+			version: '59.0',
+			chromedriverVersion: '2.29'
+		}
 	}),
 	safariMac: new SauceBrowserFactory({
 		browser: 'Safari',
