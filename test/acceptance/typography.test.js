@@ -22,13 +22,12 @@ var browsers = {
 		browser: 'microsoftedge',
 		platform: 'WIN10'
 	}),
-	chromeMac: new ChromeBrowserFactory({
+	chromeMac: new SauceBrowserFactory({
+		browser: 'Chrome',
+		version: '60.0',
 		platform: 'SIERRA',
 		desiredCapabilities: {
-			screenResolution: '2360x1770',
-			chromeOptions: {
-			  'args': ['--window-size=1900x1200']
-			}
+			chromedriverVersion: '2.29'
 		}
 	}),
 	safariMac: new SauceBrowserFactory({
