@@ -30,9 +30,7 @@ var browsers = {
 		size: '1900x1200',
 		desiredCapabilities: {
 			screenResolution: '2360x1770',
-			'chromeOptions': {
-			  'args': ['--window-size=1900x1200']
-			}
+			'chromeOptions.args[0]': '--window-size=1900x1200'
 		}
 	}),
 	safariMac: new SauceBrowserFactory({
