@@ -27,7 +27,10 @@ var browsers = {
 		platform: 'SIERRA',
 		/* fails sometimes on resize without initial size being set. See:
 			https://bugs.chromium.org/p/chromedriver/issues/detail?id=2173 */
-		size: '1900x1200'
+		size: '1900x1200',
+		desiredCapabilities: {
+			screenResolution: '2360x1770'
+		}
 	}),
 	safariMac: new SauceBrowserFactory({
 		browser: 'Safari',
