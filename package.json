@@ -26,7 +26,7 @@
   "devDependencies": {
     "chromedriver": "^2.27.3",
     "concurrently": "^3.3.0",
-    "d2l-galen-utils": "git+https://github.com/Brightspace/d2l-galen-utils.git#v0.2.4",
+    "d2l-galen-utils": "git+https://github.com/Brightspace/d2l-galen-utils.git#try-sauce",
     "galenframework": "^2.3.2",
     "node-sass": "^4.5.0",
     "polymer-cli": "^1.5.7",

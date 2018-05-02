@@ -22,15 +22,13 @@ var browsers = {
 		browser: 'microsoftedge',
 		platform: 'WIN10'
 	}),
-	chromeMac: new SauceBrowserFactory({
-		browser: 'Chrome',
+	chromeMac: new ChromeBrowserFactory({
 		platform: 'SIERRA',
-		/* fails sometimes on resize without initial size being set. See:
-			https://bugs.chromium.org/p/chromedriver/issues/detail?id=2173 */
-		size: '1900x1200',
 		desiredCapabilities: {
 			screenResolution: '2360x1770',
-			'chromeOptions.args[0]': '--window-size=1900x1200'
+			chromeOptions: {
+			  'args': ['--window-size=1900x1200']
+			}
 		}
 	}),
 	safariMac: new SauceBrowserFactory({
