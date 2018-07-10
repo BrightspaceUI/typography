@@ -3,3 +3,4 @@ bower_components/
 node_modules/
 reports
 bower-1.x.json
+package-lock.json
