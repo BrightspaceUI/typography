@@ -22,20 +22,8 @@ var browsers = {
 		browser: 'microsoftedge',
 		platform: 'WIN10'
 	}),
-	chromeMac: new SauceBrowserFactory({
-		browser: 'Chrome',
-		platform: 'SIERRA',
-		desiredCapabilities: {
-			version: '59.0',
-			chromedriverVersion: '2.29'
-		}
-	}),
 	safariMac: new SauceBrowserFactory({
 		browser: 'Safari',
-		platform: 'SIERRA'
-	}),
-	firefoxMac: new SauceBrowserFactory({
-		browser: 'Firefox',
 		platform: 'SIERRA'
 	})
 };
