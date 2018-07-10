@@ -5,8 +5,8 @@
   "scripts": {
     "build:sass": "node-sass --output-style expanded ./test/acceptance/typography.css.scss ./test/acceptance/typography.css",
     "postinstall": "polymer install --variants",
-    "test": "npm run test:lint && npm run test:galen:local",
-    "test:lint": "polymer lint --input d2l-typography.html d2l-typography-shared-styles.html",
+    "lint": "polymer lint -i *.html",
+    "test": "npm run lint && npm run test:galen:local",
     "galen:local:run": "d2l-galen test test/acceptance/typography.test.js -g factory:local",
     "galen:local:dump": "d2l-galen dump test/acceptance/typography.test.js -d test/acceptance/dumps -g factory:local",
     "galen:sauce:run": "sc-run -- d2l-galen test test/acceptance/typography.test.js -g factory:sauce -i SAUCE_USERNAME SAUCE_ACCESS_KEY TRAVIS_REPO_SLUG TRAVIS_BUILD_NUMBER -- -p4",
@@ -29,7 +29,7 @@
     "d2l-galen-utils": "git+https://github.com/Brightspace/d2l-galen-utils.git#v0.2.4",
     "galenframework": "^2.3.2",
     "node-sass": "^4.5.0",
-    "polymer-cli": "^1.5.7",
+    "polymer-cli": "^1.7.7",
     "sauce-connect-launcher": "^1.2.4",
     "sauceconnect-runner": "git+https://github.com/Brightspace/sauceconnect-runner.git#v0.3.0"
   }

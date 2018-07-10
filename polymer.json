@@ -1,6 +1,8 @@
 {
     "lint": {
       "rules": ["polymer-2-hybrid"],
-      "ignoreWarnings": []
+      "ignoreWarnings": [
+        "not-loadable"
+      ]
     }
 }
