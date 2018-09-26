@@ -2,8 +2,8 @@
 'use strict';
 
 var browsers = {
-	phantomjs: new LocalBrowserFactory({
-		browser: 'phantomjs'
+	chrome: new LocalBrowserFactory({
+		browser: 'chrome'
 	}),
 	chromeWindows: new SauceBrowserFactory({
 		browser: 'Chrome',
