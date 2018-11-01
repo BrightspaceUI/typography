@@ -5,8 +5,9 @@
   "scripts": {
     "build:sass": "node-sass --output-style expanded ./test/acceptance/typography.css.scss ./test/acceptance/typography.css",
     "postinstall": "polymer install --variants",
-    "lint": "polymer lint -i *.html",
-    "test": "npm run lint && npm run test:galen:local",
+    "test:lint": "npm run test:lint:wc",
+    "test:lint:wc": "polymer lint -i *.html",
+    "test": "npm run test:lint && npm run test:galen:local",
     "galen:local:run": "d2l-galen test test/acceptance/typography.test.js -g factory:local",
     "galen:local:dump": "d2l-galen dump test/acceptance/typography.test.js -d test/acceptance/dumps -g factory:local",
     "galen:sauce:run": "sc-run -- d2l-galen test test/acceptance/typography.test.js -g factory:sauce -i SAUCE_USERNAME SAUCE_ACCESS_KEY TRAVIS_REPO_SLUG TRAVIS_BUILD_NUMBER -- -p4",
