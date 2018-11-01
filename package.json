@@ -7,6 +7,7 @@
   "name": "d2l-typography",
   "scripts": {
     "build:sass": "node-sass --output-style expanded ./test/acceptance/typography.css.scss ./test/acceptance/typography.css",
+    "pretest:lint": "npm run build:sass",
     "test:lint": "npm run test:lint:wc && npm run test:lint:js",
     "test:lint:js": "eslint . --ext .js,.html test/**/*.js test/**/*.html demo/**/*.js demo/**/*.html",
     "test:lint:wc": "polymer lint",
