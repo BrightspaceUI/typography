@@ -1,7 +1,9 @@
-<link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../d2l-colors/d2l-colors.html">
-<link rel="import" href="d2l-typography-shared-styles.html">
-<dom-module id="d2l-typography">
+import '../@polymer/polymer/polymer-legacy.js';
+import '../d2l-colors/d2l-colors.js';
+import './d2l-typography-shared-styles.js';
+const $_documentContainer = document.createElement('template');
+
+$_documentContainer.innerHTML = `<dom-module id="d2l-typography">
 	<template>
 		<style>
 			@import url("https://s.brightspace.com/lib/fonts/0.4.0/fonts.css");
@@ -142,4 +144,6 @@
 
 		</style>
 	</template>
-</dom-module>
+</dom-module>`;
+
+document.head.appendChild($_documentContainer.content);
