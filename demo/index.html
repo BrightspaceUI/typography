@@ -4,11 +4,22 @@
 		<meta charset="utf-8">
 		<title>Typography Snapshot</title>
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
-		<script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-		<link rel="import" href="../d2l-typography.html">
+		<script src="../../@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+		<script type="module" src="../d2l-typography.js"></script>
 	</head>
 	<body class="d2l-typography" unresolved>
-		<custom-style include="d2l-typography">
+		<!-- FIXME(polymer-modulizer):
+		These imperative modules that innerHTML your HTML are
+		a hacky way to be sure that any mixins in included style
+		modules are ready before any elements that reference them are
+		instantiated, otherwise the CSS @apply mixin polyfill won't be
+		able to expand the underlying CSS custom properties.
+		See: https://github.com/Polymer/polymer-modulizer/issues/154
+		-->
+	<script type="module">
+const $_documentContainer = document.createElement('template');
+
+$_documentContainer.innerHTML = `<custom-style include="d2l-typography">
 			<style is="custom-style" include="d2l-typography">
 				html {
 					font-size: 20px;
@@ -24,9 +35,19 @@
 					text-align: center;
 				}
 			</style>
-		</custom-style>
-		<h1>Typography</h1>
-		<table>
+		</custom-style>`;
+
+document.body.appendChild($_documentContainer.content);
+</script>
+		<script type="module">
+const $_documentContainer = document.createElement('template');
+$_documentContainer.innerHTML = '<h1>Typography</h1>';
+document.body.appendChild($_documentContainer.content);
+</script>
+		<script type="module">
+const $_documentContainer = document.createElement('template');
+
+$_documentContainer.innerHTML = `<table>
 			<thead>
 				<tr>
 					<th>Element</th>
@@ -72,6 +93,9 @@
 					</td>
 				</tr>
 			</tbody>
-		</table>
+		</table>`;
+
+document.body.appendChild($_documentContainer.content);
+</script>
 	</body>
 </html>
