@@ -50,6 +50,6 @@
   "main": "d2l-typography.js",
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
-    "d2l-colors": "git+https://github.com/BrightspaceUI/colors.git#v4.0.0"
+    "d2l-colors": "BrightspaceUI/colors#semver:^4.0.0"
   }
 }
