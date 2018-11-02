@@ -1,14 +1,16 @@
 {
-  "name": "d2l-typography",
   "description": "Polymer and Sass custom styles/mixins for applying D2L typography",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrightspaceUI/typography.git"
+  },
+  "name": "d2l-typography",
   "scripts": {
     "build:sass": "node-sass --output-style expanded ./test/acceptance/typography.css.scss ./test/acceptance/typography.css",
-    "postinstall": "polymer install --variants",
     "pretest:lint": "npm run build:sass",
-    "test:lint": "npm run test:lint:wc && npm run test:lint:html",
-    "test:lint:html": "eslint *.html",
-    "test:lint:wc": "polymer lint -i *.html",
+    "test:lint": "npm run test:lint:wc && npm run test:lint:js",
+    "test:lint:js": "eslint . --ext .js,.html test/**/*.js test/**/*.html demo/**/*.js demo/**/*.html",
+    "test:lint:wc": "polymer lint",
     "test": "npm run test:lint && npm run test:galen:local",
     "galen:local:run": "d2l-galen test test/acceptance/typography.test.js -g factory:local",
     "galen:local:dump": "d2l-galen dump test/acceptance/typography.test.js -d test/acceptance/dumps -g factory:local",
@@ -20,13 +22,12 @@
     "predump": "rimraf test/acceptance/dumps",
     "dump": "concurrently -p name -n serve,galen -s first -k \"polymer serve\" \"npm run galen:local:dump\""
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BrightspaceUI/typography.git"
-  },
   "author": "D2L Corporation",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@webcomponents/webcomponentsjs": "^2.1.3",
+    "babel-eslint": "^10.0.1",
     "chromedriver": "^2.27.3",
     "concurrently": "^3.3.0",
     "d2l-galen-utils": "git+https://github.com/Brightspace/d2l-galen-utils.git#v0.2.4",
@@ -35,8 +36,20 @@
     "eslint-plugin-html": "^4.0.1",
     "galenframework": "^2.3.2",
     "node-sass": "^4.5.0",
-    "polymer-cli": "^1.7.7",
+    "polymer-cli": "^1.8.1",
     "sauce-connect-launcher": "^1.2.4",
     "sauceconnect-runner": "git+https://github.com/Brightspace/sauceconnect-runner.git#v0.3.0"
+  },
+  "version": "",
+  "resolutions": {
+    "inherits": "2.0.3",
+    "samsam": "1.1.3",
+    "supports-color": "3.1.2",
+    "type-detect": "1.0.0"
+  },
+  "main": "d2l-typography.js",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0",
+    "d2l-colors": "git+https://github.com/BrightspaceUI/colors.git#v4.0.0"
   }
 }
