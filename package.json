@@ -5,6 +5,7 @@
   "scripts": {
     "build:sass": "node-sass --output-style expanded ./test/acceptance/typography.css.scss ./test/acceptance/typography.css",
     "postinstall": "polymer install --variants",
+    "pretest:lint": "npm run build:sass",
     "test:lint": "npm run test:lint:wc && npm run test:lint:html",
     "test:lint:html": "eslint *.html",
     "test:lint:wc": "polymer lint -i *.html",
