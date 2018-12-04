@@ -1,48 +1,12 @@
-import '../@polymer/polymer/polymer-legacy.js';
-import '../d2l-colors/d2l-colors.js';
+import '@polymer/polymer/polymer-legacy.js';
+import 'd2l-colors/d2l-colors.js';
 import './d2l-typography-shared-styles.js';
-const importUrl = 'https://s.brightspace.com/lib/fonts/0.4.0/assets/';
 const $_documentContainer = document.createElement('template');
 
 $_documentContainer.innerHTML = `<dom-module id="d2l-typography">
 	<template>
 		<style>
-			@font-face {
-				font-family: 'Lato';
-				font-style: normal;
-				font-weight: 400;
-				src: local('Lato Regular'), local('Lato-Regular'), url(${new URL('Lato-400.woff2', importUrl)}) format('woff2'), url(${new URL('Lato-400.woff', importUrl)}) format('woff'), url(${new URL('Lato-400.ttf', importUrl)}) format('truetype');
-			}
-			@font-face {
-				font-family: 'Lato';
-				font-style: normal;
-				font-weight: 700;
-				src: local('Lato Bold'), local('Lato-Bold'), url(${new URL('Lato-700.woff2', importUrl)}) format('woff2'), url(${new URL('Lato-700.woff', importUrl)}) format('woff'), url(${new URL('Lato-700.ttf', importUrl)}) format('truetype');
-			}
-			@font-face {
-				font-family: 'Open Dyslexic';
-				font-style: normal;
-				font-weight: 400;
-				src: local('Open Dyslexic Regular'), local('OpenDyslexic-Regular'), url(${new URL('OpenDyslexic.woff', importUrl)}) format('woff'), url(${new URL('OpenDyslexic.ttf', importUrl)}) format('truetype');
-			}
-			@font-face {
-				font-family: 'Open Dyslexic';
-				font-style: italic;
-				font-weight: 400;
-				src: local('Open Dyslexic Italic'), local('OpenDyslexic-Italic'), url(${new URL('OpenDyslexic-Italic.woff', importUrl)}) format('woff'), url(${new URL('OpenDyslexic-Italic.ttf', importUrl)}) format('truetype');
-			}
-			@font-face {
-				font-family: 'Open Dyslexic';
-				font-style: normal;
-				font-weight: 700;
-				src: local('Open Dyslexic Bold'), local('OpenDyslexic-Bold'), url(${new URL('OpenDyslexic-700.woff', importUrl)}) format('woff'), url(${new URL('OpenDyslexic-700.ttf', importUrl)}) format('truetype');
-			}
-			@font-face {
-				font-family: 'Open Dyslexic';
-				font-style: italic;
-				font-weight: 700;
-				src: local('Open Dyslexic Bold Italic'), local('OpenDyslexic-BoldItalic'), url(${new URL('OpenDyslexic-700-Italic.woff', importUrl)}) format('woff'), url(${new URL('OpenDyslexic-700-Italic.ttf', importUrl)}) format('truetype');
-			}
+			@import url("https://s.brightspace.com/lib/fonts/0.4.0/fonts.css");
 
 			.d2l-typography,
 			.vui-typography {
