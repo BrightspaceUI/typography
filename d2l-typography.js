@@ -60,23 +60,29 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-typography">
 				line-height: 1.4rem;
 				@apply --d2l-font-custom;
 			}
+
 			.d2l-typography .d2l-body-standard {
 				@apply --d2l-body-standard-text;
 			}
+
 			.d2l-typography .d2l-body-compact {
 				@apply --d2l-body-compact-text;
 			}
+
 			.d2l-typography .d2l-body-small {
 				@apply --d2l-body-small-text;
 			}
+
 			.d2l-typography .d2l-label-text {
 				@apply --d2l-label-text;
 			}
+
 			.d2l-typography p,
 			.vui-typography p {
 				margin: 1rem 0;
 				@apply --d2l-font-paragraph-custom;
 			}
+
 			.d2l-typography.d2l-dyslexic,
 			.d2l-typography .d2l-dyslexic,
 			.vui-typography.vui-dyslexic,
@@ -85,50 +91,59 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-typography">
 				font-weight: 400;
 				@apply --d2l-font-dyslexic-custom;
 			}
+
 			.d2l-typography:lang(ar),
 			.d2l-typography :lang(ar),
 			.vui-typography:lang(ar),
 			.vui-typography :lang(ar) {
 				font-family: 'Arabic Transparent', 'Arabic Typesetting', 'Geeza Pro', sans-serif;
 			}
+
 			.d2l-typography:lang(zh),
 			.d2l-typography :lang(zh),
 			.vui-typography:lang(zh),
 			.vui-typography :lang(zh) {
 				font-family: 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
 			}
+
 			.d2l-typography:lang(ko),
 			.d2l-typography :lang(ko),
 			.vui-typography:lang(ko),
 			.vui-typography :lang(ko) {
 				font-family: 'Apple SD Gothic Neo', Dotum, sans-serif;
 			}
+
 			.d2l-typography:lang(ja),
 			.d2l-typography :lang(ja),
 			.vui-typography:lang(ja),
 			.vui-typography :lang(ja) {
 				font-family: 'Hiragino Kaku Gothic Pro', 'Meiyro', sans-serif;
 			}
+
 			.vui-typography .vui-heading-1,
 			.d2l-typography .d2l-heading-1 {
 				@apply --d2l-heading-1;
 				@apply --d2l-heading-1-custom;
 			}
+
 			.vui-typography .vui-heading-2,
 			.d2l-typography .d2l-heading-2 {
 				@apply --d2l-heading-2;
 				@apply --d2l-heading-2-custom;
 			}
+
 			.vui-typography .vui-heading-3,
 			.d2l-typography .d2l-heading-3 {
 				@apply --d2l-heading-3;
 				@apply --d2l-heading-3-custom;
 			}
+
 			.vui-typography .vui-heading-4,
 			.d2l-typography .d2l-heading-4 {
 				@apply --d2l-heading-4;
 				@apply --d2l-heading-4-custom;
 			}
+
 			@media (max-width: 615px) {
 				.d2l-typography .d2l-heading-1,
 				.d2l-typography .vui-heading-1 {
@@ -167,6 +182,7 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-typography">
 					line-height: 0.9rem;
 				}
 			}
+
 		</style>
 	</template>
 </dom-module>`;
