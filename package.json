@@ -40,7 +40,7 @@
     "sauce-connect-launcher": "^1.2.4",
     "sauceconnect-runner": "git+https://github.com/Brightspace/sauceconnect-runner.git#v0.3.0"
   },
-  "version": "",
+  "version": "7.0.4",
   "resolutions": {
     "inherits": "2.0.3",
     "samsam": "1.1.3",
