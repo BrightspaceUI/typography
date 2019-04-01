@@ -170,4 +170,4 @@ See the [Best Practices & Style Guide](https://github.com/Brightspace/valence-ui
 [bower-url]: http://bower.io/search/?q=d2l-typography
 [bower-image]: https://badge.fury.io/bo/d2l-typography.svg
 [ci-url]: https://travis-ci.org/BrightspaceUI/typography
-[ci-image]: https://img.shields.io/travis-ci/BrightspaceUI/typography.svg
+[ci-image]: https://travis-ci.org/BrightspaceUI/typography.svg?branch=master
