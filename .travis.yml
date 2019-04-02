@@ -27,6 +27,7 @@ deploy:
     tags: true
 env:
   global:
+  - OWNER_NAME=BrightspaceUI
   - REPO_NAME=typography
   - SAUCE_USERNAME: Desire2Learn
   - secure: DJvA0W0U/k26O2GETOEf2Lz3RcBW936cdm5Nzw75h3WL2Cu6MHee/9hM69JMostWqyPnbbzUNv0swwRCY8ZPfNkboHMZQRNxrUpp9yN9zz9mrXTn/qUi5bSP41DjJO8yqvYlSGO83tKN/dnvhgwYlWmGot3oJ12XB0ItO/kb868=
