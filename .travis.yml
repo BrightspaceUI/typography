@@ -14,7 +14,21 @@ script:
     echo "Pull request with secure environment variables, running Sauce tests...";
     npm run test:galen:sauce || travis_terminate 1;
   fi
+- |
+  if [ "$TRAVIS_BRANCH" == "master" ] && [ $TRAVIS_PULL_REQUEST == false ]; then
+    echo "Not a Pull Request and on branch master so bumping version";
+    frauci-update-version;
+    export TRAVIS_TAG=$(frauci-get-version)
+  fi
+deploy:
+  provider: releases
+  api_key: "$GITHUB_RELEASE_TOKEN"
+  on:
+    tags: true
 env:
   global:
+  - OWNER_NAME=BrightspaceUI
+  - REPO_NAME=typography
   - SAUCE_USERNAME: Desire2Learn
   - secure: DJvA0W0U/k26O2GETOEf2Lz3RcBW936cdm5Nzw75h3WL2Cu6MHee/9hM69JMostWqyPnbbzUNv0swwRCY8ZPfNkboHMZQRNxrUpp9yN9zz9mrXTn/qUi5bSP41DjJO8yqvYlSGO83tKN/dnvhgwYlWmGot3oJ12XB0ItO/kb868=
+  - secure: Ms8j6W8edeEEiue73sMjyeircrPDUcIlq9xxHN35NStolxGB9GVKzPyHlTAyShDO2Jqm48W0cyFa7ketCc3w0v42uF97u28xRtIhjmY2SYsVDj+PeVuckoBJM+2eqvkM94e/2hOjkQLvOc40BIZL9qXafIUp21tXmmYstvUvIk0=
