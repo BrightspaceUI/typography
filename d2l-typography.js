@@ -177,10 +177,6 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-typography">
 					font-size: 0.6rem;
 					line-height: 0.9rem;
 				}
-				.d2l-typography .d2l-label-text {
-					font-size: 0.6rem;
-					line-height: 0.9rem;
-				}
 			}
 
 		</style>
