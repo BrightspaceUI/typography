@@ -22,7 +22,7 @@
 = Typography classes =
 	@on desktop
 		paragraph:
-			css color matches "#565a5c|rgba\\(86, 90, 92, 1\\)|rgb\\(86, 90, 92\\)"
+			css color matches "#494c4e|rgba\\(73, 76, 78, 1\\)|rgb\\(73, 76, 78\\)"
 			css font-family matches "(?i)['|\"]*lato['|\"]*,\\s*['|\"]lucida sans unicode['|\"],\\s*['|\"]lucida grande['|\"],\\s*sans-serif"
 			css font-size is "19px"
 			css font-weight matches "normal|400"
@@ -81,7 +81,7 @@
 			css font-size is "16px"
 			css line-height is "24px"
 		small:
-			css color matches "#72777a|rgba\\(114, 119, 122, 1\\)|rgb\\(114, 119, 122\\)"
+			css color matches "#6e7376|rgba\\(110, 115, 118, 1\\)|rgb\\(110, 115, 118\\)"
 			css font-size is "14px"
 			css line-height is "20px"
 	@on mobile
