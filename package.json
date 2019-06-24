@@ -51,6 +51,6 @@
   "main": "d2l-typography.js",
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
-    "d2l-colors": "BrightspaceUI/colors#semver:^4"
+    "d2l-colors": "BrightspaceUI/colors#dbatiste/dark-mode-1"
   }
 }

@@ -10,6 +10,10 @@
 	font-weight: 400;
 	line-height: 1.4rem;
 
+	@media (prefers-color-scheme: dark) {
+		color: $d2l-color-mica;
+	}
+
 	p {
 		margin: 1rem 0;
 	}
@@ -111,6 +115,9 @@
 		font-size: 0.6rem;
 		line-height: 0.9rem;
 	}
+	@media (prefers-color-scheme: dark) {
+		color: $d2l-color-mica;
+	}
 }
 
 @mixin d2l-heading-1() {
@@ -122,6 +129,9 @@
 		font-size: 1.5rem;
 		font-weight: 400;
 		line-height: 1.8rem;
+	}
+	@media (prefers-color-scheme: dark) {
+		color: $d2l-color-regolith;
 	}
 }
 
@@ -135,6 +145,9 @@
 		font-weight: 700;
 		line-height: 1.5rem;
 	}
+	@media (prefers-color-scheme: dark) {
+		color: $d2l-color-regolith;
+	}
 }
 
 @mixin d2l-heading-3() {
@@ -147,6 +160,9 @@
 		font-weight: 700;
 		line-height: 1.2rem;
 	}
+	@media (prefers-color-scheme: dark) {
+		color: $d2l-color-regolith;
+	}
 }
 
 @mixin d2l-heading-4() {
@@ -158,6 +174,9 @@
 		font-size: 0.8rem;
 		font-weight: 700;
 		line-height: 1.2rem;
+	}
+	@media (prefers-color-scheme: dark) {
+		color: $d2l-color-regolith;
 	}
 }
 
