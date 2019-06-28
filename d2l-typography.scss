@@ -10,8 +10,7 @@
 	font-weight: 400;
 	line-height: 1.4rem;
 
-	&.d2l-dark-mode,
-	.d2l-dark-mode & {
+	[d2l-color-scheme="dark"] & {
 		color: $d2l-color-mica;
 	}
 
@@ -116,7 +115,7 @@
 		font-size: 0.6rem;
 		line-height: 0.9rem;
 	}
-	.d2l-dark-mode & {
+	[d2l-color-scheme="dark"] & {
 		color: $d2l-color-mica;
 	}
 }
@@ -131,7 +130,7 @@
 		font-weight: 400;
 		line-height: 1.8rem;
 	}
-	.d2l-dark-mode & {
+	[d2l-color-scheme="dark"] & {
 		color: $d2l-color-regolith;
 	}
 }
@@ -146,7 +145,7 @@
 		font-weight: 700;
 		line-height: 1.5rem;
 	}
-	.d2l-dark-mode & {
+	[d2l-color-scheme="dark"] & {
 		color: $d2l-color-regolith;
 	}
 }
@@ -161,7 +160,7 @@
 		font-weight: 700;
 		line-height: 1.2rem;
 	}
-	.d2l-dark-mode & {
+	[d2l-color-scheme="dark"] & {
 		color: $d2l-color-regolith;
 	}
 }
@@ -176,7 +175,7 @@
 		font-weight: 700;
 		line-height: 1.2rem;
 	}
-	.d2l-dark-mode & {
+	[d2l-color-scheme="dark"] & {
 		color: $d2l-color-regolith;
 	}
 }
