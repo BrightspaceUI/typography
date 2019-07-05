@@ -14,12 +14,6 @@
 		margin: 1rem 0;
 	}
 
-	&.d2l-dyslexic,
-	& .d2l-dyslexic {
-		font-family: 'Open Dyslexic', sans-serif;
-		font-weight: 400;
-	}
-
 	&:lang(ar),
 	& :lang(ar) {
 		font-family: 'Arabic Transparent', 'Arabic Typesetting', 'Geeza Pro', sans-serif;
@@ -54,30 +48,6 @@
 		font-style: normal;
 		font-weight: 700;
 		src: url(https://s.brightspace.com/lib/fonts/0.4.0/assets/Lato-700.woff2) format('woff2'), url(https://s.brightspace.com/lib/fonts/0.4.0/assets/Lato-700.woff) format('woff');
-	}
-	@font-face {
-		font-family: 'Open Dyslexic';
-		font-style: normal;
-		font-weight: 400;
-		src: url(https://s.brightspace.com/lib/fonts/0.4.0/assets/OpenDyslexic.woff) format('woff');
-	}
-	@font-face {
-		font-family: 'Open Dyslexic';
-		font-style: italic;
-		font-weight: 400;
-		src: url(https://s.brightspace.com/lib/fonts/0.4.0/assets/OpenDyslexic-Italic.woff) format('woff');
-	}
-	@font-face {
-		font-family: 'Open Dyslexic';
-		font-style: normal;
-		font-weight: 700;
-		src: url(https://s.brightspace.com/lib/fonts/0.4.0/assets/OpenDyslexic-700.woff) format('woff');
-	}
-	@font-face {
-		font-family: 'Open Dyslexic';
-		font-style: italic;
-		font-weight: 700;
-		src: url(https://s.brightspace.com/lib/fonts/0.4.0/assets/OpenDyslexic-700-Italic.woff) format('woff');
 	}
 }
 

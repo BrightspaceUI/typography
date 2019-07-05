@@ -1,6 +1,5 @@
 @objects
 	paragraph		.paragraph
-	dyslexic		.d2l-dyslexic
 	lang-arabic		#arabic
 	lang-chinese	#chinese
 	lang-korean		#korean
@@ -32,8 +31,6 @@
 			css margin-right is "0px"
 			css margin-bottom is "20px"
 			css margin-left is "0px"
-		dyslexic:
-			css font-family matches "(?i)['|\"]open dyslexic['|\"],\\s*sans-serif"
 		lang-arabic:
 			css font-family matches "(?i)['|\"]arabic transparent['|\"],\\s*['|\"]arabic typesetting['|\"],\\s*['|\"]geeza pro['|\"],\\s*sans-serif"
 		lang-chinese:
