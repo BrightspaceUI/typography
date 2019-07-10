@@ -50,7 +50,7 @@
   },
   "main": "d2l-typography.js",
   "dependencies": {
-    "@polymer/polymer": "^3.0.0",
-    "d2l-colors": "BrightspaceUI/colors#semver:^4"
+    "@brightspace-ui/core": "^0.2",
+    "@polymer/polymer": "^3.0.0"
   }
 }

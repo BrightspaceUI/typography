@@ -1,3 +1,5 @@
+> Deprecated: use [BrightspaceUI/core](https://github.com/BrightspaceUI/core) instead.
+
 # d2l-typography
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/BrightspaceUI/typography)
 [![Bower version][bower-image]][bower-url]
