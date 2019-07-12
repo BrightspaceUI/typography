@@ -1,7 +1,8 @@
+import '@brightspace-ui/core/components/colors/colors.js';
 import '@polymer/polymer/polymer-legacy.js';
-import 'd2l-colors/d2l-colors.js';
 import './d2l-typography-shared-styles.js';
-const importUrl = 'https://s.brightspace.com/lib/fonts/0.4.0/assets/';
+
+const importUrl = 'https://s.brightspace.com/lib/fonts/0.5.0/assets/';
 
 const $_fontFaces = document.createElement('style');
 $_fontFaces.id = 'd2l-typography-font-face';
