@@ -23,7 +23,7 @@
     "frau-ci": "^1.33.2",
     "polymer-cli": "^1.9.1"
   },
-  "version": "7.3.3",
+  "version": "8.0.0",
   "resolutions": {
     "inherits": "2.0.3",
     "samsam": "1.1.3",
@@ -32,7 +32,7 @@
   },
   "main": "d2l-typography.js",
   "dependencies": {
-    "@brightspace-ui/core": "^1",
+    "@brightspace-ui/core": "^2",
     "@polymer/polymer": "^3.0.0"
   }
 }
