@@ -32,7 +32,7 @@
   },
   "main": "d2l-typography.js",
   "dependencies": {
-    "@brightspace-ui/core": "https://github.com/BrightspaceUI/core#vmisechko/lit-2",
+    "@brightspace-ui/core": "^2",
     "@polymer/polymer": "^3.0.0"
   }
 }
