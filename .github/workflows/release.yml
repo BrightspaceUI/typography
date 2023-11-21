@@ -7,7 +7,7 @@ jobs:
   release:
     if: "!contains(github.event.head_commit.message, 'skip ci')"
     name: Release
-    timeout-minutes: 2
+    timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,6 +21,6 @@ jobs:
       - name: Semantic Release
         uses: BrightspaceUI/actions/semantic-release@main
         with:
-          GITHUB_TOKEN: ${{ secrets.D2L_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.D2L_RELEASE_TOKEN }}
           NPM: true
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}   
