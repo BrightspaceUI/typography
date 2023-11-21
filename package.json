@@ -23,7 +23,7 @@
     "eslint-plugin-lit": "^1",
     "eslint-plugin-sort-class-members": "^1"
   },
-  "version": "8.1.0",
+  "version": "8.2.0",
   "main": "d2l-typography.js",
   "files": [
     "d2l-typography-shared-styles.js",
