@@ -1,48 +1,11 @@
 import '@brightspace-ui/core/components/colors/colors.js';
 import '@polymer/polymer/polymer-legacy.js';
 import './d2l-typography-shared-styles.js';
-
-const importUrl = 'https://s.brightspace.com/lib/fonts/0.5.0/assets/';
+import { fontFacesCss } from '@brightspace-ui/core/components/typography/styles.js';
 
 const $_fontFaces = document.createElement('style');
 $_fontFaces.id = 'd2l-typography-font-face';
-$_fontFaces.innerHTML = `
-	@font-face {
-		font-family: 'Lato';
-		font-style: normal;
-		font-weight: 400;
-		src: local('Lato Regular'), local('Lato-Regular'), url(${new URL('Lato-400.woff2', importUrl)}) format('woff2'), url(${new URL('Lato-400.woff', importUrl)}) format('woff'), url(${new URL('Lato-400.ttf', importUrl)}) format('truetype');
-	}
-	@font-face {
-		font-family: 'Lato';
-		font-style: normal;
-		font-weight: 700;
-		src: local('Lato Bold'), local('Lato-Bold'), url(${new URL('Lato-700.woff2', importUrl)}) format('woff2'), url(${new URL('Lato-700.woff', importUrl)}) format('woff'), url(${new URL('Lato-700.ttf', importUrl)}) format('truetype');
-	}
-	@font-face {
-		font-family: 'Open Dyslexic';
-		font-style: normal;
-		font-weight: 400;
-		src: local('Open Dyslexic Regular'), local('OpenDyslexic-Regular'), url(${new URL('OpenDyslexic.woff', importUrl)}) format('woff'), url(${new URL('OpenDyslexic.ttf', importUrl)}) format('truetype');
-	}
-	@font-face {
-		font-family: 'Open Dyslexic';
-		font-style: italic;
-		font-weight: 400;
-		src: local('Open Dyslexic Italic'), local('OpenDyslexic-Italic'), url(${new URL('OpenDyslexic-Italic.woff', importUrl)}) format('woff'), url(${new URL('OpenDyslexic-Italic.ttf', importUrl)}) format('truetype');
-	}
-	@font-face {
-		font-family: 'Open Dyslexic';
-		font-style: normal;
-		font-weight: 700;
-		src: local('Open Dyslexic Bold'), local('OpenDyslexic-Bold'), url(${new URL('OpenDyslexic-700.woff', importUrl)}) format('woff'), url(${new URL('OpenDyslexic-700.ttf', importUrl)}) format('truetype');
-	}
-	@font-face {
-		font-family: 'Open Dyslexic';
-		font-style: italic;
-		font-weight: 700;
-		src: local('Open Dyslexic Bold Italic'), local('OpenDyslexic-BoldItalic'), url(${new URL('OpenDyslexic-700-Italic.woff', importUrl)}) format('woff'), url(${new URL('OpenDyslexic-700-Italic.ttf', importUrl)}) format('truetype');
-	}`;
+$_fontFaces.innerHTML = fontFacesCss;
 document.head.appendChild($_fontFaces);
 
 const $_documentContainer = document.createElement('template');
@@ -82,15 +45,6 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-typography">
 			.vui-typography p {
 				margin: 1rem 0;
 				@apply --d2l-font-paragraph-custom;
-			}
-
-			.d2l-typography.d2l-dyslexic,
-			.d2l-typography .d2l-dyslexic,
-			.vui-typography.vui-dyslexic,
-			.vui-typography .vui-dyslexic {
-				font-family: 'Open Dyslexic', sans-serif;
-				font-weight: 400;
-				@apply --d2l-font-dyslexic-custom;
 			}
 
 			.d2l-typography:lang(ar),
