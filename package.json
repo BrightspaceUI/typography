@@ -31,7 +31,8 @@
     "d2l-typography.scss"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
     "@brightspace-ui/core": "^3",
